@@ -45,6 +45,6 @@ list-style-type: none;
     height: 3pc;
     width: 3pc;
 }
-.titles li a:not(#home,#logo):hover,div:hover {
+.titles li a:not(#home,#logo):hover,div#other:hover {
     background-color:#AC9FBB ;
 }

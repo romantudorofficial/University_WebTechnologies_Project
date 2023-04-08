@@ -33,3 +33,7 @@
 .lessons li a:hover{
     background-color: #C9DDFF;
 }
+
+.pageContent{
+    margin-left: 15%;
+}
