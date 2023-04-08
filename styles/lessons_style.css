@@ -1,0 +1,25 @@
+.lessons{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.lessons li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: left;
+  color: #333;
+}
+.active{
+    background-color: #cb838f;
+}
+
+.lessons li a:hover{
+    background-color: #C9DDFF;
+}
