@@ -4,25 +4,27 @@
 }
 
 .titles{
-list-style-type: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color:  #C1AAC0 ;
   height: fit-content;
+  border-radius: 0.1cm;
 }
 
 .titles li{
     float: left;
 }
 
-.titles li a,div {
+.titles li a,div{
     display: block;
     color: #59656F;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
+
 #buttonLog{
     float: right;
 }
@@ -45,6 +47,10 @@ list-style-type: none;
     height: 3pc;
     width: 3pc;
 }
-.titles li a:not(#home,#logo):hover,div#other:hover {
+.titles li a:not(#home,#logo):hover,div#other:hover,div#commands:hover {
     background-color:#AC9FBB ;
+}
+
+#commands{
+    background-color: darkseagreen;
 }
