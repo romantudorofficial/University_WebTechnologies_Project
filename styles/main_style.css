@@ -29,6 +29,7 @@ list-style-type: none;
 
 #buttonLog a{
     background-color: #C9DDFF;
+    font-weight: bold;
 }
 #logo img{
     margin-top: -1pc;

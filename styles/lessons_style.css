@@ -8,7 +8,17 @@
     height: 100%;
     overflow: auto;
 }
-
+.titleLesson{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  font-size:150%;
+  background-color: bisque;
+  font-family:cursive;
+  color:#59656F;
+}
 .lessons li a {
   display: block;
   padding: 8px 16px;
