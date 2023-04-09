@@ -1,0 +1,12 @@
+.sectionTitle {
+    font-size: 45px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    color: black;
+}
+.sectionBody {
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+    color: black;
+}
