@@ -211,9 +211,285 @@
 
             </section>
 
-            <!-- Part 2 - Maria - Write Your Part After This Comment -->
+            <!-- Section 3 - External Interface Requirements -->
+            <section>
 
-                <!-- Here Goes Your Content. Delete these two comments after you read this. -->
+                <h2>3. External Interface Requirements</h2>
+
+                <!-- Section 3.1 - User Interfaces -->
+                <section>
+
+                    <h3>3.1 User Interfaces</h3>
+
+                    <p>
+                        The MaMa - Manners Matter website will interact with two main user groups: customers and administrators. 
+                        Customers are people who want to learn more about netiquette, and administrators are responsible for adding 
+                        new lessons to the website. Users will be required to create an account and log in to access the website's features.
+                    </p>
+                    <p>
+                        The website's user interface will be designed to follow industry-standard web design principles and best practices. 
+                        The layout will be intuitive, with easy-to-use navigation and clear calls-to-action. The site's design will be consistent 
+                        across all pages, with a header that includes the site's logo and a sign-out button that returns the user to the login page.
+                    </p>
+                    <p>
+                        The user interface will be web-based, and will be designed to be responsive and accessible across a range of devices and 
+                        screen sizes. The site will include standard buttons and functions, such as a help button and navigation buttons, as well 
+                        as keyboard shortcuts and other accessibility features as needed.
+                    </p>
+                    <p>
+                        The user interface will be designed to meet accessibility standards and ensure that all users can access the site's content 
+                        and features, regardless of their abilities. In addition, the website will comply with relevant data privacy regulations to 
+                        ensure that user data is protected.
+                    </p>
+
+                </section>
+
+                <!-- Section 3.2 - Hardware Interfaces -->
+                <section>
+
+                    <h3>3.2 Hardware Interfaces</h3>
+
+                    <p>
+                        The MaMa - Manners Matter website does not have any specific hardware requirements and can run on any device that has a web 
+                        browser and an internet connection. The software does not interact with any specific hardware components and is not dependent 
+                        on any particular hardware communication protocols.
+                    </p>
+
+                </section>
+
+                <!-- Section 3.3 - Software Interfaces -->
+                <section>
+
+                    <h3>3.3 Software Interfaces</h3>
+
+                    <p>
+                        The MaMa - Manners Matter website will interact with a database where information about the users will be stored, including 
+                        their email address, password, name, other specific information about them, and the number of points they have accumulated. 
+                        This database will be used for the log in component, for creating the leaderboard, and for keeping track of which lessons a 
+                        user has already completed.
+                    </p>
+                    <p>
+                        The website is built using HTML, PHP, and CSS programming languages, and will interact with the database using SQL queries. The 
+                        website will not interact with any other specific software components or libraries.
+                    </p>
+                    <p>
+                        To access the database, the website will connect to it using the appropriate credentials and communication protocols. The data 
+                        items that will be exchanged between the website and the database include user login information, user profile information, lesson 
+                        completion data, and leaderboard data. The purpose of each data item is to facilitate user authentication, personalize the user 
+                        experience, and provide feedback on user progress.
+                    </p>
+
+                </section>
+
+                <!-- Section 3.4 - Communications Interfaces -->
+                <section>
+
+                    <h3>3.4 Communications Interfaces</h3>
+
+                    <p>
+                        The MaMa - Manners Matter website will require communications functions to enable user interactions such as email notifications 
+                        and feedback submissions. The following communication protocols and standards will be used:
+                    </p>
+                    <ul>
+                        <li>Email: The website will send email notifications to users to confirm their account creation and password reset requests. 
+                            The email protocol used will be SMTP.</li>
+                        <li>Web Browser: The website will interact with web browsers to deliver its content to users. The supported web browsers will 
+                            be Chrome, Firefox, Safari, and Edge. The website will follow web standards such as HTML5 and CSS3 to ensure compatibility 
+                            across different web browsers.</li>
+                        <li>HTTP: The website will use HTTP protocol for communication between the web server and client web browsers.</li>
+                        <li>HTTPS: The website will use HTTPS protocol to encrypt and secure data transmission between the web server and client web browsers.</li>
+                    </ul>
+                    <p>
+                        In addition, the website will comply with data privacy and security regulations such as GDPR and CCPA. Any data collected from 
+                        users will be stored securely and will not be shared with third-party services without user consent. Any communication security 
+                        or encryption issues will be addressed using industry-standard encryption protocols.
+                    </p>
+
+                </section>
+
+            </section>
+
+
+            <!-- Section 4 - System Features -->
+            <section>
+
+                <h2>4. System Features</h2>
+
+                <!-- Section 4.1 - User Authentication -->
+                <section>
+
+                    <h3>4.1 User Authentication</h3>
+
+                        <section>
+
+                            <h4>4.1.1  Description and Priority</h4>
+                            <p>
+                                Users can create an account and log in to access their account information, progress, and to complete lessons. This 
+                                feature is of high priority.
+                            </p>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.1.2  Stimulus/Response Sequences</h4>
+                            <ul>
+                                <li>User enters login credentials and clicks the Log In button.</li>
+                                <li>System verifies user credentials.</li>
+                                <li>If credentials are valid, system displays the main page.</li>
+                                <li>If credentials are invalid, system displays error message and prompts user to enter valid credentials.</li>
+                            </ul>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.1.3  Functional Requirements</h4>
+                            <ul>
+                                <li>The system shall provide a user registration form.</li>
+                                <li>The system shall store user login credentials in a secure database.</li>
+                                <li>The system shall verify user credentials before granting access to user account.</li>
+                                <li>The system shall allow users to reset their password in case they forget it.</li>
+                                <li>The system shall display appropriate error messages if invalid credentials are entered.</li>
+                            </ul>
+
+                        </section>
+
+                </section>
+
+                <section>
+
+                    <h3>4.2 Lesson Browsing</h3>
+
+                        <section>
+
+                            <h4>4.2.1  Description and Priority</h4>
+                            <p>
+                                Users will be able to browse and view available lessons. This feature is of high priority.
+                            </p>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.2.2  Stimulus/Response Sequences</h4>
+                            <ul>
+                                <li>User clicks on "Go To Lessons" button in the main page.</li>
+                                <li>System displays a list of available lesson categories in the header.</li>
+                                <li>User clicks on a specific lesson category.</li>
+                                <li>System displays a list of available lessons in the respective category.</li>
+                                <li>User clicks on a specific lesson.</li>
+                                <li>System displays lesson content.</li>
+                            </ul>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.2.3  Functional Requirements</h4>
+                            <ul>
+                                <li>The system shall display a list of available lessons.</li>
+                                <li>The system shall display the lesson content in a readable and organized format.</li>
+                                <li>The system shall allow users to mark a lesson as completed.</li>
+                                <li>The system shall update the user's progress and points accordingly.</li>
+                            </ul>
+
+                        </section>
+
+                </section>
+
+                <section>
+
+                    <h3>4.3 Leaderboard</h3>
+
+                        <section>
+
+                            <h4>4.3.1  Description and Priority</h4>
+                            <p>
+                                The leaderboard is a feature that displays the top 10 users based on the number of points they have 
+                                accumulated through completing lessons. It is of medium priority as it is not critical to the core 
+                                functionality of the system but provides a gamification aspect to the learning experience.
+                            </p>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.3.2  Stimulus/Response Sequences</h4>
+                            <ul>
+                                <li>User clicks on "Scoreboard" button on the main page.</li>
+                                <li>System displays the leaderboard page with the top 10 users listed in descending order based on 
+                                    points accumulated, as well as the user's own score and placement if they are not placed in 
+                                    top 10.</li>
+                            </ul>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.3.3  Functional Requirements</h4>
+                            <ul>
+                                <li>The system shall keep track of the number of points accumulated by each user.</li>
+                                <li>The system shall calculate the total number of points for each user based on the number of lessons 
+                                    completed and their difficulty level.</li>
+                                <li>The system shall display the top 10 users with their names and number of points accumulated.</li>
+                                <li>The system shall update the leaderboard in real-time as users complete lessons and accumulate points.</li>
+                                <li>The system shall provide a way for users to view their own rank on the leaderboard.</li>
+                            </ul>
+
+                        </section>
+
+                </section>
+
+                <section>
+
+                    <h3>4.4 Admin Lesson Management</h3>
+
+                        <section>
+
+                            <h4>4.4.1  Description and Priority</h4>
+                            <p>
+                                Admin Lesson Management refers to the ability of the admin to add, edit, and delete lessons on the site. This feature 
+                                is of high priority.
+                            </p>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.4.2  Stimulus/Response Sequences</h4>
+                            <ul>
+                                <li>System prompts the admin to enter their login credentials.</li>
+                                <li>Admin logs in to the system.</li>
+                                <li>Admin clicks on "Go To Lessons" button in the main page.</li>
+                                <li>System display the "Admin Commands" option in the header.</li>
+                                <li>Admin clicks on the aforementioned option.</li>
+                                <li>System displays the management page.</li>
+                            </ul>
+
+                        </section>
+
+                        <section>
+
+                            <h4>4.4.3  Functional Requirements</h4>
+                            <ul>
+                                <li>The system shall provide a secure login for admins to access the lesson management functionality.</li>
+                                <li>The system shall allow admins to add new lessons to the site, including a title, description, and content.</li>
+                                <li>The system shall allow admins to delete lessons from the site, with a confirmation prompt to prevent accidental deletion.</li>
+                                <li>The system shall allow admins to edit existing lessons, including the ability to modify the title, description, and content.</li>
+                                <li>The system shall maintain the integrity of the database when adding, editing, or deleting lessons.</li>
+                                <li>The system shall display a success message to the admin after a lesson has been successfully added, edited, or deleted.</li>
+                                <li>The system shall ensure that only authenticated admins have access to the lesson management functionality.</li>
+                            </ul>
+
+                        </section>
+
+                </section>
+
+            </section>
+
+
+
                 
             <!-- Section 5 - Other Nonfunctional Requirements -->
             <section>
