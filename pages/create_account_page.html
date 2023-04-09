@@ -1,0 +1,78 @@
+<!-- Create Account Page -->
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+    <head>
+
+        <!-- The Charset -->
+        <meta charset = "UTF-8" />
+
+        <!-- The Title of the Page -->
+        <title>Create Account</title>
+
+        <!-- The Stylesheet for the Page -->
+        <link rel = "stylesheet" href = "../styles/create_account_page_style.css" />
+
+    </head>
+
+
+    <body>
+
+        <section class = "create-account-container">
+
+            <!-- The Title of the Page -->
+            <h1 class = "title">Create Account</h1>
+
+            <form class = "create-account-form" method = "POST">
+
+                <label for = "first-name">First Name: </label>
+                <input type = "text" id = "first-name" name = "first-name" />
+                
+                <br />
+
+                <label for = "last-name">Last Name: </label>
+                <input type = "text" id = "last-name" name = "last-name" />
+                
+                <br />
+
+                <label for = "email">Email: </label>
+                <input type = "text" id = "email" name = "email" />
+                
+                <br />
+    
+                <label for = "password">Password: </label>
+                <input type = "password" id = "password" name = "password" />
+    
+                <br />
+
+                <div class = "account-type">
+
+                    <label for = "account-type-option">Account Type:</label>
+                    <br />
+
+                    <input type = "radio" id = "individual" name = "account-type-option" value = "individual" />
+                    <label for = "individual">Individual</label>
+                    <br />
+
+                    <input type = "radio" id = "administrator" name = "account-type-option" value = "administrator" />
+                    <label for = "administrator">Administrator</label>
+                    <br />
+
+                </div>
+    
+                <br />
+    
+                <input type = "submit" value = "Create Account" class = "create-account-button">
+    
+            </form>
+
+        </section>
+
+
+    </body>
+
+</html>
