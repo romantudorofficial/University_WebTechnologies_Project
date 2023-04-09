@@ -1,0 +1,82 @@
+body{
+    background-color: beige;
+}
+h1{
+    margin-top: -0.9pc;
+    padding-top: 2pc;
+    font-size: xx-large;
+    width: 100%;
+    padding-bottom: 2pc;
+    color: black;
+    background-color: bisque;
+    text-align: center;
+}
+p.info{
+    padding-top: 1pc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 1pc;
+}
+
+div.adminContent{
+    width: 100%;
+    margin-left: -1pc;
+    text-align: left;
+}
+
+div.adminContent button{
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+    border-radius: 0.5cm;
+    border-color: coral;
+    border-style: dotted;
+    width: 20%;
+    background-color: bisque;
+}
+
+div.adminContent button a{
+    text-decoration: none;
+    color: black;
+}
+
+p.end{
+    font-size: xx-large;
+    font-style: oblique;
+    font-family: cursive;
+}
+select{
+    background-color: bisque;
+}
+
+
+.backButton{
+    margin-left: 10pc;
+    text-align: center;
+}
+
+.contentEditor label,input,textarea{
+    margin-bottom: 2pc;
+}
+
+.adminPageIcons{
+    width: 5pc;
+    height: 5pc;
+    margin-left: 5pc;
+    margin-right: 5pc;
+}
+
+.addMoreQuestions, .addMoreImages{
+    height: 3pc;
+    width: 3pc;
+    margin-bottom: 1pc;
+}
+
+textarea{
+    resize: none;
+}
+
+fieldset legend{
+    padding-left: 2pc;
+    padding-right: 2pc;
+}

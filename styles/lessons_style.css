@@ -1,0 +1,58 @@
+.lessons{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.titleLesson{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: center;
+  color: #333;
+  font-size:150%;
+  background-color: bisque;
+  font-family:cursive;
+  color:#59656F;
+}
+.lessons li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  text-align: left;
+  color: #333;
+}
+.active{
+    background-color: #cb838f;
+}
+
+.lessons li a:hover{
+    background-color: #C9DDFF;
+}
+
+.pageContent{
+    margin-left: 20%;
+    padding:1px 16px;
+    height: 100%;
+}
+
+.picturesLessons{
+    display: block;
+    margin-top: 1pc;
+    margin-bottom: 1pc;
+    margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 10px;
+}
+
+.completeLesson{
+    margin-top: 1pc;
+    border-radius: 1cm;
+    border-color: #cb838f;
+    width: 20%;
+}
