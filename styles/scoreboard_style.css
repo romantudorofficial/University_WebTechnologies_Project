@@ -1,0 +1,34 @@
+.categTitle {
+    text-align: center;
+    background-color: #FFF5BF;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    font-size: 50px;
+}
+.userBox {
+    color: black;
+    text-align: center;
+    background-color: #FFB07C;
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.userInfo {
+    font-size: 20px;
+}
+.myBox {
+    color: black;
+    text-align: center;
+    background-color: #D28452;
+    margin-top: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}

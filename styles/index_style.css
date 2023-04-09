@@ -1,0 +1,45 @@
+.goToPage {
+    border: none;
+    color: black;
+    background-color: #FFB07C;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 23px;
+    margin: 6px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.goToPage:hover {
+    background-color: #D28452;
+}
+.categs {
+    text-align: center;
+    background-color: #FFF5BF;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.presentPage {
+    background-color: #FFF5BF;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.presentationTitle {
+    color: black;
+    font-size: 60px;
+    padding-bottom: 45px;
+    padding-top: 50px;
+}
+.presentationBody {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+}
