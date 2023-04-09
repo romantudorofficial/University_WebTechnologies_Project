@@ -14,11 +14,11 @@
         <li><a href="../index.html" id="logo"><img src="../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
         <li><a href="lessons.html" id="home"> <img src="../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
         <li> <a href="../messages/introduction.html">Messages</a> </li>
-        <li> <a href="">Virtual Community</a> </li>
-        <li> <a href="introduction.html" class="active">Emoji</a> </li>
-        <li> <a href="">Video Conferences</a> </li>
-        <li> <a href="">Culture</a> </li>
-        <li> <a href="">Multilingualism</a> </li>
+        <li> <a href="../virtual community/introduction.html">Virtual Community</a> </li>
+        <li> <a href="../emoji/introduction.html" class="active">Emoji</a> </li>
+        <li> <a href="../video conferences/introduction.html">Video Conferences</a> </li>
+        <li> <a href="../culture/introduction.html">Culture</a> </li>
+        <li> <a href="../multilingualism/introduction.html">Multilingualism</a> </li>
         <li>
             <div id="other">Other</div>
         </li>
@@ -54,8 +54,32 @@
             For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <img src="../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
+        <h6>QUESTION</h6>
+        <fieldset>
+        <legend for="Q1"> Which one of the following is an emoji?</legend> 
+        <div>
+            <input type="radio" id="emoji" name="emoji" value="emoji" checked>
+            <label for="emoji">🦚</label>
+        </div>
+        <div>
+            <input type="radio" id="emoticon" name="emoji" value="emoticon" checked>
+            <label for="emoticon">:P</label>
+        </div>
+        <button type="submit" onclick="myFunction()">Check Answer</button> <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
     </div>
+    <!-- Just for demo -->
+    <script>
+        function myFunction() {
+            if(document.getElementById("emoji").checked){
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else{
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+     </script>
 </body>
 
 </html>

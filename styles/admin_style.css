@@ -54,3 +54,29 @@ select{
     margin-left: 10pc;
     text-align: center;
 }
+
+.contentEditor label,input,textarea{
+    margin-bottom: 2pc;
+}
+
+.adminPageIcons{
+    width: 5pc;
+    height: 5pc;
+    margin-left: 5pc;
+    margin-right: 5pc;
+}
+
+.addMoreQuestions, .addMoreImages{
+    height: 3pc;
+    width: 3pc;
+    margin-bottom: 1pc;
+}
+
+textarea{
+    resize: none;
+}
+
+fieldset legend{
+    padding-left: 2pc;
+    padding-right: 2pc;
+}
