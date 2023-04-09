@@ -2,10 +2,10 @@
 <html>
 <head>
 	<title>MaMa! Lessons</title>
-	<link rel = "stylesheet" href = "main_style.css" />
-	<link rel = "stylesheet" href = "index_style.css" />
-    <link rel = "stylesheet" href = "scoreboard_style.css" />
-    <link rel = "stylesheet" href = "lessonspage_style.css" />
+	<link rel = "stylesheet" href = "../styles/main_style.css" />
+	<link rel = "stylesheet" href = "../styles/index_style.css" />
+    <link rel = "stylesheet" href = "../styles/scoreboard_style.css" />
+    <link rel = "stylesheet" href = "../styles/lessonspage_style.css" />
 	<style>
 	* { font-family: cambria; font-size: 17px; }
 	label { display: block; }
@@ -13,18 +13,23 @@
 </head>
 <body>
     <ul class="titles">
-        <li><a href="indexProj.php" id="logo"><img src="newLogo.jpg" alt="logo icon"> </a></li>
-        <li><a href="lessonsProj.php" id="home"> <img src="HomeLogo.png" alt="home icon"> </a> </li>
-        <li> <a href="">Messages</a> </li>
-        <li> <a href="">Virtual Community</a> </li>
-        <li> <a href="introduction.html" class="active">Emoji</a> </li>
-        <li> <a href="">Video Conferences</a> </li>
-        <li> <a href="">Culture</a> </li>
-        <li> <a href="">Multilingualism</a> </li>
+        <li><a href="./indexProj.php" id="logo"><img src="../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
+        <li><a href="./lessonsProj.php" id="home"> <img src="../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
+        <li> <a href="./messages/introduction.html">Messages</a> </li>
+        <li> <a href="./virtual community/introduction.html">Virtual Community</a> </li>
+        <li> <a href="./emoji/introduction.html">Emoji</a> </li>
+        <li> <a href="./video conferences/introduction.html">Video Conferences</a> </li>
+        <li> <a href="./culture/introduction.html">Culture</a> </li>
+        <li> <a href="./multilingualism/introduction.html">Multilingualism</a> </li>
         <li>
             <div id="other">Other</div>
         </li>
-        <li id="buttonLog"> <a href="Login.html"> Sign Out </a> </li> 
+        <!-- Commands for admin: php for making them appear for admins, until then invisible, in our case is admin -->
+        <li id="commands">
+            <a href="../admin/menu.html">Admin Commands</a>
+        </li>
+        <!-- end admin -->
+        <li id="buttonLog"> <a href="login_page.html"> Sign Out </a> </li> 
     </ul>
 
     <article class="categTitle">
@@ -33,7 +38,7 @@
 
     <article class="presentPage">
 		<div>
-			<img src="newLogo.jpg" alt="MaMa! Logo" width=300px, height=auto>
+			<img src="../assets\images/newLogo.jpg" alt="MaMa! Logo" width=300px, height=auto>
 		</div>
 		<div>
 			<header class="sectionTitle">
@@ -74,7 +79,7 @@
 		</div>
 
         <div>
-			<img src="stairs.png" alt="MaMa! Logo" width=525px, height=auto>
+			<img src="../assets\images/stairs.png" alt="MaMa! Logo" width=525px, height=auto>
 		</div>
 	</article>
 

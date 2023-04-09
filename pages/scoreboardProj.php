@@ -2,9 +2,9 @@
 <html>
 <head>
 	<title>MaMa! Scoreboard</title>
-	<link rel = "stylesheet" href = "main_style.css" />
-	<link rel = "stylesheet" href = "index_style.css" />
-	<link rel = "stylesheet" href = "scoreboard_style.css" />
+	<link rel = "stylesheet" href = "../styles/main_style.css" />
+	<link rel = "stylesheet" href = "../styles/index_style.css" />
+	<link rel = "stylesheet" href = "../styles/scoreboard_style.css" />
 	<style>
 	* { font-family: cambria; font-size: 17px; }
 	label { display: block; }
@@ -12,8 +12,8 @@
 </head>
 <body>
 	<ul class="titles">
-        <li><a href="../indexProj.php" id="logo"><img src="newLogo.jpg" alt="logo icon"> </a></li>
-        <li id="buttonLog"> <a href="Login.html"> Sign Out </a> </li> 
+        <li><a href="./indexProj.php" id="logo"><img src="../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
+        <li id="buttonLog"> <a href="login_page.html"> Sign Out </a> </li> 
     </ul>
 
 	<article class="categTitle">
