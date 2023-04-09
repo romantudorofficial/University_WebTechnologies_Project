@@ -42,6 +42,8 @@
 
 .picturesLessons{
     display: block;
+    margin-top: 1pc;
+    margin-bottom: 1pc;
     margin-left: auto;
   margin-right: auto;
   width: 50%;
@@ -49,6 +51,7 @@
 }
 
 .completeLesson{
+    margin-top: 1pc;
     border-radius: 1cm;
     border-color: #cb838f;
     width: 20%;
