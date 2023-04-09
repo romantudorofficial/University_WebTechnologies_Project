@@ -1,0 +1,39 @@
+*
+{
+    background-color: papayawhip;
+}
+
+
+.create-account-container
+{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.title
+{
+    font-size: 36px;
+}
+
+
+.create-account-form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    font-size: 20px;
+}
+
+
+.create-account-button
+{
+    align-self: center;
+
+    font-size: 20px;
+}
