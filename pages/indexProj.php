@@ -58,7 +58,7 @@
 
 	<article class="categs">
 		<header>
-			<form method="POST" action="scoreboardProj.php">
+			<form method="POST" action="./suggestion/suggestion.html">
     			<input class="goToPage" type="submit" value="Suggestions For You"/>
   			</form>
 		</header>

@@ -91,7 +91,7 @@
             <p class="sectionBody">
                 If you'd like to read a more in-depth description of this project and its purpose and functionalities,
                  feel free to check out our System Requirements Specification document
-                 by clicking <a class="sectionBody" href="https://github.com/tudorgalatan/University_WebTechnologies_Project/blob/main/pages/software_requirements_specification.html"> here</a>.
+                 by clicking <a class="sectionBody" href="software_requirements_specification.html"> here</a>.
             </p>
         </div>
     </article>
