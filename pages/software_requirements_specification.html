@@ -41,7 +41,7 @@
                     <ul>
                         <li typeof = "sa:ContributorRole" property = "schema:author">Tudor Gălățan</li>
                         <li typeof = "sa:ContributorRole" property = "schema:author">Gheorghiu Maria</li>
-                        <li typeof = "sa:ContributorRole" property = "schema:author">Cătălina-Cristina Vornicu</li>
+                        <li typeof = "sa:ContributorRole" property = "schema:author">Vornicu Cătălina-Cristina</li>
                     </ul>
 
                 </section>
@@ -215,9 +215,220 @@
 
                 <!-- Here Goes Your Content. Delete these two comments after you read this. -->
                 
-            <!-- Part 3 - Cătălina - Write Your Part After This Comment -->
+            <!-- Section 5 - Other Nonfunctional Requirements -->
+            <section>
+                
+                <h2>5. Other Nonfunctional Requirements</h2>
 
-                <!-- Here Goes Your Content. Delete these two comments after you read this. -->
+                <!-- Section 5.1 - Performance Requirements -->
+                <section>
+                    
+                    <h3>5.1 Performance Requirements</h3>
+
+                    <p>
+                        The project is implemented in PHP which is a superior option 
+                        for integrating or customizing any popular CMS for our project. 
+                        Even if it is slower than Node.js , PHP comes with more advantages
+                        as it has been stated. We will use a database as a storage for many
+                        parameters: from user data to questions answers. It is very important
+                        for us to have a dynamic web application, that is why, we will use them
+                        in order to offer the high wanted performance. For suggestions we will
+                        use the property of PHP to send the user directly to the specific content
+                        that he would like to have an idea on how to behave in a specific context.
+                    </p>
+
+                </section>
+
+                <!-- Section 5.2 - Safety Requirements -->
+                <section>
+                    
+                    <h3>5.2 Safety Requirements</h3>
+
+                    <p>
+                        The only ways that could be with loss of data might be when deleting a category
+                        of lessons or a specific lesson. But everything is handled by the back-end, so 
+                        there should not be any issues. In case of something, the other admins could redo
+                        everything.
+                    </p>
+
+                </section>
+
+                <!-- Section 5.3 - Security Requirements -->
+                <section>
+                    
+                    <h3>5.3 Security Requirements</h3>
+
+                    <p>
+                        First of all, the application will use verification of the roles: if it is an admin
+                        or if it has an account. This is for being sure that no person will use it without 
+                        having an account, so the other users will be protected.
+                    </p>
+
+                    <p>
+                        Secondly, the passwords will be encrypted, this will provide safety for each user that
+                        their account will NOT be stolen by another person. It is very important to keep them safe.
+                    </p>
+
+                    <p>
+                        Eventually, if the application grows, it will be changed to HTTPS for more security than the
+                        current state that we are in.
+                    </p>
+
+                </section>
+
+                <!-- Section 5.4 - Software Quality Attributes -->
+                <section>
+                    
+                    <h3>5.4 Software Quality Attributes</h3>
+
+                    <p>
+                        It is able to get new categories of lessons and to add
+                        lessons to every existent category. It is also able to
+                        delete categories and lessons. This should show that it 
+                        is a flexible application down for changes of its content.
+                    </p>
+
+                    <p>
+                        But the application, might have additional future features,
+                        such as being able to modify the navigation bar. That would 
+                        be a nice attribute for implementation.
+                    </p>
+
+                    <p>
+                        It could be adapted really quickly if we would use a new page
+                        for doing all this hard-work automatically.
+                    </p>
+
+                </section>
+
+            </section>
+
+            <!-- Section 6 - Other Requirements -->
+            <section>
+                
+                <h2>6. Other Requirements</h2>
+
+                <!-- Section 6.1 - Database Requirements -->
+                <section>
+                    
+                    <h3>6.1 Database Requirements</h3>
+
+                    <p>
+                        The database would be a relational one. This would help us
+                        implement faster joins between tables in order to find the content
+                        faster. The application will be divided in more tables depending on
+                        types: user, info about questions, lessons, categories. Then we will just
+                        create connections between them through ids.
+                    </p>
+
+                </section>
+
+                <!-- Section 6.2 - Internationalization Requirements -->
+                <section>
+                    
+                    <h3>6.2 Internationalization Requirements</h3>
+
+                    <p>
+                        The application is already written in English, but over time we could
+                        implement a way of displaying the content in different languages through
+                        the help of Google. At first, might be used only important langauges [ spoken 
+                        by a higher number of people].
+                    </p>
+
+                </section>
+
+                <!-- Section 6.3 - Legal Requirements -->
+                <section>
+                    
+                    <h3>6.3 Legal Requirements</h3>
+
+                    <p>
+                        We will keep hidden the users' data. It is important for us
+                        that they will feel safe while using our application. So, the
+                        data that we will use, it will NOT be made public, it will be 
+                        used only for filtrations, no more. The only Information that 
+                        will be made public is the user's score, for our Scoreboard.
+                        But this score will be seen only if he is in Top 10. Otherwise,
+                        it will be seen only by him.
+                    </p>
+
+                </section>
+
+                <!-- Section 6.4 - Appendix A: Glossary -->
+                <section>
+                    
+                    <h3>6.4 Appendix A: Glossary</h3>
+
+                    <ul>
+                        <li><bold>HTML5</bold> = Hyper Text Markup Language</li>
+                        <ol>
+                            <li>HTML is the standard markup language for creating Web pages</li>
+                            <li>HTML describes the structure of a Web page</li>
+                            <li>HTML consists of a series of elements</li>
+                            <li>HTML elements tell the browser how to display the content</li>
+                            <li>HTML5 is the fifth and final major HTML version that is a 
+                                World Wide Web Consortium (W3C) recommendation</li>
+                        </ol>
+                        <li><bold>CSS</bold> = Cascading Style Sheets</li>
+                        <ol>
+                            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once</li>
+                            <li>External stylesheets are stored in CSS files</li>
+                        </ol>
+                        <li><bold>PHP</bold> = PHP: Hypertext Preprocessor</li>
+                        <ol>
+                            <li>PHP can generate dynamic page content</li>
+                            <li>PHP can create, open, read, write, delete, and close files on the server</li>
+                            <li>PHP can collect form data</li>
+                            <li>PHP can send and receive cookies</li>
+                            <li>PHP can add, delete, modify data in your database</li>
+                            <li>PHP can be used to control user-access</li>
+                            <li>PHP can encrypt data</li>
+                        </ol>
+                        <li><bold>SQL</bold> = Structured Query Language</li>
+                        <ol>
+                            <li>SQL lets you access and manipulate databases</li>
+                        </ol>
+                    </ul>
+
+                </section>
+
+                <!-- Section 6.5 - Appendix B: Analysis Models -->
+                <section>
+                    
+                    <h3>6.5 Appendix B: Analysis Models</h3>
+
+                    <p>The following diagram represents the project:</p>
+
+                    <img src="../assets/images/MaMa diagram.png" style="width: 100%;" alt="the diagram C4">
+
+                </section>
+
+                <!-- Section 6.6 - Appendix C: To Be Determined List -->
+                <section>
+                    
+                    <h3>6.6 Appendix C: To Be Determined List</h3>
+
+                    <p>
+                        As it has been said before, we woud like to implement those functionalities
+                        that have been described in the section 5. They would be a huge advantage for
+                        our application. We would also like to implement some further functionalities
+                        such as:
+                    </p>
+
+                    <ol>
+                        <li>admins being able to move the categories around: changing the order in the navigation bar</li>
+                        <li>basic users being able to come up with their ideas and feedbacks in a special page</li>
+                        <li>allowing users to have group chats based on their preferences, scores</li>
+                        <li>allowing users to come up with additional Information about each lesson, category
+                            and being able to send it, afterwards to be checked if it is correct.
+                        </li>
+                        <li>would also help our users if we would implement a way of allowing video usage and audio as well</li>
+                    </ol>
+
+                </section>
+                
+            </section>
 
         </article>
 
