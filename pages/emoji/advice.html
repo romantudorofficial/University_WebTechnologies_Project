@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8" />
     <title> Emoji Tutorial </title>
-    <link rel="stylesheet" href="../styles/main_style.css" />
-    <link rel="stylesheet" href="../styles/lessons_style.css" />
+    <link rel="stylesheet" href="../../styles/main_style.css" />
+    <link rel="stylesheet" href="../../styles/lessons_style.css" />
 </head>
 
 <body>
     <!-- The main navigation bar -->
     <ul class="titles">
-        <li><a href="../index.html" id="logo"><img src="../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li><a href="lessons.html" id="home"> <img src="../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
+        <li><a href="../index.html" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
+        <li><a href="lessons.html" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
         <li> <a href="../messages/introduction.html">Messages</a> </li>
         <li> <a href="../virtual community/introduction.html">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.html" class="active">Emoji</a> </li>
@@ -26,19 +26,18 @@
         <li id="commands">
             <a href="../admin/menu.html">Admin Commands</a>
         </li>
-        <!-- end admin -->
-        <li id="buttonLog"> <a href="../login.html"> Sign Out </a> </li>
+        <li id="buttonLog"> <a href="Login.html"> Sign Out </a> </li>
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">How to use emojis</li>
-        <li><a href="introduction.html"  class="active">Introduction<span class="easy"> 🟢 </span></a></li>
-        <li><a href="brief_history.html">Brief history</a></li>
+        <li><a href="introduction.html">Introduction</a></li>
+        <li><a href="brief_history.html" >Brief history</a></li>
         <li><a href="emoji_emoticon.html">Emoji vs Emoticon</a></li>
         <li><a href="the_use_of_emojis.html">When (not) to use emojis</a></li>
         <li><a href="different_generations.html">Their meaning to different generations</a></li>
         <li><a href="rise_of_emoji.html">The new era of emojis</a></li>
-        <li><a href="advice.html">Rules</a></li>
+        <li><a href="advice.html" class="active">Rules<span class="hard"> 🔴 </span></a></li>
         <li><a href="test.html">Take a test: BONUS</a></li>
     </ul>
     <!-- The content of this page -->
@@ -54,32 +53,8 @@
             For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <img src="../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
-        <h6>QUESTION</h6>
-        <fieldset>
-        <legend for="Q1"> Which one of the following is an emoji?</legend> 
-        <div>
-            <input type="radio" id="emoji" name="emoji" value="emoji" checked>
-            <label for="emoji">🦚</label>
-        </div>
-        <div>
-            <input type="radio" id="emoticon" name="emoji" value="emoticon" checked>
-            <label for="emoticon">:P</label>
-        </div>
-        <button type="submit" onclick="myFunction()">Check Answer</button> <div id="answer"></div>
-        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
     </div>
-    <!-- Just for demo -->
-    <script>
-        function myFunction() {
-            if(document.getElementById("emoji").checked){
-                document.getElementById("answer").innerHTML = "Your answer is correct";
-            }
-            else{
-                document.getElementById("answer").innerHTML = "Your answer is wrong";
-            }
-        }
-     </script>
 </body>
 
 </html>
