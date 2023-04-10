@@ -37,7 +37,7 @@
                 <li id = "buttonLog">
                     <a href = "login_page.html">Sign Out</a>
                 </li>
-                 
+
             </ul>
             
         </header>
@@ -83,36 +83,79 @@
                     <br />
 
                 </div>
-    
+
                 <br />
 
                 <label for = "nationality">Nationality: </label>
-                <input type = "text" id = "nationality" name = "nationality" placeholder = "Romanian" />
-    
+                <input list = "nationalities-list" id = "nationality" name = "nationality" placeholder = "Romanian" />
+
+                <datalist id = "nationalities-list">
+                    <option value = "Romanian">
+                    <option value = "Hungarian">
+                    <option value = "American">
+                    <option value = "French">
+                    <option value = "Other">
+                </datalist>
+
                 <br />
 
                 <label for = "country-of-residence">Country of Residence: </label>
-                <input type = "text" id = "country-of-residence" name = "country-of-residence" placeholder = "Romania" />
+                <input list = "countries-list" id = "country-of-residence" name = "country-of-residence" placeholder = "Romania" />
+
+                <datalist id = "countries-list">
+                    <option value = "Romania">
+                    <option value = "Hungary">
+                    <option value = "United States">
+                    <option value = "France">
+                    <option value = "Other">
+                </datalist>
     
                 <br />
 
                 <label for = "gender">Gender: </label>
-                <input type = "text" id = "gender" name = "gender" placeholder = "Male" />
+                <input list = "genders-list" id = "gender" name = "gender" placeholder = "Male" />
+
+                <datalist id = "genders-list">
+                    <option value = "Male">
+                    <option value = "Female">
+                </datalist>
     
                 <br />
 
                 <label for = "occupation">Occupation: </label>
-                <input type = "text" id = "occupation" name = "occupation" placeholder = "Student" />
+                <input list = "occupations-list" id = "occupation" name = "occupation" placeholder = "Student" />
+
+                <datalist id = "occupations-list">
+                    <option value = "Student">
+                    <option value = "Employed">
+                    <option value = "Unemployed">
+                    <option value = "Other">
+                </datalist>
     
                 <br />
 
                 <label for = "social-status">Social Status: </label>
-                <input type = "text" id = "social-status" name = "social-status" placeholder = "Middle Class" />
+                <input list = "social-statuses-list" id = "social-status" name = "social-status" placeholder = "Middle Class" />
+
+                <datalist id = "social-statuses-list">
+                    <option value = "Lower Class">
+                    <option value = "Middle Class">
+                    <option value = "Upper Class">
+                </datalist>
     
                 <br />
 
                 <label for = "religion">Religion: </label>
-                <input type = "text" id = "religion" name = "religion" placeholder = "Agnostic Atheism" />
+                <input list = "religions-list" id = "religion" name = "religion" placeholder = "Agnostic Atheism" />
+
+                <datalist id = "religions-list">
+                    <option value = "Christianity">
+                    <option value = "Catholicism">
+                    <option value = "Agnosticism">
+                    <option value = "Atheism">
+                    <option value = "Agnostic Atheism">
+                    <option value = "Other">
+                </datalist>
     
                 <br />
     
