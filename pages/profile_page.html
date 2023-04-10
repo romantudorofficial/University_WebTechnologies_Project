@@ -1,0 +1,107 @@
+<!-- Profile Page -->
+
+<!DOCTYPE html>
+
+
+
+<html>
+
+    <head>
+
+        <!-- The Charset -->
+        <meta charset = "UTF-8" />
+
+        <!-- The Title of the Page -->
+        <title>My Profile</title>
+
+        <!-- The Stylesheet for the Page -->
+        <link rel = "stylesheet" href = "../styles/profile_page_style.css" />
+
+    </head>
+
+
+    <body>
+
+        <section class = "profile-container">
+
+            <!-- The Title of the Page -->
+            <h1 class = "title">My Profile</h1>
+
+            <form class = "profile-form" method = "POST">
+
+                <label for = "first-name">First Name: </label>
+                <input type = "text" id = "first-name" name = "first-name" placeholder = "Tudor" />
+                
+                <br />
+
+                <label for = "last-name">Last Name: </label>
+                <input type = "text" id = "last-name" name = "last-name" placeholder = "Gălățan" />
+                
+                <br />
+
+                <label for = "email">Email: </label>
+                <input type = "text" id = "email" name = "email" placeholder = "tudorgalatan@gmail.com" />
+                
+                <br />
+    
+                <label for = "password">New Password: </label>
+                <input type = "password" id = "password" name = "password" placeholder = "********" />
+    
+                <br />
+
+                <div class = "account-type">
+
+                    <label for = "account-type-option">Account Type:</label>
+                    <br />
+
+                    <input type = "radio" id = "individual" name = "account-type-option" value = "individual" checked = "checked" />
+                    <label for = "individual">Individual</label>
+                    <br />
+
+                    <input type = "radio" id = "administrator" name = "account-type-option" value = "administrator" />
+                    <label for = "administrator">Administrator</label>
+                    <br />
+
+                </div>
+    
+                <br />
+
+                <label for = "nationality">Nationality: </label>
+                <input type = "text" id = "nationality" name = "nationality" placeholder = "Romanian" />
+    
+                <br />
+
+                <label for = "country-of-residence">Country of Residence: </label>
+                <input type = "text" id = "country-of-residence" name = "country-of-residence" placeholder = "Romania" />
+    
+                <br />
+
+                <label for = "gender">Gender: </label>
+                <input type = "text" id = "gender" name = "gender" placeholder = "Male" />
+    
+                <br />
+
+                <label for = "occupation">Occupation: </label>
+                <input type = "text" id = "occupation" name = "occupation" placeholder = "Student" />
+    
+                <br />
+
+                <label for = "social-status">Social Status: </label>
+                <input type = "text" id = "social-status" name = "social-status" placeholder = "Middle-Class" />
+    
+                <br />
+
+                <label for = "religion">Religion: </label>
+                <input type = "text" id = "religion" name = "religion" placeholder = "Agnostic" />
+    
+                <br />
+    
+                <input type = "submit" value = "Save Details" class = "save-details-button" />
+    
+            </form>
+
+        </section>
+
+    </body>
+
+</html>
