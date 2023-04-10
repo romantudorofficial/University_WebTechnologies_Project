@@ -36,7 +36,7 @@
 
 	<article class="categs">
 		<header>
-			<form method="POST" action="scoreboardProj.php">
+			<form method="POST" action="./profile_page.html">
     			<input class="goToPage" type="submit" value="My Account"/>
   			</form>
 		</header>
