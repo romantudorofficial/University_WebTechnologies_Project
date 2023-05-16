@@ -13,7 +13,7 @@
 <body>
 	<ul class="titles">
         <li><a href="./indexProj.php" id="logo"><img src="../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li id="buttonLog"> <a href="login_page.html"> Sign Out </a> </li> 
+        <li id="buttonLog"> <a href="login_page.php"> Sign Out </a> </li> 
     </ul>
 
 	<article class="categTitle">

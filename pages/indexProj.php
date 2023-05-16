@@ -12,7 +12,7 @@
 <body>
 	<ul class="titles">
         <li><a href="./indexProj.php" id="logo"><img src="../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li id="buttonLog"> <a href="login_page.html"> Sign Out </a> </li> 
+        <li id="buttonLog"> <a href="login_page.php"> Sign Out </a> </li> 
     </ul>
 
 	<article class="presentPage">
@@ -36,7 +36,7 @@
 
 	<article class="categs">
 		<header>
-			<form method="POST" action="./profile_page.html">
+			<form method="POST" action="./profile_page.php">
     			<input class="goToPage" type="submit" value="My Account"/>
   			</form>
 		</header>
@@ -58,7 +58,7 @@
 
 	<article class="categs">
 		<header>
-			<form method="POST" action="./suggestion/suggestion.html">
+			<form method="POST" action="./suggestion/suggestion.php">
     			<input class="goToPage" type="submit" value="Suggestions For You"/>
   			</form>
 		</header>
