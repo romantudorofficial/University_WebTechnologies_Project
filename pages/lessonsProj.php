@@ -26,7 +26,7 @@
         </li>
         <!-- Commands for admin: php for making them appear for admins, until then invisible, in our case is admin -->
         <li id="commands">
-            <a href="../admin/menu.html">Admin Commands</a>
+            <a href="./admin/menu.html">Admin Commands</a>
         </li>
         <!-- end admin -->
         <li id="buttonLog"> <a href="login_page.html"> Sign Out </a> </li> 
