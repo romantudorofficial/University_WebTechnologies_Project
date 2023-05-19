@@ -44,10 +44,16 @@
 
         <section class = "login-container">
 
+        <?php
+        if(!empty($_REQUEST["msg"])){
+            echo '<p style="color:blue;"> Congratulations! You have got registered! </p>';
+            echo '<p style="color:blue;"> Now try to log in! </p>';
+        }
+        ?>
             <!-- The Title of the Page -->
             <h1 class = "title">Login</h1>
 
-            <form class = "login-form" method = "POST">
+            <form action="../services/account_checker.php" class = "login-form" method = "POST">
 
                 <label for = "email">Email: </label>
                 <input type = "text" id = "email" name = "email" />
@@ -62,6 +68,18 @@
                 <input type = "submit" value = "Login" class = "login-button">
     
             </form>
+
+            <?php
+                if(!empty($_REQUEST["error"])){
+                    $error = $_REQUEST["error"];
+                    if($error == 1){
+                        echo '<p style="color:red;"> Please check the error: write the email or the password! </p>';
+                    }
+                    else{
+                        echo '<p style="color:red;"> Please check the error: wrong email or wrong password! </p>';
+                    }
+                }
+            ?>
 
             <p>
                 Don't have an account yet? 

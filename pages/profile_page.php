@@ -45,7 +45,7 @@
         <section class = "profile-container">
 
             <!-- The Title of the Page -->
-            <h1 class = "title" style="margin-top: 5.1em;">My Profile</h1>
+            <h1 class = "title" style="margin-top: 3.2em;">My Profile</h1>
 
             <form class = "profile-form" method = "POST">
 
@@ -62,11 +62,6 @@
                 <label for = "email">Email: </label>
                 <input type = "text" id = "email" name = "email" placeholder = "tudorgalatan@gmail.com" />
                 
-                <br />
-    
-                <label for = "password">New Password: </label>
-                <input type = "password" id = "password" name = "password" placeholder = "********" />
-    
                 <br />
 
                 <div class = "account-type">

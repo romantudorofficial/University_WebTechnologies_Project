@@ -47,7 +47,7 @@
             <!-- The Title of the Page -->
             <h1 class = "title">Create Account</h1>
 
-            <form class = "create-account-form" method = "POST">
+            <form action="../services/creating_account.php" class = "create-account-form" method = "POST">
 
                 <label for = "first-name">First Name: </label>
                 <input type = "text" id = "first-name" name = "first-name" />
@@ -89,6 +89,18 @@
                 <input type = "submit" value = "Create Account" class = "create-account-button">
     
             </form>
+
+            <?php
+                if(!empty($_REQUEST["error"])){
+                    $error = $_REQUEST["error"];
+                    if($error == 1){
+                        echo '<p style="color:red;"> Please check the error: write the email, the first name , the last name or the password! Or check an option! </p>';
+                    }
+                    else{
+                        echo '<p style="color:red;"> Please check the error: the email already exists! </p>';
+                    }
+                }
+            ?>
 
         </section>
 
