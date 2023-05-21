@@ -16,30 +16,30 @@ After a while, we will decide what users we will add as well
 2. Create the tables like in : https://docs.google.com/document/d/15mzF2AO19qKVUY87MHRoZNO1PCOv84kD5HTkh1ukZfA/edit?usp=sharing  (copy-paste)
 3. For creating the admins: we will just create an account using our names and a password , for not forgetting about it, complete below (should be a proper email that contains `@gmail.com` or `@smth.com`)
 
-*Maria*__
-first name: __
-last name: __
-email: __
-password: __
+*Maria* <br />
+first name: <br />
+last name: <br />
+email: <br />
+password: <br />
 
-*Tudor*__
-first name: __
-last name: __
-email: __
-password: __
+*Tudor* <br />
+first name: <br />
+last name: <br />
+email: <br />
+password: <br />
 
-*Catalina*__
-first name: Catalina-Cristina__
-last name:Vornicu__
-email:catalina.tiger25@gmail.com__
-password:admin123__
+*Catalina* <br />
+first name: Catalina-Cristina<br />
+last name:Vornicu<br />
+email:catalina.tiger25@gmail.com<br />
+password:admin123<br />
 
 4. For checking the correctness of the email or making them as checked, we must remember that we will use Ajax and it will be learned at this lab12, so we will do this after 
 5. Write `done` next to your name when you finished this first task
 
-`Maria` : -__
-`Tudor` : -__
-`Catalina` : done__
+`Maria` : -<br />
+`Tudor` : -<br />
+`Catalina` : done<br />
 
 ## Details
 
