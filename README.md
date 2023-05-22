@@ -23,10 +23,10 @@ email: <br />
 password: <br />
 
 *Tudor* <br />
-first name: <br />
-last name: <br />
-email: <br />
-password: <br />
+first name: Tudor<br />
+last name: Gălățan<br />
+email: tudorgalatan@gmail.com<br />
+password: admin321<br />
 
 *Catalina* <br />
 first name: Catalina-Cristina<br />
@@ -38,7 +38,7 @@ password:admin123<br />
 5. Write `done` next to your name when you finished this first task
 
 `Maria` : -<br />
-`Tudor` : -<br />
+`Tudor` : done<br />
 `Catalina` : done<br />
 
 ## Details
