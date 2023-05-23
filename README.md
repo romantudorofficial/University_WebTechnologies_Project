@@ -37,7 +37,7 @@ password:admin123<br />
 4. For checking the correctness of the email or making them as checked, we must remember that we will use Ajax and it will be learned at this lab12, so we will do this after 
 5. Write `done` next to your name when you finished this first task
 
-`Maria` : done-<br />
+`Maria` : done<br />
 `Tudor` : done<br />
 `Catalina` : done<br />
 
