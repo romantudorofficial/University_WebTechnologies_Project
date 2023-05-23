@@ -6,101 +6,100 @@
 
 <html>
 
-    <head>
+<head>
 
-        <!-- The Charset -->
-        <meta charset = "UTF-8" />
+    <!-- The Charset -->
+    <meta charset="UTF-8" />
+
+    <!-- The Title of the Page -->
+    <title>Create Account</title>
+
+    <!-- The Stylesheet for the Page -->
+    <link rel="stylesheet" href="../styles/main_style.css" />
+    <link rel="stylesheet" href="../styles/index_style.css" />
+    <link rel="stylesheet" href="../styles/create_account_page_style.css" />
+
+</head>
+
+
+<body>
+
+    <header>
+
+        <ul class="titles">
+
+            <li>
+                <a href="./indexProj.php" id="logo">
+                    <img src="../assets\images/newLogo.jpg" alt="logo icon" />
+                </a>
+            </li>
+
+        </ul>
+
+    </header>
+
+    <section class="create-account-container">
 
         <!-- The Title of the Page -->
-        <title>Create Account</title>
+        <h1 class="title">Create Account</h1>
 
-        <!-- The Stylesheet for the Page -->
-        <link rel = "stylesheet" href = "../styles/main_style.css" />
-        <link rel = "stylesheet" href = "../styles/index_style.css" />
-        <link rel = "stylesheet" href = "../styles/create_account_page_style.css" />
+        <form action="../services/creating_account.php" class="create-account-form" method="POST">
 
-    </head>
+            <label for="first-name">First Name: </label>
+            <input type="text" id="first-name" name="first-name" />
 
+            <br />
 
-    <body>
+            <label for="last-name">Last Name: </label>
+            <input type="text" id="last-name" name="last-name" />
 
-        <header>
+            <br />
 
-            <ul class = "titles">
+            <label for="email">Email: </label>
+            <input type="text" id="email" name="email" />
 
-                <li>
-                    <a href = "./indexProj.php" id = "logo">
-                        <img src = "../assets\images/newLogo.jpg" alt = "logo icon" />
-                    </a>
-                </li>
-                 
-            </ul>
-            
-        </header>
+            <br />
 
-        <section class = "create-account-container">
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" />
 
-            <!-- The Title of the Page -->
-            <h1 class = "title">Create Account</h1>
+            <br />
 
-            <form action="../services/creating_account.php" class = "create-account-form" method = "POST">
+            <div class="account-type">
 
-                <label for = "first-name">First Name: </label>
-                <input type = "text" id = "first-name" name = "first-name" />
-                
+                <label for="account-type-option">Account Type:</label>
                 <br />
 
-                <label for = "last-name">Last Name: </label>
-                <input type = "text" id = "last-name" name = "last-name" />
-                
+                <input type="radio" id="individual" name="account-type-option" value="individual" />
+                <label for="individual">Individual</label>
                 <br />
 
-                <label for = "email">Email: </label>
-                <input type = "text" id = "email" name = "email" />
-                
-                <br />
-    
-                <label for = "password">Password: </label>
-                <input type = "password" id = "password" name = "password" />
-    
+                <input type="radio" id="administrator" name="account-type-option" value="administrator" />
+                <label for="administrator">Administrator</label>
                 <br />
 
-                <div class = "account-type">
+            </div>
 
-                    <label for = "account-type-option">Account Type:</label>
-                    <br />
+            <br />
 
-                    <input type = "radio" id = "individual" name = "account-type-option" value = "individual" />
-                    <label for = "individual">Individual</label>
-                    <br />
+            <input type="submit" value="Create Account" class="create-account-button">
 
-                    <input type = "radio" id = "administrator" name = "account-type-option" value = "administrator" />
-                    <label for = "administrator">Administrator</label>
-                    <br />
+        </form>
 
-                </div>
-    
-                <br />
-    
-                <input type = "submit" value = "Create Account" class = "create-account-button">
-    
-            </form>
+        <?php
+        if (!empty($_REQUEST["error"])) {
+            $error = $_REQUEST["error"];
+            if ($error == 1) {
+                echo '<p style="color:red;"> Please check the error: write the email, the first name , the last name or the password! Or check an option! </p>';
+            } else {
+                echo '<p style="color:red;"> Please check the error: the email already exists! </p>';
+            }
+        }
+        ?>
 
-            <?php
-                if(!empty($_REQUEST["error"])){
-                    $error = $_REQUEST["error"];
-                    if($error == 1){
-                        echo '<p style="color:red;"> Please check the error: write the email, the first name , the last name or the password! Or check an option! </p>';
-                    }
-                    else{
-                        echo '<p style="color:red;"> Please check the error: the email already exists! </p>';
-                    }
-                }
-            ?>
-
-        </section>
+    </section>
 
 
-    </body>
+</body>
 
 </html>

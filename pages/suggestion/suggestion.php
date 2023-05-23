@@ -13,7 +13,8 @@
     <!-- The main navigation bar -->
     <ul class="titles">
         <li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
+        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
+        </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php">Emoji</a> </li>
@@ -42,7 +43,7 @@
                 <option value="messages">Messages</option>
             </select>
             <fieldset>
-                <legend for="type"> What type of situation? </legend> 
+                <legend for="type"> What type of situation? </legend>
                 <div>
                     <input type="radio" id="formal" name="type" value="formal" checked>
                     <label for="formal">formal</label>
@@ -71,8 +72,8 @@
                     <label for="family">in family</label>
                 </div>
             </fieldset>
-            <fieldset> 
-                <legend>What words might describe it the best:</legend> 
+            <fieldset>
+                <legend>What words might describe it the best:</legend>
                 <div>
                     <input type="checkbox" id="w_using" name="words" value="w_using">
                     <label for="w_using">using emojis</label>
@@ -89,7 +90,7 @@
                     <input type="checkbox" id="w_replying_to_message" name="words" value="w_replying_to_message">
                     <label for="w_replying_to_message">replying to a message</label>
                 </div>
-        </fieldset>
+            </fieldset>
         </form>
         <button type="submit" style="margin-left: 40%">Check Suggestion</button>
     </div>

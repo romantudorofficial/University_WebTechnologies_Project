@@ -12,7 +12,8 @@
     <!-- The main navigation bar -->
     <ul class="titles">
         <li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
+        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
+        </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php" class="active">Emoji</a> </li>
@@ -49,8 +50,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <p>Let's clear up some confusion first off:
             An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
@@ -58,8 +60,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <p>Let's clear up some confusion first off:
             An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
@@ -67,8 +70,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <p>Let's clear up some confusion first off:
             An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
@@ -76,8 +80,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <p>Let's clear up some confusion first off:
             An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
@@ -85,8 +90,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <p>Let's clear up some confusion first off:
             An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
@@ -94,8 +100,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <button class="completeLesson">Complete Lesson</button>
     </div>

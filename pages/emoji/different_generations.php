@@ -12,7 +12,8 @@
     <!-- The main navigation bar -->
     <ul class="titles">
         <li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
+        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
+        </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php" class="active">Emoji</a> </li>
@@ -35,7 +36,8 @@
         <li><a href="brief_history.php">Brief history</a></li>
         <li><a href="emoji_emoticon.php">Emoji vs Emoticon</a></li>
         <li><a href="the_use_of_emojis.php">When (not) to use emojis</a></li>
-        <li><a href="different_generations.php" class="active">Their meaning to different generations<span class="medium"> 🟡 </span></a></li>
+        <li><a href="different_generations.php" class="active">Their meaning to different generations<span
+                    class="medium"> 🟡 </span></a></li>
         <li><a href="rise_of_emoji.php">The new era of emojis</a></li>
         <li><a href="advice.php">Rules</a></li>
         <li><a href="test.php">Take a test: BONUS</a></li>
@@ -49,8 +51,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <img src="../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
         <button class="completeLesson">Complete Lesson</button>

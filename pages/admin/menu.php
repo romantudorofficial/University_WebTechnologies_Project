@@ -13,7 +13,8 @@
     <!-- The main navigation bar -->
     <ul class="titles">
         <li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
+        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
+        </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php">Emoji</a> </li>
@@ -34,9 +35,11 @@
     <!-- The content of this page -->
     <div class="adminContent">
         <h1> Management Page </h1>
-        <p class="info"> If you want to add a category or a new lesson to an exitent category please click the following button:</p>
+        <p class="info"> If you want to add a category or a new lesson to an exitent category please click the following
+            button:</p>
         <button><a href="add.php">ADD</a></button>
-        <p class="info"> If you want to delete a category or a lesson to an exitent category please click the following button:</p>
+        <p class="info"> If you want to delete a category or a lesson to an exitent category please click the following
+            button:</p>
         <button><a href="delete.php">DELETE</a></button>
     </div>
 </body>
