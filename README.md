@@ -17,10 +17,10 @@ After a while, we will decide what users we will add as well
 3. For creating the admins: we will just create an account using our names and a password , for not forgetting about it, complete below (should be a proper email that contains `@gmail.com` or `@smth.com`)
 
 *Maria* <br />
-first name: <br />
-last name: <br />
-email: <br />
-password: <br />
+first name: Maria<br />
+last name: Gheorghiu<br />
+email: mariagheorghiu27@ymail.com<br />
+password: admin123<br />
 
 *Tudor* <br />
 first name: Tudor<br />
@@ -37,7 +37,7 @@ password:admin123<br />
 4. For checking the correctness of the email or making them as checked, we must remember that we will use Ajax and it will be learned at this lab12, so we will do this after 
 5. Write `done` next to your name when you finished this first task
 
-`Maria` : -<br />
+`Maria` : done-<br />
 `Tudor` : done<br />
 `Catalina` : done<br />
 
