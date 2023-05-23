@@ -33,6 +33,10 @@ function correctPassword($email,$password){
         die ('A survenit o eroare la interogare');
     }
     if($rez->num_rows>0){
+        $updating = "UPDATE users SET active='yes' WHERE email='".$email."'";
+        if(!($upd = $mysql -> query ($updating))){
+            die('error');
+        }
         return true;
     }
     return false;
