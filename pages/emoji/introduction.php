@@ -24,11 +24,28 @@
             <div id="other">Other</div>
         </li>
         <!-- Commands for admin: php for making them appear for admins, until then invisible, in our case is admin -->
-        <li id="commands">
-            <a href="../admin/menu.php">Admin Commands</a>
-        </li>
+        <?php
+        include '../../db/getting_info.php';
+        if (isset($_COOKIE['Email']) && isActive($_COOKIE['Email']) && isAdmin(($_COOKIE['Email']))) { ?>
+            <li id="commands">
+                <a href="../admin/menu.php">Admin Commands</a>
+            </li>
+        <?php } ?>
+
+
+        <?php
+        if (isset($_COOKIE['Email'])) {
+            $type = returnTypeSign($_COOKIE['Email']);
+        } else {
+            $type = "Sign in";
+        }
+        ?>
+
+
         <!-- end admin -->
-        <li id="buttonLog"> <a href="../login.php?a=false"> Sign Out </a> </li>
+        <li id="buttonLog"> <a href="../login_page.php?a=false">
+                <?php echo $type; ?>
+            </a> </li>
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">

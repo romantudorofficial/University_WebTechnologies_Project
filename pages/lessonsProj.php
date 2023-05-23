@@ -33,7 +33,7 @@
             <div id="other">Other</div>
         </li>
         <!-- Commands for admin: php for making them appear for admins, until then invisible, in our case is admin -->
-        
+
         <?php
         include '../db/getting_info.php';
         if (isset($_COOKIE['Email']) && isActive($_COOKIE['Email']) && isAdmin(($_COOKIE['Email']))) { ?>
@@ -44,8 +44,11 @@
 
 
         <?php
-        if (isset($_COOKIE['Email']))
+        if (isset($_COOKIE['Email'])) {
             $type = returnTypeSign($_COOKIE['Email']);
+        } else {
+            $type = "Sign in";
+        }
         ?>
 
 

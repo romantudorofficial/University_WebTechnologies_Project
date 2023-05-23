@@ -21,7 +21,19 @@
 <body>
 	<ul class="titles">
 		<li><a href="./indexProj.php" id="logo"><img src="../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-		<li id="buttonLog"> <a href="login_page.php?a=false"> Sign Out </a> </li>
+
+		<?php
+		include '../db/getting_info.php';
+		if (isset($_COOKIE['Email'])) {
+			$type = returnTypeSign($_COOKIE['Email']);
+		} else {
+			$type = "Sign in";
+		}
+		?>
+
+		<li id="buttonLog"> <a href="login_page.php?a=false">
+				<?php echo $type; ?>
+			</a> </li>
 	</ul>
 
 	<article class="categTitle">

@@ -21,9 +21,11 @@
 
     <?php
     include '../services/logout.php';
-    $email = $_COOKIE["Email"];
-    if (isset($_GET['a'])) {
-        logout($email);
+    if (isset($_COOKIE['Email'])) {
+        $email = $_COOKIE["Email"];
+        if (isset($_GET['a'])) {
+            logout($email);
+        }
     }
     ?>
 

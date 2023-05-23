@@ -64,23 +64,6 @@
 
             <br />
 
-            <div class="account-type">
-
-                <label for="account-type-option">Account Type:</label>
-                <br />
-
-                <input type="radio" id="individual" name="account-type-option" value="individual" checked="checked" />
-                <label for="individual">Individual</label>
-                <br />
-
-                <input type="radio" id="administrator" name="account-type-option" value="administrator" />
-                <label for="administrator">Administrator</label>
-                <br />
-
-            </div>
-
-            <br />
-
             <label for="nationality">Nationality: </label>
             <input list="nationalities-list" id="nationality" name="nationality" placeholder="Romanian" />
 

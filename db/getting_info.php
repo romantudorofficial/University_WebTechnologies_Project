@@ -1,6 +1,6 @@
 <?php
 include 'connection.php';
-include '../services/encryption.php';
+
 
 function getUser($email)
 { //when we know that the email is unique
@@ -31,6 +31,7 @@ function correctPassword($email, $password)
 {
     $mysql = connect();
 
+    include '../services/encryption.php';
     $encryptPSWD = encrypting($password);
     if (!($rez = $mysql->query('select * from users where email like "' . $email . '" and password like "' . $encryptPSWD . '"'))) {
         die('A survenit o eroare la interogare');
