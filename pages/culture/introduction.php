@@ -27,7 +27,7 @@
             <a href="../admin/menu.php">Admin Commands</a>
         </li>
         <!-- end admin -->
-        <li id="buttonLog"> <a href="../login_page.php"> Sign Out </a> </li>
+        <li id="buttonLog"> <a href="../login_page.php?a=false"> Sign Out </a> </li>
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">

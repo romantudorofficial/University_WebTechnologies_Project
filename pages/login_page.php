@@ -19,6 +19,14 @@
         <link rel = "stylesheet" href = "../styles/index_style.css" />
         <link rel = "stylesheet" href = "../styles/login_page_style.css" />
 
+        <?php
+	        include '../services/logout.php';
+	        $email = $_COOKIE["Email"];
+            if(isset($_GET['a'])){
+                logout($email);
+            }
+	    ?>
+
     </head>
 
 
@@ -32,10 +40,6 @@
                     <a href = "./indexProj.php" id = "logo">
                         <img src = "../assets\images/newLogo.jpg" alt = "logo icon" />
                     </a>
-                </li>
-
-                <li id = "buttonLog">
-                    <a href = "login_page.php">Sign Out</a>
                 </li>
                  
             </ul>

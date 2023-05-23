@@ -15,7 +15,7 @@ else{
         header("Location: ../pages/create_account_page.php?error=$eroare",true,303);
     }
     else{
-        setcookie($email,$emailName,time()+(86400));
+        //setcookie($email,$emailName,time()+(86400));
         include '../db/adding_data.php';
     $firstName = $_REQUEST["first-name"];
     

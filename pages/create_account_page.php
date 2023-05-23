@@ -33,10 +33,6 @@
                         <img src = "../assets\images/newLogo.jpg" alt = "logo icon" />
                     </a>
                 </li>
-
-                <li id = "buttonLog">
-                    <a href = "login_page.php">Sign Out</a>
-                </li>
                  
             </ul>
             

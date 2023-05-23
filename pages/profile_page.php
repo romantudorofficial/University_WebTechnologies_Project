@@ -35,7 +35,7 @@
                 </li>
 
                 <li id = "buttonLog">
-                    <a href = "login_page.php">Sign Out</a>
+                    <a href = "login_page.php?a=false">Sign Out</a>
                 </li>
 
             </ul>
