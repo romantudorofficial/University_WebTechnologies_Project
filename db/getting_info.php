@@ -91,4 +91,16 @@ function returnTypeSign($email)
     }
     return $name;
 }
+
+function getId($email){
+    $mysql = connect();
+    if (!($rez = $mysql->query('select id_user from users where email like "' . $email . '"'))) {
+        die('A survenit o eroare la interogare');
+    }
+    while ($inreg = $rez->fetch_assoc()) {
+        $id = $inreg["id_user"];
+        break;
+    }
+    return $id;
+}
 ?>
