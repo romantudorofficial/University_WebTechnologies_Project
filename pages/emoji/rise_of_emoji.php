@@ -12,7 +12,8 @@
     <!-- The main navigation bar -->
     <ul class="titles">
         <li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a> </li>
+        <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
+        </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php" class="active">Emoji</a> </li>
@@ -23,10 +24,28 @@
             <div id="other">Other</div>
         </li>
         <!-- Commands for admin: php for making them appear for admins, until then invisible, in our case is admin -->
-        <li id="commands">
-            <a href="../admin/menu.php">Admin Commands</a>
-        </li>
-        <li id="buttonLog"> <a href="../login_page.php"> Sign Out </a> </li>
+        <?php
+        include '../../db/getting_info.php';
+        if (isset($_COOKIE['Email']) && isActive($_COOKIE['Email']) && isAdmin(($_COOKIE['Email']))) { ?>
+            <li id="commands">
+                <a href="../admin/menu.php">Admin Commands</a>
+            </li>
+        <?php } ?>
+
+
+        <?php
+        if (isset($_COOKIE['Email'])) {
+            $type = returnTypeSign($_COOKIE['Email']);
+        } else {
+            $type = "Sign in";
+        }
+        ?>
+
+
+        <!-- end admin -->
+        <li id="buttonLog"> <a href="../login_page.php?a=false">
+                <?php echo $type; ?>
+            </a> </li>
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
@@ -49,8 +68,9 @@
             by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
         <p>It's now possible to have entire conversations, flirt, argue and debate using
             cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise. 
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an Emoji.</p>
+        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
+            Emoji.</p>
         <p> So, in the following lessons we will talk about emoji etiquette</p>
         <img src="../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
         <button class="completeLesson">Complete Lesson</button>
