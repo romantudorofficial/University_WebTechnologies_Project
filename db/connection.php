@@ -17,3 +17,4 @@ function connect()
     }
     return $mysql;
 }
+?>
