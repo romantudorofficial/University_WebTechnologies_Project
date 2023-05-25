@@ -13,7 +13,7 @@
 <body>
 	<ul class="titles">
         <li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
-        <li id="buttonLog"> <a href="login_page.php"> Sign Out </a> </li> 
+        <li id="buttonLog"> <a href="../login_page.php"> Sign Out </a> </li> 
     </ul>
 
 	<article class="categTitle">
@@ -32,11 +32,13 @@
                 $i = $i + 1;
             }
         ?>
-		<div class="myBox">
-			<p class="userInfo">52.</p>
-			<p class="userInfo">You</p>
-			<p class="userInfo">15 points</p>
-		</div>
+		<?php
+			echo '<div class="myBox">';
+			echo '<p class="userInfo">'.$user_current["rank"].'.</p>';
+			echo '<p class="userInfo">'.$user_current["firstName"].' '.$user_current["lastName"].'</p>';
+			echo '<p class="userInfo">'.$user_current["score"].' points</p>';
+			echo '</div>';
+		?>
 	</article>
 </body>
 </html>
