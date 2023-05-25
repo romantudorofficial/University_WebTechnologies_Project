@@ -69,7 +69,7 @@
 
 	<article class="categs">
 		<header>
-			<form method="POST" action="scoreboardProj.php">
+			<form method="POST" action="scoreboard_stuff/scoreboard_controller.php">
     			<input class="goToPage" type="submit" value="Scoreboard"/>
   			</form>
 		</header>

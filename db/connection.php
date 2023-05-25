@@ -13,3 +13,4 @@ function connect(){
     }
     return $mysql;
 }
+?>
