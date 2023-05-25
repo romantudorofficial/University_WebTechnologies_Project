@@ -31,7 +31,7 @@
 
 
 		<!-- end admin -->
-		<li id="buttonLog"> <a href="../login_page.php?a=false">
+		<li id="buttonLog"> <a href="./login_page.php?a=false">
 				<?php echo $type; ?>
 			</a> </li>
 	</ul>

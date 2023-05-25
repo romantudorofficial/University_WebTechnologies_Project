@@ -22,14 +22,6 @@
 	<ul class="titles">
 		<li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
 
-		<?php
-		include '../../db/getting_info.php';
-		if (isset($_COOKIE['Email'])) {
-			$type = returnTypeSign($_COOKIE['Email']);
-		} else {
-			$type = "Sign in";
-		}
-		?>
 		<!-- end admin -->
 		<li id="buttonLog"> <a href="../login_page.php?a=false">
 				<?php echo $type; ?>
@@ -54,9 +46,15 @@
 		?>
 		<?php
 		echo '<div class="myBox">';
-		echo '<p class="userInfo">' . $user_current["rank"] . '.</p>';
-		echo '<p class="userInfo">' . $user_current["firstName"] . ' ' . $user_current["lastName"] . '</p>';
-		echo '<p class="userInfo">' . $user_current["score"] . ' points</p>';
+		if ($type == "Sign out") {
+			echo '<p class="rank">' . $user_current["rank"] . '.</p>';
+			echo '<p class="userInfo">' . $user_current["firstName"] . ' ' . $user_current["lastName"] . '</p>';
+			echo '<p class="userInfo">' . $user_current["score"] . ' points</p>';
+		} else {
+			echo '<p class="userInfo"> - </p>';
+			echo '<p class="userInfo"> - </p>';
+			echo '<p class="userInfo"> No points </p>';
+		}
 		echo '</div>';
 		?>
 	</article>
