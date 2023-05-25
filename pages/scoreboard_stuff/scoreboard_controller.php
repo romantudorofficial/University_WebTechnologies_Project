@@ -1,10 +1,10 @@
 <?php
-    include "scoreboard_model.php";
+include "scoreboard_model.php";
 
-    $email = $_COOKIE['Email'];
+$email = $_COOKIE['Email'];
 
-    $user_top = getFirst10Users();
-    $user_current = getCurrentUserScore($email);
-    
-    include "scoreboard_view.php";
-?>  
+$user_top = getFirst10Users();
+$user_current = getCurrentUserScore($email);
+
+include "scoreboard_view.php";
+?>
