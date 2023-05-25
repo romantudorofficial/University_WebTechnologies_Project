@@ -6,7 +6,7 @@ $email = $_COOKIE['Email'];
 function getFirst10UsersService()
 {
     $mysql = connect();
-    if (!($rez = $mysql->query("SELECT firstName, lastName, score FROM users ORDER BY score,firstName,lastName DESC LIMIT 10"))) {
+    if (!($rez = $mysql->query("SELECT firstName, lastName, score FROM users ORDER BY score DESC, firstName, lastName ASC LIMIT 10"))) {
         return false;
     }
     $i = 1;
