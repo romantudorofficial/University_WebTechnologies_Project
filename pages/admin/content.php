@@ -17,13 +17,13 @@
             <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon">
                 </a> </li>
             <li> <a href="../messages/introduction.php">Messages</a> </li>
-            <li> <a href="">Virtual Community</a> </li>
+            <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
             <li> <a href="../emoji/introduction.php">Emoji</a> </li>
-            <li> <a href="">Video Conferences</a> </li>
-            <li> <a href="">Culture</a> </li>
-            <li> <a href="">Multilingualism</a> </li>
+            <li> <a href="../video conferences/introduction.php">Video Conferences</a> </li>
+            <li> <a href="../culture/introduction.php">Culture</a> </li>
+            <li> <a href="../multilingualism/introduction.php">Multilingualism</a> </li>
             <li>
-                <div id="other">Other</div>
+                <a href="../other.php" id="other">Other</a>
             </li>
             <!-- Commands for admin: php for making them appear for admins, until then invisible, in our case is admin -->
             <li id="commands">

@@ -22,7 +22,7 @@
         <li> <a href="../culture/introduction.php">Culture</a> </li>
         <li> <a href="../multilingualism/introduction.php">Multilingualism</a> </li>
         <li>
-            <div id="other">Other</div>
+            <a href="../other.php" id="other">Other</a>
         </li>
         <!-- Commands for admin: php for making them appear for admins, until then invisible, in our case is admin -->
         <li id="commands">
