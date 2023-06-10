@@ -1,0 +1,31 @@
+.imagesAcc{
+    width: 5pc;
+    height: 5pc;
+    margin-left: 5pc;
+    margin-right: 5pc;
+    margin-top: -3pc;
+    float: right;
+}
+
+.imagesRej{
+    width: 7pc;
+    height: 7pc;
+    margin-left: 5pc;
+    margin-right: 5pc;
+    margin-top: -4pc;
+    float: right;
+}
+#theResult{
+    display: block;
+    text-align: left;
+    width: auto;
+    margin-left: 5pc;
+}
+.result{
+    display: inline;
+    float: left;
+    width: 100%;
+    margin-left: 1pc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}

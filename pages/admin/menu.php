@@ -42,7 +42,7 @@
             button:</p>
         <button><a href="delete.php">DELETE</a></button>
         <p class="info"> If you need to check who is worth to become an admin , click the following button:</p>
-        <button><a href="admin.php">ADMIN</a></button>
+        <button><a href="futureAdmins/admin.php">ADMIN</a></button>
     </div>
 </body>
 
