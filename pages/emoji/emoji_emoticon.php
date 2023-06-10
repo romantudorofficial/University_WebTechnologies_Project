@@ -57,22 +57,32 @@
         <li><a href="different_generations.php">Their meaning to different generations</a></li>
         <li><a href="rise_of_emoji.php">The new era of emojis</a></li>
         <li><a href="advice.php">Rules</a></li>
-        <li><a href="test.php">Take a test: BONUS</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <img src="../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
+        <h1> Emoji vs Emoticon </h1>
+        <p>
+            This comes as no surprise since texting is a short form of communication, so it makes sense that people want
+            to make their communication brief and simple. After all, people have used symbols to communicate for
+            hundreds of years.
+        </p>
+        <p>
+            Emoticons are the digital predecessors of emoji, starting out as smiley faces using punctuation marks. Some
+            of the most well-known early emoticons, popularised in the 80s, include the ASCII smiley face emoticon:
+            :-&rpar;.
+        </p>
+        <p>
+            An emoticon is a sequence of keyboard characters used to illustrate a facial expression (or to render some
+            kind of picture or symbol), such as : &rpar; for a smile, : &lpar; for a frown, XD for a laughing face, or
+            O_O for
+            surprise. An emoji is a small image used alongside or in place of text. Many depict facial expressions (such
+            as 🙂 and 🙁), but there are many, many other kinds (such as 👍, 💙, and 🐈). Despite their similarity in
+            form and meaning, the words are not etymologically related: emoticon comes from a combination of the words
+            emotion and icon, while emoji comes from a Japanese term meaning “pictograph,” from e, “picture, drawing,”
+            and moji, “(written) character, letter.”
+        </p>
+        <img src="https://www.callcentrehelper.com/images/stories/2016/07/emoji-emoticon-300x164.jpg"
+            alt="A nice picture of emojis" class="picturesLessons">
         <button class="completeLesson">Complete Lesson</button>
     </div>
 </body>

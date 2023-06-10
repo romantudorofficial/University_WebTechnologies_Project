@@ -57,22 +57,31 @@
         <li><a href="different_generations.php">Their meaning to different generations</a></li>
         <li><a href="rise_of_emoji.php">The new era of emojis</a></li>
         <li><a href="advice.php" class="active">Rules<span class="hard"> 🔴 </span></a></li>
-        <li><a href="test.php">Take a test: BONUS</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <img src="../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
+        <h1> Rules </h1>
+        <p>
+            This is fast moving ground. Early adopters were teenagers (particularly girls), but now most adults have
+            used them “at least once”. On the whole, they’re still a “no-no” at work. That especially includes your
+            boss, who will almost certainly mistakenly think you’re flirting with him/her.
+        </p>
+        <p>
+            Emojis are frivolous, quirky, cute and fun—great for pre-evening-out banter. Not so good when it’s time to
+            be serious or when sad times are afoot.
+        </p>
+        <img src="https://www.readersdigest.co.uk/media/images/Anna/emoji-keyboard.jpg" alt="A nice picture of emojis"
+            class="picturesLessons">
+        <h3>
+            Bear these simple rules in mind when using Emojis:
+        </h3>
+        <p> - Emojis come at the end of the sentence if they’re conveying an emotion</p>
+        <p> - They can appear in the middle of a sentence too, but only if they’re replacing a word</p>
+        <p> - Emojis are not full stops. Don’t use them as full stops</p>
+        <p> - If you’re using a string of Emojis the order matters. For example, we weep first and then we have a
+            broken heart. And make sure the barrel of the Emoji gun is pointing the right direction.</p>
+        <p> - Another point of order: A single Emoji reply says, “I’m too busy for you” or “I can’t be bothered to
+            reply”. That might be fine, but bear it in mind</p>
         <button class="completeLesson">Complete Lesson</button>
     </div>
 </body>
