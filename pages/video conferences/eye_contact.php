@@ -50,11 +50,11 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
         <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
         <li><a href="environment.php">Find a Suitable Environment</a></li>
-        <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
+        <li><a href="eye_contact.php" class="active">Establish and Maintain Eye Contact<span class="easy"> 🟢 </span></a></li>
         <li><a href="listening.php">Use Active Listening Skills</a></li>
         <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
         <li><a href="engaging.php">Engage and Participate Actively</a></li>
@@ -63,25 +63,28 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <h1> Establish and Maintain Eye Contact </h1> <br>
+        <p>Establishing and maintaining eye contact is essential during video conferences, as it conveys 
+            attentiveness and engagement. Although it may feel unnatural, try to look directly into the camera 
+            lens when speaking or listening. This creates the illusion of eye contact for other participants, 
+            simulating a face-to-face interaction.</p> <br>
+        <p>Remember that it is common to glance at the participants on the screen while listening or speaking. 
+            However, whenever possible, direct your attention towards the camera to maintain a sense of connection. 
+            By doing so, you convey active participation and establish a stronger rapport with other participants.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q5"> Why is maintaining eye contact and positive body language important during video conferences?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <label for="emoji">To show disinterest and distraction</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To focus on your own image on the screen</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">To create a connection and show attentiveness</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>
@@ -90,7 +93,7 @@
     </div>
     <script>
         function myFunction() {
-            if (document.getElementById("B").checked) {
+            if (document.getElementById("C").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
             }
             else {

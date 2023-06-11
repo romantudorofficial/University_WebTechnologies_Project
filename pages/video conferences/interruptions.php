@@ -50,38 +50,42 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
         <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
         <li><a href="environment.php">Find a Suitable Environment</a></li>
         <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
         <li><a href="listening.php">Use Active Listening Skills</a></li>
-        <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
+        <li><a href="interruptions.php" class="active">Respect Speaking Turns and Avoid Interruptions<span class="medium"> 🟡 </span></a></li>
         <li><a href="engaging.php">Engage and Participate Actively</a></li>
         <li><a href="language.php">Use Clear and Concise Language</a></li>
         <li><a href="end_meeting.php">Wrap Up the Meeting Appropriately</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <h1> Respect Speaking Turns and Avoid Interruptions </h1> <br>
+        <p>In a video conference, it is crucial to respect speaking turns and allow each participant to express
+             their thoughts without interruptions. Wait for an appropriate pause before speaking and avoid talking 
+             over others. Interrupting not only disrupts the flow of the conversation but also shows a lack of respect
+              for other participants' perspectives.</p> <br>
+        <p>Practice active listening and patience, allowing others to finish their statements before contributing your 
+            ideas. This inclusive approach fosters collaboration and encourages a diverse range of viewpoints to be heard 
+            and valued. By respecting speaking turns, you contribute to a respectful and inclusive video conference 
+            environment.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q7"> Why is it important to be mindful of speaking turns during a video conference?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <label for="emoji">To interrupt others and dominate the conversation</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To foster a collaborative and inclusive environment</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">To ignore the need for active listening</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>

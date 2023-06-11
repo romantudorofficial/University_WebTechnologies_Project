@@ -50,7 +50,7 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="respectful_comm.php">Respectful Communication</a></li>
         <li><a href="active_listening.php">Active Listening</a></li>
         <li><a href="privacy.php">Privacy and Consent</a></li>
@@ -59,44 +59,41 @@
         <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
         <li><a href="sharing_content.php">Etiquette in Sharing Content</a></li>
         <li><a href="mods.php">Engaging with Moderators</a></li>
-        <li><a href="good_com_member.php">Being a Good Community Member</a></li>
+        <li><a href="good_com_member.php" class="active">Being a Good Community Member<span class="hard"> 🔴 </span></a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <h1> Being a Good Community Member </h1> <br>
+        <p>Being a good member of a virtual community entails actively contributing in positive ways. By practicing 
+            good citizenship, you can foster a welcoming and supportive environment where everyone feels valued and 
+            respected.</p><br>
+        <p>One way to be a good community member is to actively participate and contribute your knowledge and experiences. 
+            Share insights, ask questions, and engage in meaningful discussions. Contribute to the community's growth and 
+            learning by sharing valuable resources or offering guidance to others.</p><br>
+        <p>Supporting fellow community members is another vital aspect of being a good member. Be kind, respectful, and 
+            inclusive in your interactions. Offer encouragement, help, and constructive feedback when appropriate. Celebrate 
+            the achievements and contributions of others, fostering a sense of camaraderie within the community.</p><br>
+        <p>Respect the community's guidelines and norms. Familiarize yourself with the rules and adhere to them. Be mindful 
+            of your language, tone, and behavior, ensuring they align with the community's expectations. If you notice any 
+            violations or inappropriate behavior, report it to the moderators in a timely and respectful manner.</p><br>
+        <p>Lastly, foster a culture of appreciation and gratitude. Acknowledge and express gratitude for the contributions 
+            and efforts of others. Recognize the value they bring to the community and the positive impact they have.</p><br>
+        <p>By embodying the principles of good citizenship, you contribute to the growth, positivity, and sustainability of 
+            the virtual community you are a part of.</p><br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q10"> What is an important aspect of being a good community member?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <label for="emoji">Engaging in conflicts and arguments</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <label for="emoticon">Actively participating and contributing</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <label for="emoticon">Ignoring community guidelines</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>

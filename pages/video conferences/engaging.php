@@ -50,38 +50,42 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
         <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
         <li><a href="environment.php">Find a Suitable Environment</a></li>
         <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
         <li><a href="listening.php">Use Active Listening Skills</a></li>
         <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
-        <li><a href="engaging.php">Engage and Participate Actively</a></li>
+        <li><a href="engaging.php" class="active">Engage and Participate Actively<span class="medium"> 🟡 </span></a></li>
         <li><a href="language.php">Use Clear and Concise Language</a></li>
         <li><a href="end_meeting.php">Wrap Up the Meeting Appropriately</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <h1> Engage and Participate Actively </h1> <br>
+        <p>Active engagement and participation are key to a successful video conference. Contribute to the discussion
+             by sharing your insights, asking relevant questions, and providing valuable input. Show enthusiasm and 
+             interest in the topic being discussed. Your active participation not only adds value to the conversation
+              but also encourages others to engage more actively.</p> <br>
+        <p>If you are attending a larger video conference with numerous participants, you may need to use non-verbal 
+            cues, such as raising your hand or using the chat function, to indicate your desire to speak. Be respectful 
+            of the facilitator or moderator's guidance regarding the participation process. By actively engaging, you 
+            contribute to a dynamic and productive video conference environment.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q8"> Why is it important to pay attention and stay engaged during a video conference?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To demonstrate active listening and effective communication</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To multitask and engage in unrelated activities</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <label for="emoticon">To ignore the meeting and remain passive</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>
@@ -90,7 +94,7 @@
     </div>
     <script>
         function myFunction() {
-            if (document.getElementById("B").checked) {
+            if (document.getElementById("A").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
             }
             else {

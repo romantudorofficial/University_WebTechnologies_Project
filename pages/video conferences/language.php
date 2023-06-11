@@ -50,7 +50,7 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
         <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
         <li><a href="environment.php">Find a Suitable Environment</a></li>
@@ -58,30 +58,34 @@
         <li><a href="listening.php">Use Active Listening Skills</a></li>
         <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
         <li><a href="engaging.php">Engage and Participate Actively</a></li>
-        <li><a href="language.php">Use Clear and Concise Language</a></li>
+        <li><a href="language.php" class="active">Use Clear and Concise Language<span class="medium"> 🟡 </span></a></li>
         <li><a href="end_meeting.php">Wrap Up the Meeting Appropriately</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <h1> Use Clear and Concise Language </h1> <br>
+        <p>In a video conference, effective communication relies on using clear and concise language. Express 
+            your thoughts and ideas in a manner that is easy for others to understand. Avoid using excessive 
+            jargon, acronyms, or technical terms that may confuse participants who are not familiar with the 
+            terminology.</p> <br>
+        <p>Be mindful of the pace of your speech and articulate your words clearly. Take pauses when necessary 
+            to allow others to process the information or ask for clarification if something is not clear. By 
+            using clear and concise language, you ensure that your message is effectively conveyed to all 
+            participants.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q9"> Why is it important to use professional language and tone during video conferences?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To maintain a respectful and productive atmosphere</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To use jargon and informal expressions</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <label for="emoticon">To disregard the need for clear communication</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>
@@ -90,7 +94,7 @@
     </div>
     <script>
         function myFunction() {
-            if (document.getElementById("B").checked) {
+            if (document.getElementById("A").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
             }
             else {
