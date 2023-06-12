@@ -97,8 +97,11 @@
             <div id="answer"></div>
         </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+        <p>
+            <?php checking_email(); ?>
+        </p>
     </div>
-    <script>
+    <script type="text/javascript">
         function myFunction() {
             if (document.getElementById("A").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
@@ -106,8 +109,75 @@
             else {
                 document.getElementById("answer").innerHTML = "Your answer is wrong";
             }
+            returnPair();
+        }
+        function returnPair() {
+            var results = document.getElementsByClassName("active");
+            var ceva = [];
+            var i = 0;
+            for (i = 0; i < results.length; i++) {
+                ceva[i] = results.item(i).innerHTML;
+            }
+            return ceva;
         }
     </script>
+    <?php
+    function gettingJson()
+    {
+        $file = file_get_contents("../../files/checker.json");
+        $jsonFile = json_decode($file, true);
+        //echo var_dump($jsonFile);
+        return $jsonFile;
+    }
+    function checking_email()
+    {
+        $jsonArray=decodingJSON();
+        existCategoryLessonEmail($jsonArray,'Emoji','Rules');
+    }
+    function decodingJSON()
+    {
+        $jsonFile = gettingJson();
+        $i = 0;
+        foreach ($jsonFile as $element) {
+            $array = (array) $element;
+            $result[$i]['category'] = $array['nameCategory'];
+            //for getting the lessons
+            $j = 0;
+            foreach ($array['lessons'] as $lesson) {
+                $arrayForLessons = (array) $lesson;
+                $result[$i]['lesson'][$j] = $arrayForLessons['nameLesson'];
+                $j = $j + 1;
+                //for getting the emails
+                $k = 0;
+                foreach ($arrayForLessons['email'] as $email) {
+                    $arrayForEmails = (array) $email;
+                    $result[$i]['lesson'][$j][$k] = $arrayForEmails[$k];
+                    $k = $k + 1;
+                }
+            }
+            $i = $i + 1;
+        }
+        //echo var_dump($result);
+        return $result;
+    }
+    function existCategoryLessonEmail($jsonFile,$category,$lesson)
+    {
+        //checks category
+        $ok=-2;
+        foreach($jsonFile as $test){
+            var_dump($test);
+            echo "YOLO<br>";
+            if($test['category']==$category){
+                echo "YES, category <br>";
+                $ok=-1;
+                //now checking lessons
+                foreach($test['lesson'] as $lesson){
+                    if($lesson['nameLesson']==$lesson)
+                }
+            }
+        }
+    }
+    ?>
     </div>
     </div>
 </body>
