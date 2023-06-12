@@ -107,7 +107,36 @@
         </p>
         <img src="https://uploads-ssl.webflow.com/6349fd438ecb3a3594605225/63e2d8ec2eb430ef6f7b970f_text-broadcast.webp"
             class="picturesLessons">
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> What should not you do in a group chat?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">start a conversation late at night</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">do not tell when you join the conversation or when you leave</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">drag a group text out for longer than it needs to be</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("A").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

@@ -311,7 +311,36 @@
         </p>
         <img src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2023/06/Birthday_Message-235x124.png"
             class="picturesLessons">
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> What does FTW stand for?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">funny to wait</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">for the win</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">feeling too worried</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("B").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

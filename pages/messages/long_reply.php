@@ -138,7 +138,36 @@
         </p>
         <img src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2019/04/thumbnail-3d9165d85fe52a7d82c02152151088dc.jpeg"
             class="picturesLessons">
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> What is the average text respond?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">10 minutes</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">1 minute and 30 seconds</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">2 hours</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("B").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

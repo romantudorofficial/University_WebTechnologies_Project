@@ -157,7 +157,40 @@
                 style="text-decoration:none; color: #333;">Texting Guidelines</a></h2>
         <img src="https://messagemedia.com/nz/wp-content/uploads/sites/6/2022/03/Text-messaging-etiquette_-dos-and-donts-Blog-header-1024x325px.jpg"
             class="picturesLessons">
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> What rules are important in text etiquette?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">Do keep texts short</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">Don’t text too early or late</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">none of above</label>
+            </div>
+            <div>
+                <input type="radio" id="D" name="option" value="option" checked>
+                <label for="option">first 2 bullets</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("D").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

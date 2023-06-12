@@ -95,7 +95,33 @@
         <p> So, in the following lessons we will talk about messages etiquette</p>
         <img src="https://i.insider.com/528559a46da811e1525c86ed?width=800&format=jpeg" alt="A nice picture of emojis"
             class="picturesLessons">
+            <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> Why learning it?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">being mindful of your word choice, tone, and manners when
+            texting for business communication</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">getting to be loved for how you write texts</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("A").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 
