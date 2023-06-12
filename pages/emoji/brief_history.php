@@ -57,72 +57,60 @@
         <li><a href="different_generations.php">Their meaning to different generations</a></li>
         <li><a href="rise_of_emoji.php">The new era of emojis</a></li>
         <li><a href="advice.php">Rules</a></li>
-        <li><a href="test.php">Take a test: BONUS</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
+        <h1> Brief history </h1>
+        <p>
+            Emojis originated with emoticons. If you can recall being online back in the day, you might remember
+            characters like :&par; and &lt;3. Since modern emoji icons didn't exist yet, people had to get creative with
+            letters, numbers, and punctuation marks to convey feelings in text. The emojis we know today rose to
+            prominence in Japan in the late 90s and early 2000s. The word "emoji" comes from the combination of the
+            Japanese words for "picture" (e) and "character" (moji). Its similarity to the word "emoticon" wasn't
+            intentional, but simply a coincidence. Emojis act as a pictographic form of communication, ultimately
+            simplifying our mode of relaying information.
+        </p>
+        <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/06/emojis-and-emoticons.jpg"
+            class="picturesLessons">
+        <p>
+            Emojis slowly spread from Japan to the rest of the world, and eventually, Google had them recognized by the
+            Unicode Consortium to ensure their universal inclusion in all digital devices.
+            <br>
+
+            The use of emoticons isn't entirely outdated, but today, the majority of people prefer using emoji icons
+            since there are now over 3,000 to choose from. They include avatars with different genders and skin tones,
+            symbols, locations, random miscellaneous objects, and the classic face emojis with human expressions.
+        </p>
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> Where did emojis appear for the first time?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">Japan</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">The US</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">Romania</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("A").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

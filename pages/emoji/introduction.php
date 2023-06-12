@@ -57,31 +57,40 @@
         <li><a href="different_generations.php">Their meaning to different generations</a></li>
         <li><a href="rise_of_emoji.php">The new era of emojis</a></li>
         <li><a href="advice.php">Rules</a></li>
-        <li><a href="test.php">Take a test: BONUS</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
         <h1> Introduction </h1>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
+        <p>
+            Let's clear up some confusion first off:
+            An "emoticon" is a typographic display of a facial expression, for example :-&par;.
+        </p>
+        <p>
+            They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
+            by NTT DoCoMo (a Japanese corporation) are small digital pictures.
+        </p>
+        <p>
+            It's now possible to have entire conversations, flirt, argue and debate using
+            cute little digital icons, but, they're easily misunderstood and misconstrued.
+        </p>
+        <p>
+            Despite this, once the preserve of lovers and best friends, their general use is on the rise.
             For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
+            Emoji.
+        </p>
+        <p>
+            So, in the following lessons we will talk about emoji etiquette
+        </p>
         <img src="../../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
             <legend for="Q1"> Which one of the following is an emoji?</legend>
             <div>
-                <input type="radio" id="emoji" name="emoji" value="emoji" checked>
+                <input type="radio" id="emoji" name="option" value="emoji" checked>
                 <label for="emoji">🦚</label>
             </div>
             <div>
-                <input type="radio" id="emoticon" name="emoji" value="emoticon" checked>
+                <input type="radio" id="emoticon" name="option" value="emoticon" checked>
                 <label for="emoticon">:P</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>

@@ -57,23 +57,89 @@
         <li><a href="different_generations.php">Their meaning to different generations</a></li>
         <li><a href="rise_of_emoji.php" class="active">The new era of emojis<span class="hard"> 🔴 </span></a></li>
         <li><a href="advice.php">Rules</a></li>
-        <li><a href="test.php">Take a test: BONUS</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1>
-        <p>Let's clear up some confusion first off:
-            An "emoticon" is a typographic display of a facial expression, for example :-&par;.</p>
-        <p>They've been around since the 1980s. Whereas, "Emojis", introduced just before the new millennium,
-            by NTT DoCoMo (a Japanese corporation) are small digital pictures.</p>
-        <p>It's now possible to have entire conversations, flirt, argue and debate using
-            cute little digital icons, but, they're easily misunderstood and misconstrued. </p>
-        <p>Despite this, once the preserve of lovers and best friends, their general use is on the rise.
-            For example, Tyler Schnoebelen, an Emojis oracle, discovered that 10 per cent of all tweets now contained an
-            Emoji.</p>
-        <p> So, in the following lessons we will talk about emoji etiquette</p>
-        <img src="../assets\images/emojis.jpg" alt="A nice picture of emojis" class="picturesLessons">
+        <h1> The new era of emojis </h1>
+        <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/05/emoji-stock-image.jpg"
+            class="picturesLessons">
+        <p>
+            Emojis, the little colorful icons and pictures you can add to text messages, can represent a variety of
+            things—from faces to sports, to nature, and transportation.
+        </p>
+        <p>
+            With the rise of social media and smartphones, they are firmly entrenched in the way people communicate
+            textually. So much so that many smartphone keyboards suggest emojis based on the words you type, saving you
+            from having to search for the perfect one to use.
+        </p>
+        <p>
+            This comes as no surprise since texting is a short form of communication, so it makes sense that people want
+            to make their communication brief and simple. After all, people have used symbols to communicate for
+            hundreds of years.
+        </p>
+        <p>
+            Emojis have also moved into art and merchandise, where you can get your favorite emoji on everything from
+            your slippers to your mug.
+        </p>
+        <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/05/emoji-communication.jpg"
+            class="picturesLessons">
+        <p>
+            Language adapts with time and emojis are one of the ways that online communication has evolved. It can be
+            argued that emojis make online communication richer and more emotive. In text, they’re the substitute for
+            gestures, tone of voice, and facial expressions.
+        </p>
+        <p>
+            When it comes to using emojis, there aren't really grammatical rules to use as a guideline. It comes down to
+            context.
+        </p>
+        <p>
+            People have also transformed the meaning of certain emojis, allocating inferred or metaphorical meanings to
+            them that are culturally understood. For example, the skull emoji can be used in response to something funny
+            or embarrassing and people share the flames emoji when something is considered cool.
+        </p>
+        <p>
+            Words can easily be misconstrued through text, but emojis can help make the distinction of intent clearer.
+            For instance, emojis can be the difference between a message being understood as sarcastic or not. Emojis
+            can also be repeated to show emphasis, a practice not usually done with English words.
+        </p>
+        <p>
+            In today's age, emojis are being used in business emails, as part of annotations in professional online
+            meetings, and for features on social media platforms, like Twitter's Twemojis.
+        </p>
+        <p>
+            But we also have an effect on emojis. As we’ve seen, emojis have become more inclusive so that they no
+            longer exclude the diverse ranges of people that use them.
+        </p>
+        <p>
+            Some emojis have been adapted in line with sensitivities, like the gun emoji which was once a representation
+            of a handgun and was later changed to a kids toy gun, which conveys a more harmless meaning.
+        </p>
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> Are emoji used in business emails?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">yes</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">no</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("A").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

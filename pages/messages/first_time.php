@@ -14,9 +14,9 @@
         <li><a href="../indexProj.php" id="logo"><img src="../../assets\images/newLogo.jpg" alt="logo icon"> </a></li>
         <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
         </li>
-        <li> <a href="../messages/introduction.php">Messages</a> </li>
+        <li> <a href="../messages/introduction.php" class="active">Messages</a> </li>
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
-        <li> <a href="../emoji/introduction.php" class="active">Emoji</a> </li>
+        <li> <a href="../emoji/introduction.php">Emoji</a> </li>
         <li> <a href="../video conferences/introduction.php">Video Conferences</a> </li>
         <li> <a href="../culture/introduction.php">Culture</a> </li>
         <li> <a href="../multilingualism/introduction.php">Multilingualism</a> </li>
@@ -49,49 +49,60 @@
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
-        <li class="titleLesson">How to use emojis</li>
+        <li class="titleLesson">How to write messages</li>
         <li><a href="introduction.php">Introduction</a></li>
-        <li><a href="brief_history.php">Brief history</a></li>
-        <li><a href="emoji_emoticon.php">Emoji vs Emoticon</a></li>
-        <li><a href="the_use_of_emojis.php">When (not) to use emojis</a></li>
-        <li><a href="different_generations.php">Their meaning to different generations</a></li>
-        <li><a href="rise_of_emoji.php">The new era of emojis</a></li>
-        <li><a href="advice.php" class="active">Rules<span class="hard"> 🔴 </span></a></li>
+        <li><a href="first_time.php" class="active">How to text someone for the first time professionally<span
+                    class="easy"> 🟢 </span></a></li>
+        <li><a href="long_reply.php">When is it acceptable to take your sweet time to reply?</a></li>
+        <li><a href="group_text.php">Group text message etiquette</a></li>
+        <li><a href="FAQ.php">Frequently asked texting do’s and don’ts questions (FAQ)</a></li>
+        <li><a href="rules.php">Texting etiquette: The 10 do’s and don’ts</a></li>
+        <li><a href="abbreviation.php">Why abbreviate?</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Rules </h1>
+        <h1> How to text someone for the first time professionally </h1>
         <p>
-            This is fast moving ground. Early adopters were teenagers (particularly girls), but now most adults have
-            used them “at least once”. On the whole, they’re still a “no-no” at work. That especially includes your
-            boss, who will almost certainly mistakenly think you’re flirting with him/her.
+            Consider the tools you’re using to send text messages before you actually text someone for the first time
+            professionally.
         </p>
         <p>
-            Emojis are frivolous, quirky, cute and fun—great for pre-evening-out banter. Not so good when it’s time to
-            be serious or when sad times are afoot.
+            Are you using your personal phone for work? Are you just sending a personal 1-on-1 text message to your
+            boss, a manager, or another employee?
         </p>
-        <img src="https://www.readersdigest.co.uk/media/images/Anna/emoji-keyboard.jpg" alt="A nice picture of emojis"
+        <p>
+            Your personal phone number and iPhone or Android device are fine for this kind of texting. You’ll just want
+            to be mindful of the professional texting rules and etiquette I’ve listed below.
+        </p>
+        <p>
+            But are you a manager or someone at a business trying to mass text employees? Or maybe you’re an employee or
+            staff member texting for sales or customer service?
+        </p>
+        <p>
+            This kind of professional text messaging requires a business text messaging service, like MessageDesk. Group
+            texts won’t work.
+        </p>
+        <p>
+            Business text messaging services come with advanced software and professional texting features. These
+            texting platforms help you text at scale and manage tricky things like privacy, opt-in lists, TCPA
+            compliance, and more.
+        </p>
+        <img src="https://broadview.sacredsf.org/wp-content/uploads/2020/12/emailingetiquette.png"
             class="picturesLessons">
-        <h3>
-            Bear these simple rules in mind when using Emojis:
-        </h3>
-        <p> - Emojis come at the end of the sentence if they’re conveying an emotion</p>
-        <p> - They can appear in the middle of a sentence too, but only if they’re replacing a word</p>
-        <p> - Emojis are not full stops. Don’t use them as full stops</p>
-        <p> - If you’re using a string of Emojis the order matters. For example, we weep first and then we have a
-            broken heart. And make sure the barrel of the Emoji gun is pointing the right direction.</p>
-        <p> - Another point of order: A single Emoji reply says, “I’m too busy for you” or “I can’t be bothered to
-            reply”. That might be fine, but bear it in mind</p>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Does the order of emojis matter?</legend>
+            <legend for="Q1"> Why would you use a business text messaging service?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="option" checked>
-                <label for="option">yes</label>
+                <label for="option">because I want this</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="option" checked>
-                <label for="option">no</label>
+                <label for="option">for messaging someone</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">for a professional text message</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>
@@ -100,7 +111,7 @@
     </div>
     <script>
         function myFunction() {
-            if (document.getElementById("A").checked) {
+            if (document.getElementById("C").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
             }
             else {
@@ -108,7 +119,6 @@
             }
         }
     </script>
-    </div>
     </div>
 </body>
 
