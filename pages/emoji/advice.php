@@ -172,7 +172,10 @@
                 $ok=-1;
                 //now checking lessons
                 foreach($test['lesson'] as $lesson){
-                    if($lesson['nameLesson']==$lesson)
+                    if($lesson['nameLesson']==$lesson){
+                        echo "YES, lesson <br>";
+                        //now checking emails
+                    }
                 }
             }
         }
