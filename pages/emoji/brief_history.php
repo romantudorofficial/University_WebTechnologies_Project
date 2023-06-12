@@ -81,7 +81,36 @@
             since there are now over 3,000 to choose from. They include avatars with different genders and skin tones,
             symbols, locations, random miscellaneous objects, and the classic face emojis with human expressions.
         </p>
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> Where did emojis appear for the first time?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">Japan</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">The US</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">Romania</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("A").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

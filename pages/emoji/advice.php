@@ -82,7 +82,33 @@
             broken heart. And make sure the barrel of the Emoji gun is pointing the right direction.</p>
         <p> - Another point of order: A single Emoji reply says, “I’m too busy for you” or “I can’t be bothered to
             reply”. That might be fine, but bear it in mind</p>
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> Does the order of emojis matter?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">yes</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">no</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("A").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
+    </div>
     </div>
 </body>
 

@@ -112,7 +112,36 @@
             Emoji icons of avatars playing sports are used to represent extreme reactions. If you find something very
             funny, or just downright insane, these emojis are a good way to convey that.
         </p>
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> What does skull emoji represent?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">emphasize phrases or words</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">represent laughter, depending on the context</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">poking fun at something or someone</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("B").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

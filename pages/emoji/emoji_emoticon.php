@@ -83,8 +83,32 @@
         </p>
         <img src="https://www.callcentrehelper.com/images/stories/2016/07/emoji-emoticon-300x164.jpg"
             alt="A nice picture of emojis" class="picturesLessons">
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> Which one of the following is an emoticon?</legend>
+            <div>
+                <input type="radio" id="emoji" name="option" value="emoji" checked>
+                <label for="emoji">🦚</label>
+            </div>
+            <div>
+                <input type="radio" id="emoticon" name="option" value="emoticon" checked>
+                <label for="emoticon">:P</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
     </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("emoticon").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
 </body>
 
 </html>

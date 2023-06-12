@@ -159,7 +159,37 @@
             safer
             to avoid emojis.
         </p>
+        <h6>QUESTION</h6>
+        <fieldset>
+            <legend for="Q1"> Why is it not recommended to use emojis in Semi-Formal discussions?</legend>
+            <div>
+                <input type="radio" id="A" name="option" value="option" checked>
+                <label for="option">they think it is too funny</label>
+            </div>
+            <div>
+                <input type="radio" id="B" name="option" value="option" checked>
+                <label for="option">they do not know what a joke is</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="option" checked>
+                <label for="option">it might give them the impression that you're not taking the subject discussed
+                    seriously</label>
+            </div>
+            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <div id="answer"></div>
+        </fieldset>
         <button class="completeLesson">Complete Lesson</button>
+    </div>
+    <script>
+        function myFunction() {
+            if (document.getElementById("C").checked) {
+                document.getElementById("answer").innerHTML = "Your answer is correct";
+            }
+            else {
+                document.getElementById("answer").innerHTML = "Your answer is wrong";
+            }
+        }
+    </script>
     </div>
 </body>
 

@@ -86,11 +86,11 @@
         <fieldset>
             <legend for="Q1"> Which one of the following is an emoji?</legend>
             <div>
-                <input type="radio" id="emoji" name="emoji" value="emoji" checked>
+                <input type="radio" id="emoji" name="option" value="emoji" checked>
                 <label for="emoji">🦚</label>
             </div>
             <div>
-                <input type="radio" id="emoticon" name="emoji" value="emoticon" checked>
+                <input type="radio" id="emoticon" name="option" value="emoticon" checked>
                 <label for="emoticon">:P</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
