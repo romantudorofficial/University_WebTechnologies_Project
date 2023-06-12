@@ -50,8 +50,9 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">How to write messages</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
-        <li><a href="first_time.php">How to text someone for the first time professionally</a></li>
+        <li><a href="introduction.php">Introduction</a></li>
+        <li><a href="first_time.php" class="active">How to text someone for the first time professionally<span
+                    class="easy"> 🟢 </span></a></li>
         <li><a href="long_reply.php">When is it acceptable to take your sweet time to reply?</a></li>
         <li><a href="group_text.php">Group text message etiquette</a></li>
         <li><a href="FAQ.php">Frequently asked texting do’s and don’ts questions (FAQ)</a></li>
@@ -60,40 +61,33 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1>
+        <h1> How to text someone for the first time professionally </h1>
         <p>
-            There’s anxiety around texting etiquette. When I talk to individuals and teams who text I always hear
-            questions like:
+            Consider the tools you’re using to send text messages before you actually text someone for the first time
+            professionally.
         </p>
         <p>
-            - What’s considered good text response time etiquette?
+            Are you using your personal phone for work? Are you just sending a personal 1-on-1 text message to your
+            boss, a manager, or another employee?
         </p>
         <p>
-            - Is it ok to use emojis in my professional messages?
+            Your personal phone number and iPhone or Android device are fine for this kind of texting. You’ll just want
+            to be mindful of the professional texting rules and etiquette I’ve listed below.
         </p>
         <p>
-            - Are texting acronyms like “LOL” acceptable?
+            But are you a manager or someone at a business trying to mass text employees? Or maybe you’re an employee or
+            staff member texting for sales or customer service?
         </p>
-        <h3>
-            What is Texting Etiquette?
-        </h3>
         <p>
-            Professional texting etiquette is a set of texting rules and guidelines. Text etiquette describes how
-            employees and staff at businesses and organizations should text colleagues, customers, and clients.
-            Professional texting etiquette is also about being mindful of your word choice, tone, and manners when
-            texting for business communication.
+            This kind of professional text messaging requires a business text messaging service, like MessageDesk. Group
+            texts won’t work.
         </p>
-        <h3>Here’s what you’ll learn:</h3>
         <p>
-            How to text someone for the first time professionally ;
-            When is it acceptable to take your sweet time to reply? ;
-            Group text message etiquette ;
-            Frequently asked texting do’s and don’ts questions (FAQ);
-            Texting etiquette: The 10 do’s and don’ts;
-            Why abbreviate?
+            Business text messaging services come with advanced software and professional texting features. These
+            texting platforms help you text at scale and manage tricky things like privacy, opt-in lists, TCPA
+            compliance, and more.
         </p>
-        <p> So, in the following lessons we will talk about messages etiquette</p>
-        <img src="https://i.insider.com/528559a46da811e1525c86ed?width=800&format=jpeg" alt="A nice picture of emojis"
+        <img src="https://broadview.sacredsf.org/wp-content/uploads/2020/12/emailingetiquette.png"
             class="picturesLessons">
         <button class="completeLesson">Complete Lesson</button>
     </div>

@@ -50,50 +50,62 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">How to write messages</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="first_time.php">How to text someone for the first time professionally</a></li>
         <li><a href="long_reply.php">When is it acceptable to take your sweet time to reply?</a></li>
-        <li><a href="group_text.php">Group text message etiquette</a></li>
+        <li><a href="group_text.php" class="active">Group text message etiquette<span class="medium"> 🟡 </span></a>
+        </li>
         <li><a href="FAQ.php">Frequently asked texting do’s and don’ts questions (FAQ)</a></li>
         <li><a href="rules.php">Texting etiquette: The 10 do’s and don’ts</a></li>
         <li><a href="abbreviation.php">Why abbreviate?</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1>
+        <h1> Group text message etiquette </h1>
         <p>
-            There’s anxiety around texting etiquette. When I talk to individuals and teams who text I always hear
-            questions like:
+            Group text etiquette is a tricky thing. In professional contexts, I advise that you keep group texts to a
+            minimum.
         </p>
         <p>
-            - What’s considered good text response time etiquette?
+            This is because the mechanics of a group text aren’t inherently professional. People (myself included)
+            generally don’t like being stuck in a group chat.
         </p>
         <p>
-            - Is it ok to use emojis in my professional messages?
+            The problem is that every contact in a group text sees every message and recipient. Everyone gets a
+            notification when a new text gets added to the conversation.
         </p>
         <p>
-            - Are texting acronyms like “LOL” acceptable?
+            These constant notifications get annoying. This is especially annoying if you can’t mute the conversation or
+            put your phone on silent.
         </p>
-        <h3>
-            What is Texting Etiquette?
-        </h3>
+        <img src="https://uploads-ssl.webflow.com/6349fd438ecb3a3594605225/63e2a39dd38f433ab16855d5_messagedesk-shared-team-inbox-p-500.webp"
+            alt="some img" class="picturesLessons">
         <p>
-            Professional texting etiquette is a set of texting rules and guidelines. Text etiquette describes how
-            employees and staff at businesses and organizations should text colleagues, customers, and clients.
-            Professional texting etiquette is also about being mindful of your word choice, tone, and manners when
-            texting for business communication.
+            If you find yourself in a group text, here’s some general group text etiquette:
         </p>
-        <h3>Here’s what you’ll learn:</h3>
         <p>
-            How to text someone for the first time professionally ;
-            When is it acceptable to take your sweet time to reply? ;
-            Group text message etiquette ;
-            Frequently asked texting do’s and don’ts questions (FAQ);
-            Texting etiquette: The 10 do’s and don’ts;
-            Why abbreviate?
+            1.Don’t start conversations late at night. <br>
+            2.Don’t use a group text to only text with one person in a group. <br>
+            3.Include people in the group text who know each other. <br>
+            4.Keep the conversation in the group text on the subject. <br>
+            5.Announce when and if you’re leaving the conversation. <br>
+            6.Don’t drag a group text out for longer than it needs to be. <br>
+            7.Put your phone on silent to keep annoying notifications from buzzing. <br>
+            8.Participate in the conversation, don’t just add to the noise. <br>
         </p>
-        <p> So, in the following lessons we will talk about messages etiquette</p>
-        <img src="https://i.insider.com/528559a46da811e1525c86ed?width=800&format=jpeg" alt="A nice picture of emojis"
+        <p>
+            If you need to send a text to more than 20 people, don’t send it as a group text. Send a mass text using a
+            business text messaging software like MessageDesk instead.
+        </p>
+        <p>
+            Mass texts are like BCC emails—they’re one-to-many text messages. Sometimes people refer to mass texts as
+            “group text without reply all”.
+        </p>
+        <p>
+            When someone responds to your mass text, that message starts a private, two-way message thread. This is an
+            essential part of professional texting at scale.
+        </p>
+        <img src="https://uploads-ssl.webflow.com/6349fd438ecb3a3594605225/63e2d8ec2eb430ef6f7b970f_text-broadcast.webp"
             class="picturesLessons">
         <button class="completeLesson">Complete Lesson</button>
     </div>
