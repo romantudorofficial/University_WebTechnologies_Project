@@ -6,6 +6,7 @@
     <title> Emoji Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
+    <script src="../../services/functionsForAjax.js"></script>
 </head>
 
 <body>
@@ -61,6 +62,13 @@
     <!-- The content of this page -->
     <div class="pageContent">
         <h1> Rules </h1>
+        <h2 id="finished">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    sendUsingAjax(-1);
+                });
+            </script>
+        </h2>
         <p>
             This is fast moving ground. Early adopters were teenagers (particularly girls), but now most adults have
             used them “at least once”. On the whole, they’re still a “no-no” at work. That especially includes your
@@ -93,94 +101,28 @@
                 <input type="radio" id="B" name="option" value="option" checked>
                 <label for="option">no</label>
             </div>
-            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
         </fieldset>
-        <button class="completeLesson">Complete Lesson</button>
-        <p>
-            <?php checking_email(); ?>
-        </p>
+        <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
     </div>
     <script type="text/javascript">
-        function myFunction() {
-            if (document.getElementById("A").checked) {
-                document.getElementById("answer").innerHTML = "Your answer is correct";
+        function myFunction(validUser) {
+            if (validUser != 1) {
+                if (document.getElementById("A").checked) {
+                    document.getElementById("answer").innerHTML = "Your answer is correct";
+                    answeredCorrectly = true;
+                }
+                else {
+                    document.getElementById("answer").innerHTML = "Your answer is wrong";
+                    answeredCorrectly = false;
+                }
             }
             else {
-                document.getElementById("answer").innerHTML = "Your answer is wrong";
+                document.getElementById("answer").innerHTML = "You already answered this question";
             }
-            returnPair();
-        }
-        function returnPair() {
-            var results = document.getElementsByClassName("active");
-            var ceva = [];
-            var i = 0;
-            for (i = 0; i < results.length; i++) {
-                ceva[i] = results.item(i).innerHTML;
-            }
-            return ceva;
         }
     </script>
-    <?php
-    function gettingJson()
-    {
-        $file = file_get_contents("../../files/checker.json");
-        $jsonFile = json_decode($file, true);
-        //echo var_dump($jsonFile);
-        return $jsonFile;
-    }
-    function checking_email()
-    {
-        $jsonArray=decodingJSON();
-        existCategoryLessonEmail($jsonArray,'Emoji','Rules');
-    }
-    function decodingJSON()
-    {
-        $jsonFile = gettingJson();
-        $i = 0;
-        foreach ($jsonFile as $element) {
-            $array = (array) $element;
-            $result[$i]['category'] = $array['nameCategory'];
-            //for getting the lessons
-            $j = 0;
-            foreach ($array['lessons'] as $lesson) {
-                $arrayForLessons = (array) $lesson;
-                $result[$i]['lesson'][$j] = $arrayForLessons['nameLesson'];
-                $j = $j + 1;
-                //for getting the emails
-                $k = 0;
-                foreach ($arrayForLessons['email'] as $email) {
-                    $arrayForEmails = (array) $email;
-                    $result[$i]['lesson'][$j][$k] = $arrayForEmails[$k];
-                    $k = $k + 1;
-                }
-            }
-            $i = $i + 1;
-        }
-        //echo var_dump($result);
-        return $result;
-    }
-    function existCategoryLessonEmail($jsonFile,$category,$lesson)
-    {
-        //checks category
-        $ok=-2;
-        foreach($jsonFile as $test){
-            var_dump($test);
-            echo "YOLO<br>";
-            if($test['category']==$category){
-                echo "YES, category <br>";
-                $ok=-1;
-                //now checking lessons
-                foreach($test['lesson'] as $lesson){
-                    if($lesson['nameLesson']==$lesson){
-                        echo "YES, lesson <br>";
-                        //now checking emails
-                    }
-                }
-            }
-        }
-    }
-    ?>
     </div>
     </div>
 </body>

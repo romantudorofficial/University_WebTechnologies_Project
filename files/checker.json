@@ -1,10 +1,25 @@
 [
     {
-        "nameCategory":"Emoji",
-        "lessons":[
+        "nameCategory": "Emoji",
+        "lessons": [
             {
-                "nameLesson":"Rules",
-                "email":["catalina.tiger25@gmail.com"]
+                "nameLesson": "Rules",
+                "email": [
+                    "catalina.tiger25@gmail.com",
+                    "altceva"
+                ]
+            },
+            {
+                "nameLesson": "Rkashdla",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Rules<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
             }
         ]
     }
