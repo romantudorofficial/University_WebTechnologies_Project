@@ -126,7 +126,6 @@
             }
         }
     </script>
-    </div>
 </body>
 
 </html>

@@ -56,8 +56,7 @@
         <li><a href="long_reply.php">When is it acceptable to take your sweet time to reply?</a></li>
         <li><a href="group_text.php">Group text message etiquette</a></li>
         <li><a href="FAQ.php">Frequently asked texting do’s and don’ts questions (FAQ)</a></li>
-        <li><a href="rules.php" class="active">Texting etiquette: The 10 do’s and don’ts<span class="hard"> 🔴
-                </span></a></li>
+        <li><a href="rules.php" class="active">Texting etiquette: The 10 do’s and don’ts<span class="hard"> 🔴 </span></a></li>
         <li><a href="abbreviation.php">Why abbreviate?</a></li>
     </ul>
     <!-- The content of this page -->
@@ -206,7 +205,6 @@
             }
         }
     </script>
-    </div>
 </body>
 
 </html>

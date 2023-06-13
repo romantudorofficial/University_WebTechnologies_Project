@@ -152,7 +152,6 @@
             }
         }
     </script>
-    </div>
 </body>
 
 </html>
