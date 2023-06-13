@@ -50,7 +50,7 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="respectful_comm.php">Respectful Communication</a></li>
         <li><a href="active_listening.php">Active Listening</a></li>
         <li><a href="privacy.php">Privacy and Consent</a></li>
@@ -58,45 +58,43 @@
         <li><a href="conflicts.php">Conflict Resolution</a></li>
         <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
         <li><a href="sharing_content.php">Etiquette in Sharing Content</a></li>
-        <li><a href="mods.php">Engaging with Moderators</a></li>
+        <li><a href="mods.php" class="active">Engaging with Moderators<span class="hard"> 🔴 </span></a></li>
         <li><a href="good_com_member.php">Being a Good Community Member</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <h1> Engaging with Moderators </h1> <br>
+        <p>Virtual communities often have dedicated moderators who play a crucial role in maintaining a healthy 
+            and inclusive environment. Engaging with moderators respectfully and cooperatively contributes to the 
+            overall well-being of the community.</p><br>
+        <p>When interacting with moderators, it is important to maintain a respectful and cooperative attitude. Follow
+             their instructions and guidelines without resistance or hostility. Moderators are responsible for ensuring 
+             that the community guidelines are followed, and their actions aim to create a safe and productive space for 
+             all members.</p><br>
+        <p>If you have concerns or questions, approach moderators in a polite and constructive manner. Provide feedback 
+            regarding community issues or suggestions for improvement. Moderators appreciate constructive input that helps
+             them enhance the community experience. However, avoid personal attacks or disrespectful language when expressing
+              your concerns.</p><br>
+        <p>Recognize that moderators have the best interest of the community in mind and that their decisions are based on 
+            community guidelines and policies. If you disagree with a moderator's action, seek clarification and discuss it 
+            calmly. Engage in a dialogue to understand their perspective and find common ground.</p><br>
+        <p>By maintaining a positive and respectful relationship with moderators, you contribute to a well-managed and thriving
+             virtual community. Remember that moderators are volunteers or professionals who invest their time and effort to 
+             ensure a positive experience for all members.</p><br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q9"> How should you interact with moderators in virtual communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <label for="emoji"> Be disrespectful and uncooperative</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <label for="emoticon">Follow their instructions and provide constructive feedback</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <label for="emoticon">Ignore their existence</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>

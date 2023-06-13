@@ -50,7 +50,7 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
         <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
         <li><a href="environment.php">Find a Suitable Environment</a></li>
@@ -59,29 +59,33 @@
         <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
         <li><a href="engaging.php">Engage and Participate Actively</a></li>
         <li><a href="language.php">Use Clear and Concise Language</a></li>
-        <li><a href="end_meeting.php">Wrap Up the Meeting Appropriately</a></li>
+        <li><a href="end_meeting.php" class="active">Wrap Up the Meeting Appropriately<span class="medium"> 🟡 </span></a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <h1> Wrap Up the Meeting Appropriately </h1> <br>
+        <p>As a video conference comes to an end, it is important to wrap up the meeting appropriately. 
+            Summarize the key points discussed during the conference, clarify any action items or next steps, 
+            and express gratitude for everyone's participation. This ensures that all participants are on the 
+            same page regarding the outcomes and any further responsibilities.</p> <br>
+        <p>Avoid abruptly ending the meeting without proper closure. Thank everyone for their contributions 
+            and reiterate any important follow-up information, such as the date and time of the next meeting 
+            or any pending deliverables. By ending the meeting on a positive note and providing necessary 
+            information, you demonstrate professionalism and ensure that the conference has a clear conclusion.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q10"> Why is it important to end a video conference appropriately?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To show professionalism and inform participants about outcomes</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To abruptly leave the meeting without any summary or clarification</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <label for="emoticon">To disregard the need for follow-up actions</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>
@@ -90,7 +94,7 @@
     </div>
     <script>
         function myFunction() {
-            if (document.getElementById("B").checked) {
+            if (document.getElementById("A").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
             }
             else {

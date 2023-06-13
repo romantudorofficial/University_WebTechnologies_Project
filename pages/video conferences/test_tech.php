@@ -50,8 +50,8 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
-        <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
+        <li><a href="introduction.php">Introduction</a></li>
+        <li><a href="test_tech.php" class="active">Prepare and Test Your Technology<span class="easy"> 🟢 </span></a></li>
         <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
         <li><a href="environment.php">Find a Suitable Environment</a></li>
         <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
@@ -63,25 +63,26 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <h1> Prepare and Test Your Technology </h1> <br>
+        <p>Before joining a video conference, it is crucial to ensure that your technology is prepared and tested. 
+            Technical difficulties can disrupt the flow of the meeting and hinder effective communication. Take the 
+            time to check your camera, microphone, and speakers to ensure they are functioning correctly. Verify that 
+            your internet connection is stable and capable of supporting a smooth video conference experience. By being 
+            well-prepared, you can actively participate in the conference and avoid unnecessary interruptions or delays.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q2"> Why is it important to prepare and test your technology before a video conference?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To participate actively and avoid technical difficulties</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To keep your camera turned off throughout the call</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <label for="emoticon">To intentionally disrupt the meeting</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>
@@ -90,7 +91,7 @@
     </div>
     <script>
         function myFunction() {
-            if (document.getElementById("B").checked) {
+            if (document.getElementById("A").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
             }
             else {

@@ -50,9 +50,9 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="respectful_comm.php">Respectful Communication</a></li>
-        <li><a href="active_listening.php">Active Listening</a></li>
+        <li><a href="active_listening.php" class="active">Active Listening<span class="easy"> 🟢 </span></a></li>
         <li><a href="privacy.php">Privacy and Consent</a></li>
         <li><a href="diversity.php">Diversity and Inclusion</a></li>
         <li><a href="conflicts.php">Conflict Resolution</a></li>
@@ -63,40 +63,35 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <h1> Active Listening </h1> <br>
+        <p>Active listening is a crucial skill in virtual communities. It goes beyond simply hearing what someone is 
+            saying or reading their messages. Active listening involves giving your full attention to the speaker or writer, 
+            understanding their perspective, and responding in a thoughtful manner.</p> <br>
+        <p>In virtual communities, active listening plays a significant role in fostering understanding and constructive dialogue. 
+            It helps prevent misunderstandings and allows community members to engage in meaningful conversations. When actively 
+            listening, you show respect for others' opinions, demonstrate empathy, and create an environment where everyone's voice 
+            is heard.</p> <br>
+        <p>To practice active listening, start by focusing on the speaker or writer's message without distractions. Give them 
+            your undivided attention and refrain from interrupting or interjecting prematurely. Avoid making assumptions or jumping 
+            to conclusions. Instead, seek clarification by asking questions to ensure that you understand their viewpoints accurately.</p> <br>
+        <p>It's important to remember that virtual communication lacks non-verbal cues, such as facial expressions or body language. 
+            To compensate for this, pay close attention to the tone and context of the message. If something seems unclear or ambiguous, 
+            ask for clarification politely. By actively listening and seeking to understand, you contribute to a more inclusive and 
+            respectful virtual community.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q3"> Why is active listening important in virtual communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <label for="emoji">To dominate conversations</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <label for="emoticon">To encourage constructive dialogue and understanding</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <label for="emoticon">To win arguments</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>

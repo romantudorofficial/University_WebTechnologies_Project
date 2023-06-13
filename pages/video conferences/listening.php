@@ -50,12 +50,12 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
         <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
         <li><a href="environment.php">Find a Suitable Environment</a></li>
         <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
-        <li><a href="listening.php">Use Active Listening Skills</a></li>
+        <li><a href="listening.php" class="active">Use Active Listening Skills<span class="medium"> 🟡 </span></a></li>
         <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
         <li><a href="engaging.php">Engage and Participate Actively</a></li>
         <li><a href="language.php">Use Clear and Concise Language</a></li>
@@ -63,25 +63,28 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <h1> Use Active Listening Skills </h1> <br>
+        <p>Active listening is a crucial skill during video conferences to ensure effective communication 
+            and understanding. When participating in a video conference, focus on the speaker and their message. 
+            Avoid multitasking or engaging in unrelated activities that may distract you from the discussion.</p> <br>
+        <p>Demonstrate active listening by nodding your head to show understanding and using verbal cues, such as 
+            "yes" or "mm-hmm," to indicate your engagement. Non-verbal cues, such as maintaining an attentive posture 
+            and facial expressions, also play a significant role in conveying your involvement in the conversation. 
+            By actively listening, you contribute to a productive and collaborative video conference environment.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q6"> Why is it important to mute yourself when not speaking during a video conference?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <label for="emoji">To maximize background noise</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To keep yourself muted throughout the entire call</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">To prevent disruptions and distractions</label>
             </div>
             <button type="submit" onclick="myFunction()">Check Answer</button>
             <div id="answer"></div>
@@ -90,7 +93,7 @@
     </div>
     <script>
         function myFunction() {
-            if (document.getElementById("B").checked) {
+            if (document.getElementById("C").checked) {
                 document.getElementById("answer").innerHTML = "Your answer is correct";
             }
             else {
