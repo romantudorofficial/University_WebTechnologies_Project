@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<file>
+    <1>
+        <informal>
+            <female>
+                Opt for a comfortable yet presentable outfit such as a well-fitted blouse or a casual dress. 
+                You can pair it with jeans, trousers, or a skirt, depending on your personal style and preference. 
+                Choose colors and patterns that suit your complexion and convey a professional yet relaxed vibe. 
+                Avoid overly revealing or distracting clothing and opt for accessories that are simple and not overly flashy.
+            </female>
+            <male>
+                For an informal setting, you can go for a collared shirt, polo shirt, or a neat t-shirt paired with 
+                chinos, khakis, or dark-colored jeans. You can also consider wearing a casual blazer or cardigan to 
+                add a touch of sophistication. Opt for clean and well-maintained footwear that complements your outfit. 
+                Avoid wearing overly casual or wrinkled clothing, and ensure that your appearance is tidy and presentable.
+            </male>
+        </informal>
+        <formal>
+            <female>
+                Choose a tailored blouse, button-down shirt, or a professional dress with a modest neckline and length. 
+                Pair it with dress pants, a skirt, or a formal dress that exudes professionalism. Stick to neutral colors 
+                or classic patterns, and avoid loud or flashy prints. Accessorize with simple and elegant jewelry, and ensure 
+                that your hair and makeup are neat and professional.
+            </female>
+            <male>
+                Opt for a crisp, well-fitted dress shirt paired with dress pants or tailored trousers. Consider wearing a 
+                blazer or suit jacket to elevate your look further. Choose darker or neutral colors such as black, navy, or gray, 
+                and ensure that your clothing is pressed and wrinkle-free. Complete your outfit with polished dress shoes and 
+                minimal accessories.
+            </male>
+        </formal>
+    </1>
+    <2>
+        <informal>
+            <female>
+                Feel free to use emojis that reflect your personality and the tone of the conversation. For instance, 
+                you can use a smiley face 😊 to convey friendliness or happiness. If you find something amusing, you can use a 
+                laughing face 😂. To show agreement or support, a thumbs-up 👍 can be an excellent choice. Remember to use emojis 
+                sparingly and in appropriate contexts, keeping in mind the overall professionalism of the conversation.
+            </female>
+            <male>
+                Feel free to use emojis that reflect your personality and the tone of the conversation. For instance, you can use a 
+                smiley face 😊 to convey friendliness or happiness. If you find something amusing, you can use a laughing face 😂. 
+                To show agreement or support, a thumbs-up 👍 can be an excellent choice. Remember to use emojis sparingly and in 
+                appropriate contexts, keeping in mind the overall professionalism of the conversation.
+            </male>
+        </informal>
+        <formal>
+            <female>
+                In a formal setting, it is advisable to use emojis sparingly. You can consider using a smiling face 🙂 at the end of 
+                a message to add a touch of warmth or friendliness. An occasional thumbs-up 👍 can be used to acknowledge agreement 
+                or approval. However, it's crucial to gauge the formality of the conversation and the expectations of the participants 
+                to ensure that emojis are appropriate.
+            </female>
+            <male>
+            </male>
+        </formal>
+    </2>
+    <3>
+        <informal>
+            <female>
+                When selecting a space for your formal online video meeting, choose a quiet and dedicated room where you can control 
+                background noise and minimize distractions. Opt for a clean and professional-looking background, such as a blank wall 
+                or a bookshelf with neatly arranged books. Ensure that the lighting is sufficient, with your face well-illuminated and 
+                clearly visible to other participants. Consider using a professional virtual background if necessary, ensuring it is 
+                appropriate and does not cause distractions.
+            </female>
+            <male>
+                When selecting a space for your formal online video meeting, choose a quiet and dedicated room where you can control 
+                background noise and minimize distractions. Opt for a clean and professional-looking background, such as a blank wall 
+                or a bookshelf with neatly arranged books. Ensure that the lighting is sufficient, with your face well-illuminated and 
+                clearly visible to other participants. Consider using a professional virtual background if necessary, ensuring it is 
+                appropriate and does not cause distractions.
+            </male>
+        </informal>
+        <formal>
+            <female>
+                In an informal online video meeting, choose a comfortable and inviting space that reflects a relaxed atmosphere. This 
+                could be a living room, home office, or any area where you can feel at ease. Ensure that the background is clean and 
+                visually appealing, avoiding any distracting elements. Consider adding personal touches to the background, such as 
+                tasteful decorations or artwork, to add warmth and personality. Pay attention to lighting to ensure your face is well-lit 
+                and clearly visible.
+            </female>
+            <male>
+                For an informal online video meeting, find a space that is comfortable yet presentable. It could be a well-arranged home 
+                office, a cozy corner of a room, or any area where you can engage in a relaxed conversation. Keep the background clean 
+                and free from clutter, ensuring there are no distracting elements. Use appropriate lighting to ensure your face is well-lit 
+                and visible. Consider adding some personal touches to the background, such as plants or artwork, to create a pleasant and 
+                inviting atmosphere.
+            </male>
+        </formal>
+    </3>
+</file>

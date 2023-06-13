@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
     <link rel="stylesheet" href="../../styles/admin_style.css" />
+    <script>
+        function showDescriptions(category) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("txtHint").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("GET","get_descriptions.php?q="+category,true);
+            xmlhttp.send();
+        }
+    </script>
 </head>
 
 <body>
@@ -53,11 +65,16 @@
     <div class="adminContent">
         <h1> Suggestion Page </h1>
         <p class="info"> If you want to search for a specific situation, please complete the following form:</p>
-        <form action="">
+        <form action = "show_suggestion.php" method="post">
             <label> Choose in which category fits:</label>
-            <select name="category" id="category">
-                <option value="emoji">Emoji</option>
-                <option value="messages">Messages</option>
+            <select name="category" id="category" onchange="showDescriptions(this.value)"> 
+                <?php
+                    $i = 1;
+                    foreach ($categories as $category) {
+                        echo "<option value='$category'>$category</option>";
+                        $i = $i + 1;
+                    }
+                ?>
             </select>
             <fieldset>
                 <legend for="type"> What type of situation? </legend>
@@ -72,26 +89,15 @@
             </fieldset>
             <fieldset>
                 <legend>What words might describe it the best:</legend>
-                <div>
-                    <input type="checkbox" id="w_using" name="words" value="w_using">
-                    <label for="w_using">using emojis</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="w_not_using" name="words" value="w_not_using">
-                    <label for="w_not_using">not using emojis</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="w_writing_message" name="words" value="w_writing_message">
-                    <label for="w_writing_message">writing a message</label>
-                </div>
-                <div>
-                    <input type="checkbox" id="w_replying_to_message" name="words" value="w_replying_to_message">
-                    <label for="w_replying_to_message">replying to a message</label>
-                </div>
+                <div id="txtHint"><b>Pick a category to see possible descriptions</b></div>
+                
             </fieldset>
+            <input type="submit" style="margin-left: 45%" value="Check Suggestion">
         </form>
-        <button type="submit" style="margin-left: 40%">Check Suggestion</button>
     </div>
+    <script>
+        
+    </script>
 </body>
 
 </html>
