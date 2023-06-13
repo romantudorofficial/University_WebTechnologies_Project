@@ -51,12 +51,12 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="respectful_comm.php">Respectful Communication</a></li>
         <li><a href="active_listening.php">Active Listening</a></li>
         <li><a href="privacy.php">Privacy and Consent</a></li>
         <li><a href="diversity.php">Diversity and Inclusion</a></li>
-        <li><a href="conflicts.php">Conflict Resolution</a></li>
+        <li><a href="conflicts.php" class="active">Conflict Resolution<span class="medium"> 🟡 </span></a></li>
         <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
         <li><a href="sharing_content.php">Etiquette in Sharing Content</a></li>
         <li><a href="mods.php">Engaging with Moderators</a></li>
@@ -64,7 +64,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
+        <h1> Conflict Resolution </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -72,39 +72,39 @@
                 });
             </script>
         </h2>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <p>Conflict is inevitable in any community, including virtual ones. Disagreements and differences of 
+            opinion can arise, and it is essential to address them in a respectful and constructive manner. 
+            Conflict resolution skills play a crucial role in maintaining harmony and a positive atmosphere 
+            within virtual communities.</p><br>
+        <p>When conflicts arise, it is important to engage in calm and respectful discussions. Avoid resorting 
+            to personal attacks, insults, or inflammatory language. Instead, focus on the issues being discussed 
+            and present your viewpoints in a clear and logical manner.</p><br>
+        <p>Listen actively to the perspectives of others involved in the conflict. Seek to understand their viewpoints 
+            and the underlying reasons for their positions. By demonstrating empathy and respect, you can create an 
+            environment that encourages open dialogue and collaboration.</p><br>
+        <p>Look for common ground and areas of agreement. Find ways to work towards a mutually beneficial solution or 
+            compromise. It may be helpful to identify shared goals or values that can be the basis for finding 
+            common understanding.</p><br>
+        <p>In situations where conflicts escalate or become unmanageable, it is advisable to seek the assistance of 
+            community moderators or administrators. They can provide guidance and facilitate the resolution process. 
+            It is important to follow the guidelines and procedures established by the community to address conflicts 
+            effectively.</p><br>
+        <p>By actively participating in conflict resolution with a respectful and constructive mindset, you contribute 
+            to a healthier and more positive virtual community environment.</p><br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q6"> What is an important aspect of conflict resolution in virtual communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <label for="emoji">Personal attacks and insults</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <label for="emoticon">Calm and constructive discussions</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <label for="emoticon">Ignoring conflicts and avoiding them</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>

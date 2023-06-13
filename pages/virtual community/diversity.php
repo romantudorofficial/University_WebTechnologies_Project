@@ -51,11 +51,11 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="respectful_comm.php">Respectful Communication</a></li>
         <li><a href="active_listening.php">Active Listening</a></li>
         <li><a href="privacy.php">Privacy and Consent</a></li>
-        <li><a href="diversity.php">Diversity and Inclusion</a></li>
+        <li><a href="diversity.php" class="active">Diversity and Inclusion<span class="medium"> 🟡 </span></a></li>
         <li><a href="conflicts.php">Conflict Resolution</a></li>
         <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
         <li><a href="sharing_content.php">Etiquette in Sharing Content</a></li>
@@ -64,7 +64,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
+        <h1> Diversity and Inclusion </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -72,39 +72,36 @@
                 });
             </script>
         </h2>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <p>Virtual communities thrive on diversity and inclusion. They bring together individuals from various backgrounds,
+             cultures, experiences, and perspectives. Embracing and celebrating this diversity is essential for creating a 
+             vibrant and enriching community environment.</p><br>
+        <p>In a virtual community, diversity contributes to a more comprehensive and multifaceted understanding of different
+             topics and issues. It allows for a broader range of ideas, insights, and solutions to be shared. By appreciating 
+             and valuing the diverse perspectives within the community, you encourage meaningful discussions and foster a culture
+              of inclusivity.</p><br>
+        <p>To promote diversity and inclusion in virtual communities, it is important to respect and embrace the differences among 
+            community members. Avoid discrimination or exclusion based on factors such as race, ethnicity, gender, sexual orientation, 
+            religion, nationality, or any other characteristic. Treat all individuals with respect and fairness, regardless of their 
+            background or beliefs.</p><br>
+        <p>Encourage a welcoming environment where everyone feels comfortable expressing their thoughts and sharing their experiences. 
+            Be open-minded and willing to learn from others, even if their perspectives differ from your own. Engage in constructive 
+            dialogue and seek common ground to promote understanding and collaboration.</p><br>
+        <p>By fostering diversity and inclusion in virtual communities, you contribute to the growth and development of a dynamic 
+            and vibrant space that encourages mutual respect, empathy, and shared learning.</p><br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q5"> Why is diversity important in virtual communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <label for="emoji">To encourage discrimination</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To create an echo chamber</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">To foster a vibrant and inclusive environment</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -114,7 +111,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("C").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }

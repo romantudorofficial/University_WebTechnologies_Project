@@ -51,10 +51,10 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="respectful_comm.php">Respectful Communication</a></li>
         <li><a href="active_listening.php">Active Listening</a></li>
-        <li><a href="privacy.php">Privacy and Consent</a></li>
+        <li><a href="privacy.php" class="active">Privacy and Consent<span class="medium"> 🟡 </span></a></li>
         <li><a href="diversity.php">Diversity and Inclusion</a></li>
         <li><a href="conflicts.php">Conflict Resolution</a></li>
         <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
@@ -64,7 +64,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
+        <h1> Privacy and Consent </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -72,39 +72,34 @@
                 });
             </script>
         </h2>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <p>Respecting privacy and obtaining consent are fundamental principles in virtual communities. As online 
+            spaces where personal information can be easily shared and accessed, it's crucial to be mindful of others' 
+            privacy and to seek explicit permission when sharing information or content.</p><br>
+        <p>When interacting in virtual communities, always consider the privacy implications of your actions. Refrain 
+            from sharing personal information about others without their consent. Recognize that individuals have different 
+            comfort levels when it comes to privacy, and it's essential to respect their boundaries.</p><br>
+        <p>Before sharing personal information or content belonging to someone else, seek explicit permission. This 
+            applies to sharing photographs, videos, personal stories, or any other form of content that is not your own. 
+            Be respectful and considerate, ensuring that you have received consent from the appropriate individuals.</p><br>
+        <p>It's also essential to be mindful of the privacy settings and guidelines of the virtual community platform you are 
+            using. Familiarize yourself with the platform's policies regarding privacy and adhere to them. These policies are 
+            in place to protect users' personal information and maintain a safe environment for everyone.</p><br>
+        <p>By practicing respect for privacy and consent, you contribute to the creation of a virtual community where individuals 
+            feel safe, secure, and respected.</p><br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q4"> What should you do before sharing personal information about someone in a virtual community?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">Seek explicit permission</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">Share it freely</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <label for="emoticon">Assume it's already public</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -114,7 +109,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("A").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }

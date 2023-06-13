@@ -51,20 +51,20 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Introduction</a></li>
         <li><a href="respectful_comm.php">Respectful Communication</a></li>
         <li><a href="active_listening.php">Active Listening</a></li>
         <li><a href="privacy.php">Privacy and Consent</a></li>
         <li><a href="diversity.php">Diversity and Inclusion</a></li>
         <li><a href="conflicts.php">Conflict Resolution</a></li>
-        <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
+        <li><a href="plagiarism.php" class="active">Crediting and Plagiarism<span class="medium"> 🟡 </span></a></li>
         <li><a href="sharing_content.php">Etiquette in Sharing Content</a></li>
         <li><a href="mods.php">Engaging with Moderators</a></li>
         <li><a href="good_com_member.php">Being a Good Community Member</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
+        <h1> Crediting and Plagiarism </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -72,39 +72,38 @@
                 });
             </script>
         </h2>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <p>Virtual communities are often hubs of creativity and knowledge sharing. It is essential to uphold 
+            ethical standards when using the work, ideas, or content of others within these communities. Crediting 
+            the original creators and avoiding plagiarism are key aspects of maintaining trust and fairness.</p><br>
+        <p>Whenever you use someone else's work or ideas, it is important to provide proper attribution. This includes 
+            citing the original source, giving credit to the author or creator, and acknowledging their intellectual 
+            contributions. By doing so, you show respect for their efforts and ensure transparency within the 
+            community.</p><br>
+        <p>Plagiarism, which involves presenting someone else's work as your own without proper attribution, is 
+            unacceptable. It undermines the integrity of the virtual community and violates intellectual property 
+            rights. Avoid copying and pasting content from others without permission or without acknowledging the 
+            original source. Instead, strive to create original contributions or adapt existing work while giving 
+            credit where it is due.</p><br>
+        <p>Respecting intellectual property rights extends to academic integrity as well. If you are a student or 
+            engaging in academic discussions within the virtual community, ensure that you adhere to the guidelines 
+            set by your educational institution. Properly cite sources, provide references, and avoid any form of 
+            plagiarism.</p><br>
+        <p>By upholding ethical standards related to crediting and plagiarism, you contribute to a virtual community 
+            that values originality, fosters trust, and respects intellectual property rights.</p><br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q7"> What should you do when using someone else's work in a virtual community?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <label for="emoji">Plagiarize it</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">Modify it and claim it as your own</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">Provide proper attribution</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -114,7 +113,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("C").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }

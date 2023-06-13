@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title> Emoji Tutorial </title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Virtual communities Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
     <script src="../../services/functionsForAjax.js"></script>
@@ -16,9 +16,9 @@
         <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
         </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
-        <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
+        <li> <a href="../virtual community/introduction.php" class="active">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php">Emoji</a> </li>
-        <li> <a href="../video conferences/introduction.php" class="active">Video Conferences</a> </li>
+        <li> <a href="../video conferences/introduction.php">Video Conferences</a> </li>
         <li> <a href="../culture/introduction.php">Culture</a> </li>
         <li> <a href="../multilingualism/introduction.php">Multilingualism</a> </li>
         <li>
@@ -50,21 +50,21 @@
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
-        <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
-        <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
-        <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
-        <li><a href="environment.php">Find a Suitable Environment</a></li>
-        <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
-        <li><a href="listening.php">Use Active Listening Skills</a></li>
-        <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
-        <li><a href="engaging.php">Engage and Participate Actively</a></li>
-        <li><a href="language.php">Use Clear and Concise Language</a></li>
-        <li><a href="end_meeting.php">Wrap Up the Meeting Appropriately</a></li>
+        <li class="titleLesson">Norms in virtual communities</li>
+        <li><a href="introduction.php">Introduction</a></li>
+        <li><a href="respectful_comm.php">Respectful Communication</a></li>
+        <li><a href="active_listening.php" class="active">Active Listening<span class="easy"> 🟢 </span></a></li>
+        <li><a href="privacy.php">Privacy and Consent</a></li>
+        <li><a href="diversity.php">Diversity and Inclusion</a></li>
+        <li><a href="conflicts.php">Conflict Resolution</a></li>
+        <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
+        <li><a href="sharing_content.php">Etiquette in Sharing Content</a></li>
+        <li><a href="mods.php">Engaging with Moderators</a></li>
+        <li><a href="good_com_member.php">Being a Good Community Member</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
+        <h1> Active Listening </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -72,24 +72,34 @@
                 });
             </script>
         </h2>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <p>Active listening is a crucial skill in virtual communities. It goes beyond simply hearing what someone is 
+            saying or reading their messages. Active listening involves giving your full attention to the speaker or writer, 
+            understanding their perspective, and responding in a thoughtful manner.</p> <br>
+        <p>In virtual communities, active listening plays a significant role in fostering understanding and constructive dialogue. 
+            It helps prevent misunderstandings and allows community members to engage in meaningful conversations. When actively 
+            listening, you show respect for others' opinions, demonstrate empathy, and create an environment where everyone's voice 
+            is heard.</p> <br>
+        <p>To practice active listening, start by focusing on the speaker or writer's message without distractions. Give them 
+            your undivided attention and refrain from interrupting or interjecting prematurely. Avoid making assumptions or jumping 
+            to conclusions. Instead, seek clarification by asking questions to ensure that you understand their viewpoints accurately.</p> <br>
+        <p>It's important to remember that virtual communication lacks non-verbal cues, such as facial expressions or body language. 
+            To compensate for this, pay close attention to the tone and context of the message. If something seems unclear or ambiguous, 
+            ask for clarification politely. By actively listening and seeking to understand, you contribute to a more inclusive and 
+            respectful virtual community.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q3"> Why is active listening important in virtual communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <label for="emoji">To dominate conversations</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <label for="emoticon">To encourage constructive dialogue and understanding</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <label for="emoticon">To win arguments</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>

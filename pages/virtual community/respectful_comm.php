@@ -51,8 +51,8 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Norms in virtual communities</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
-        <li><a href="respectful_comm.php">Respectful Communication</a></li>
+        <li><a href="introduction.php">Introduction</a></li>
+        <li><a href="respectful_comm.php" class="active">Respectful Communication<span class="easy"> 🟢 </span></a></li>
         <li><a href="active_listening.php">Active Listening</a></li>
         <li><a href="privacy.php">Privacy and Consent</a></li>
         <li><a href="diversity.php">Diversity and Inclusion</a></li>
@@ -64,7 +64,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
+        <h1> Respectful Communication </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -72,39 +72,36 @@
                 });
             </script>
         </h2>
-        <p>Welcome to the world of virtual communities! In these online spaces, individuals from diverse 
-            backgrounds come together to share ideas, collaborate, and connect. However, to ensure a positive 
-            and respectful environment for everyone involved, it is crucial to understand and abide by certain norms. 
-            Let's explore some key aspects of virtual community norms. </p> <br>
-        <p>Virtual communities are vibrant ecosystems where people interact, share information, and build 
-            relationships through online platforms. These communities can be centered around various topics such 
-            as hobbies, professional interests, social causes, or even specific fandoms. They offer a space for 
-            individuals to connect with like-minded people, engage in discussions, and contribute their unique perspectives.</p> <br>
-        <p>To maintain a healthy and thriving virtual community, it is important to establish and follow certain norms or guidelines. 
-            These norms serve as a framework for behavior and interaction within the community, fostering respect, inclusivity, and
-             productive engagement.</p> <br>
-        <p>One of the fundamental purposes of virtual community norms is to foster a positive and respectful environment. 
-            Online platforms often lack the face-to-face interactions that provide context and non-verbal cues, making it 
-            crucial to set clear expectations for communication and behavior. These norms help create a sense of safety and 
-            trust among community members, enabling constructive dialogue and discouraging toxic or harmful behavior.</p> <br>
-        <p> Virtual community norms are not meant to stifle freedom of expression but rather to strike a balance between
-             freedom and responsibility. They encourage individuals to express their opinions, ideas, and creativity while
-              respecting the rights and boundaries of others. By adhering to these norms, members can build a community that
-               values diversity, encourages collaboration, and promotes personal growth.</p> <br>
+        <p>Respectful communication forms the cornerstone of virtual communities. When interacting with others, it's 
+            essential to be mindful of your language, tone, and overall approach. Since online communication lacks 
+            non-verbal cues like facial expressions and body language, it's important to pay extra attention to how
+             you express yourself to avoid misunderstandings and unintended offense. </p> <br>
+        <p>In virtual communities, everyone has the right to express their opinions and engage in discussions. However, 
+            it is vital to do so in a respectful manner, even when disagreeing with others. Avoid resorting to offensive
+             or derogatory language, personal attacks, or disrespectful behavior. Instead, focus on the ideas being discussed 
+             and engage in constructive dialogue.</p> <br>
+        <p>Actively listening to others is a key aspect of respectful communication in virtual communities. When someone is 
+            speaking or expressing their thoughts, give them your full attention. Avoid interrupting or dismissing their viewpoints. 
+            Instead, show genuine interest by asking clarifying questions or seeking further understanding. This demonstrates respect 
+            for their perspectives and promotes a healthy exchange of ideas.</p> <br>
+        <p>Remember that virtual communities consist of individuals from diverse backgrounds, cultures, and experiences.
+             Embrace this diversity and practice empathy when communicating. Put yourself in others' shoes, try to understand
+              their viewpoints, and be open to learning from different perspectives. By engaging in respectful communication,
+               you contribute to a positive and inclusive community atmosphere.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> What is the purpose of virtual community norms?</legend>
+            <legend for="Q2"> What is the importance of respectful communication in virtual communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To restrict freedom of expression</label>
+                <label for="emoji">To have fun</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a positive and respectful environment</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To showcase one's intelligence</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To promote anonymity</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">To foster understanding and prevent misunderstandings</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -114,7 +111,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("C").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }

@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
-    <title> Emoji Tutorial </title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title> Virtual communities Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
     <script src="../../services/functionsForAjax.js"></script>
@@ -16,9 +16,9 @@
         <li><a href="../lessonsProj.php" id="home"> <img src="../../assets\images/HomeLogo.png" alt="home icon"> </a>
         </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
-        <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
+        <li> <a href="../virtual community/introduction.php" class="active">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php">Emoji</a> </li>
-        <li> <a href="../video conferences/introduction.php" class="active">Video Conferences</a> </li>
+        <li> <a href="../video conferences/introduction.php">Video Conferences</a> </li>
         <li> <a href="../culture/introduction.php">Culture</a> </li>
         <li> <a href="../multilingualism/introduction.php">Multilingualism</a> </li>
         <li>
@@ -50,21 +50,21 @@
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
-        <li class="titleLesson">Behaviour during Video Conferences</li>
-        <li><a href="introduction.php" class="active">Introduction<span class="easy"> 🟢 </span></a></li>
-        <li><a href="test_tech.php">Prepare and Test Your Technology</a></li>
-        <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
-        <li><a href="environment.php">Find a Suitable Environment</a></li>
-        <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
-        <li><a href="listening.php">Use Active Listening Skills</a></li>
-        <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
-        <li><a href="engaging.php">Engage and Participate Actively</a></li>
-        <li><a href="language.php">Use Clear and Concise Language</a></li>
-        <li><a href="end_meeting.php">Wrap Up the Meeting Appropriately</a></li>
+        <li class="titleLesson">Norms in virtual communities</li>
+        <li><a href="introduction.php">Introduction</a></li>
+        <li><a href="respectful_comm.php">Respectful Communication</a></li>
+        <li><a href="active_listening.php">Active Listening</a></li>
+        <li><a href="privacy.php">Privacy and Consent</a></li>
+        <li><a href="diversity.php">Diversity and Inclusion</a></li>
+        <li><a href="conflicts.php">Conflict Resolution</a></li>
+        <li><a href="plagiarism.php">Crediting and Plagiarism</a></li>
+        <li><a href="sharing_content.php">Etiquette in Sharing Content</a></li>
+        <li><a href="mods.php">Engaging with Moderators</a></li>
+        <li><a href="good_com_member.php" class="active">Being a Good Community Member<span class="hard"> 🔴 </span></a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Introduction </h1> <br>
+        <h1> Being a Good Community Member </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -72,24 +72,36 @@
                 });
             </script>
         </h2>
-        <p>Video conferences have become an integral part of our professional and personal lives, 
-            especially with the rise of remote work and virtual meetings. Proper behavior during video conferences 
-            is crucial for effective communication, maintaining professionalism, and creating a positive virtual environment. 
-            In this lesson, we will explore some key etiquette guidelines to ensure successful video conferences.</p> <br>
+        <p>Being a good member of a virtual community entails actively contributing in positive ways. By practicing 
+            good citizenship, you can foster a welcoming and supportive environment where everyone feels valued and 
+            respected.</p><br>
+        <p>One way to be a good community member is to actively participate and contribute your knowledge and experiences. 
+            Share insights, ask questions, and engage in meaningful discussions. Contribute to the community's growth and 
+            learning by sharing valuable resources or offering guidance to others.</p><br>
+        <p>Supporting fellow community members is another vital aspect of being a good member. Be kind, respectful, and 
+            inclusive in your interactions. Offer encouragement, help, and constructive feedback when appropriate. Celebrate 
+            the achievements and contributions of others, fostering a sense of camaraderie within the community.</p><br>
+        <p>Respect the community's guidelines and norms. Familiarize yourself with the rules and adhere to them. Be mindful 
+            of your language, tone, and behavior, ensuring they align with the community's expectations. If you notice any 
+            violations or inappropriate behavior, report it to the moderators in a timely and respectful manner.</p><br>
+        <p>Lastly, foster a culture of appreciation and gratitude. Acknowledge and express gratitude for the contributions 
+            and efforts of others. Recognize the value they bring to the community and the positive impact they have.</p><br>
+        <p>By embodying the principles of good citizenship, you contribute to the growth, positivity, and sustainability of 
+            the virtual community you are a part of.</p><br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is proper behavior important during video conferences?</legend>
+            <legend for="Q10"> What is an important aspect of being a good community member?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To distract other participants</label>
+                <label for="emoji">Engaging in conflicts and arguments</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To maintain professionalism and effective communication</label>
+                <label for="emoticon">Actively participating and contributing</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To dominate the conversation</label>
+                <label for="emoticon">Ignoring community guidelines</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>

@@ -17,8 +17,8 @@
         </li>
         <li> <a href="../messages/introduction.php">Messages</a> </li>
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
-        <li> <a href="../emoji/introduction.php" class="active">Emoji</a> </li>
-        <li> <a href="../video conferences/introduction.php">Video Conferences</a> </li>
+        <li> <a href="../emoji/introduction.php">Emoji</a> </li>
+        <li> <a href="../video conferences/introduction.php" class="active">Video Conferences</a> </li>
         <li> <a href="../culture/introduction.php">Culture</a> </li>
         <li> <a href="../multilingualism/introduction.php">Multilingualism</a> </li>
         <li>
@@ -50,18 +50,21 @@
     </ul>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
-        <li class="titleLesson">How to use emojis</li>
+        <li class="titleLesson">Behaviour during Video Conferences</li>
         <li><a href="introduction.php">Introduction</a></li>
-        <li><a href="brief_history.php">Brief history</a></li>
-        <li><a href="emoji_emoticon.php">Emoji vs Emoticon</a></li>
-        <li><a href="the_use_of_emojis.php">When (not) to use emojis</a></li>
-        <li><a href="different_generations.php">Their meaning to different generations</a></li>
-        <li><a href="rise_of_emoji.php">The new era of emojis</a></li>
-        <li><a href="advice.php" class="active">Rules<span class="hard"> 🔴 </span></a></li>
+        <li><a href="test_tech.php" class="active">Prepare and Test Your Technology<span class="easy"> 🟢 </span></a></li>
+        <li><a href="dress_n_backgr.php">Dress Professionally and Consider Your Background</a></li>
+        <li><a href="environment.php">Find a Suitable Environment</a></li>
+        <li><a href="eye_contact.php">Establish and Maintain Eye Contact</a></li>
+        <li><a href="listening.php">Use Active Listening Skills</a></li>
+        <li><a href="interruptions.php">Respect Speaking Turns and Avoid Interruptions</a></li>
+        <li><a href="engaging.php">Engage and Participate Actively</a></li>
+        <li><a href="language.php">Use Clear and Concise Language</a></li>
+        <li><a href="end_meeting.php">Wrap Up the Meeting Appropriately</a></li>
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> Rules </h1>
+        <h1> Prepare and Test Your Technology </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -69,37 +72,25 @@
                 });
             </script>
         </h2>
-        <p>
-            This is fast moving ground. Early adopters were teenagers (particularly girls), but now most adults have
-            used them “at least once”. On the whole, they’re still a “no-no” at work. That especially includes your
-            boss, who will almost certainly mistakenly think you’re flirting with him/her.
-        </p>
-        <p>
-            Emojis are frivolous, quirky, cute and fun—great for pre-evening-out banter. Not so good when it’s time to
-            be serious or when sad times are afoot.
-        </p>
-        <img src="https://www.readersdigest.co.uk/media/images/Anna/emoji-keyboard.jpg" alt="A nice picture of emojis"
-            class="picturesLessons">
-        <h3>
-            Bear these simple rules in mind when using Emojis:
-        </h3>
-        <p> - Emojis come at the end of the sentence if they’re conveying an emotion</p>
-        <p> - They can appear in the middle of a sentence too, but only if they’re replacing a word</p>
-        <p> - Emojis are not full stops. Don’t use them as full stops</p>
-        <p> - If you’re using a string of Emojis the order matters. For example, we weep first and then we have a
-            broken heart. And make sure the barrel of the Emoji gun is pointing the right direction.</p>
-        <p> - Another point of order: A single Emoji reply says, “I’m too busy for you” or “I can’t be bothered to
-            reply”. That might be fine, but bear it in mind</p>
+        <p>Before joining a video conference, it is crucial to ensure that your technology is prepared and tested. 
+            Technical difficulties can disrupt the flow of the meeting and hinder effective communication. Take the 
+            time to check your camera, microphone, and speakers to ensure they are functioning correctly. Verify that 
+            your internet connection is stable and capable of supporting a smooth video conference experience. By being 
+            well-prepared, you can actively participate in the conference and avoid unnecessary interruptions or delays.</p> <br>
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Does the order of emojis matter?</legend>
+            <legend for="Q2"> Why is it important to prepare and test your technology before a video conference?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="option" checked>
-                <label for="option">yes</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To participate actively and avoid technical difficulties</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="option" checked>
-                <label for="option">no</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To keep your camera turned off throughout the call</label>
+            </div>
+            <div>
+                <input type="radio" id="C" name="option" value="wrong" checked>
+                <label for="emoticon">To intentionally disrupt the meeting</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -123,8 +114,6 @@
             }
         }
     </script>
-    </div>
-    </div>
 </body>
 
 </html>
