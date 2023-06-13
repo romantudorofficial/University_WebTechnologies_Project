@@ -1,8 +1,8 @@
-#contentEditor{
+.contentEditor{
     text-align: center;
 }
 
-input , label , textarea{
+label{
     display: block;
     text-align: center;
 }
