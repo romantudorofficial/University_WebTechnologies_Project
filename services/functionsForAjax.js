@@ -28,7 +28,7 @@ function sendUsingAjax(caseSave) {
                 showFinished(this.responseText);
                 window.finishedLesson = this.response == 1 ? true : false;
             }
-            else if(caseSave==1){
+            else if (caseSave == 1) {
                 defining(results[1]);
             }
         }
@@ -61,14 +61,25 @@ function checkAnswer(answer) {
 
 function defining(difficulty) {
     var score = 0;
-    if (str_contains(difficulty, 'easy')) {
+    if (difficulty.includes('easy')) {
         score = 2;
     }
-    else if (str_contains(difficulty, 'medium')) {
+    else if (difficulty.includes('medium')) {
         score = 5;
     }
     else {
         score = 10;
     }
-    //alert(score);
+    raisingScore(score);
+}
+
+function raisingScore(score) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            alert(this.responseText);
+        }
+    };
+    xmlhttp.open("GET", "http://localhost/University_WebTechnologies_Project/services/addingPoints.php?score=" + score, true);
+    xmlhttp.send();
 }
