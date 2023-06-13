@@ -151,6 +151,10 @@
 
 <?php
 
+    ### Update the profile information.
+
+    # To be repaired.
+
     $initialEmail = 'tudorgalatan@gmail.com';
 
 
@@ -184,4 +188,36 @@
             die("Error - Update User's Extended Information");
     }
 
+?>
+
+
+
+<?php
+    
+    ### Display the data of the fields in the database.
+
+
+    # Get the data from the database.
+
+    include_once 'connection.php';
+
+    $database = connect();
+
+    $email = 'tudorgalatan@gmail.com';      # ?
+    $userId = getId($email);
+
+    $firstName = $mysql->query('SELECT firstName FROM users WHERE id_user = $userId');
+    $lastName = $mysql->query('SELECT lastName FROM users WHERE id_user = $userId');
+    $email = $mysql->query('SELECT email FROM users WHERE id_user = $userId');
+    $nationality = $mysql->query('SELECT nationality FROM user_info WHERE id_user = $userId');
+    $countryOfResidence = $mysql->query('SELECT countryResidence FROM user_info WHERE id_user = $userId');
+    $gender = $mysql->query('SELECT gender FROM user_info WHERE id_user = $userId');
+    $occupation = $mysql->query('SELECT occupation FROM user_info WHERE id_user = $userId');
+    $socialStatus = $mysql->query('SELECT socialStatus FROM user_info WHERE id_user = $userId');
+    $religion = $mysql->query('SELECT religion FROM user_info WHERE id_user = $userId');
+
+
+    # Display the data from the database on the page.
+
+    
 ?>
