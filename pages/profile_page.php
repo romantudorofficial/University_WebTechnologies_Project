@@ -151,17 +151,37 @@
 
 <?php
 
+    $initialEmail = 'tudorgalatan@gmail.com';
+
+
     if (isset($_POST['submit']))
     {
+        # Get the input from the user.
+
         $firstName = $_POST['first-name'];
         $lastName = $_POST['last-name'];
-        $email = $_POST['email'];
+        $newEmail = $_POST['email'];
         $nationality = $_POST['nationality'];
         $countryOfResidence = $_POST['country-of-residence'];
         $gender = $_POST['gender'];
         $occupation = $_POST['occupation'];
         $socialStatus = $_POST['social-status'];
         $religion = $_POST['religion'];
+
+
+        # Update the database with the new data.
+        
+        include_once '../db/getting_info.php';
+        include_once '../db/adding_data.php';
+        
+        $mysql = connect();
+        $id = getId($initialEmail);
+        
+        if (!updateUserBasicInformation($mysql, $initialEmail, $newEmail, $firstName, $lastName))
+            die("Error - Update User's Basic Information");
+
+        if (!updateUserExtendedInformation($mysql, $email, $nationality, $countryOfResidence, $gender, $occupation, $socialStatus, $religion))
+            die("Error - Update User's Extended Information");
     }
 
 ?>

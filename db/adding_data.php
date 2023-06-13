@@ -43,4 +43,36 @@ function addUserInfo($mysql, $id){
     }
     return true;
 }
+
+
+
+function updateUserBasicInformation ($mysql, $initialEmail, $newEmail, $firstName, $lastName)
+{
+    $userId = getId($initialEmail);
+    
+    if (($result = $mysql->query("UPDATE users
+        SET firstName = $firstName, lastName = $lastName, email = $newEmail
+        WHERE id_user = $userId")))
+
+        return true;
+    
+    return false;
+}
+
+
+
+function updateUserExtendedInformation ($mysql, $email, $nationality, $countryOfResidence, $gender, $occupation, $socialStatus, $religion)
+{
+    $userId = getId($email);
+
+    if (($result = $mysql->query("UPDATE user_info
+        SET nationality = $nationality, countryResidence = $countryOfResidence, gender = $gender,
+        occupation = $occupation, socialStatus = $socialStatus, religion = $religion
+        WHERE id_user = $userId")))
+
+        return true;
+    
+    return false;
+}
+
 ?>

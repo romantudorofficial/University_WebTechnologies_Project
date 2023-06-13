@@ -92,8 +92,14 @@ function returnTypeSign($email)
     return $name;
 }
 
-function getId($email){
+
+
+function getId ($email)
+{
+    $id = null;
+
     $mysql = connect();
+    
     if (!($rez = $mysql->query('select id_user from users where email like "' . $email . '"'))) {
         die('A survenit o eroare la interogare');
     }
@@ -101,6 +107,8 @@ function getId($email){
         $id = $inreg["id_user"];
         break;
     }
+    
     return $id;
 }
+
 ?>
