@@ -28,6 +28,9 @@ function sendUsingAjax(caseSave) {
                 showFinished(this.responseText);
                 window.finishedLesson = this.response == 1 ? true : false;
             }
+            else if(caseSave==1){
+                defining(results[1]);
+            }
         }
     };
     xmlhttp.open("GET", "http://localhost/University_WebTechnologies_Project/services/connectionFrontBack.php?c=" + results[0] + "&l=" + results[1] + "&save=" + caseSave, true);
@@ -54,4 +57,18 @@ function checkAnswer(answer) {
         document.getElementById("answer").innerHTML = "You already completed this lesson!";
         document.getElementById("answer").style.color = "green";
     }
+}
+
+function defining(difficulty) {
+    var score = 0;
+    if (str_contains(difficulty, 'easy')) {
+        score = 2;
+    }
+    else if (str_contains(difficulty, 'medium')) {
+        score = 5;
+    }
+    else {
+        score = 10;
+    }
+    //alert(score);
 }
