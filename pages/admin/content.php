@@ -69,7 +69,7 @@
                 <label for="answer">Correct Answer:</label>
                 <input name="answer"></input>
             </form>
-            <button type="submit">Add content</button>
+            <button class="backButton" type="submit">Add content</button>
             <button class="backButton"><a href="add.php">Back</a></button>
             <button class="backButton"><a href="menu.php">Admin Page</a></button>
         </div>
