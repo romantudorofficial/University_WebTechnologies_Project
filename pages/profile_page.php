@@ -137,7 +137,7 @@
 
             <br />
 
-            <input type="submit" value="Save Details" class="save-details-button" />
+            <input type="submit" name = "submit" value="Save Details" class="save-details-button" />
 
         </form>
 
@@ -146,3 +146,22 @@
 </body>
 
 </html>
+
+
+
+<?php
+
+    if (isset($_POST['submit']))
+    {
+        $firstName = $_POST['first-name'];
+        $lastName = $_POST['last-name'];
+        $email = $_POST['email'];
+        $nationality = $_POST['nationality'];
+        $countryOfResidence = $_POST['country-of-residence'];
+        $gender = $_POST['gender'];
+        $occupation = $_POST['occupation'];
+        $socialStatus = $_POST['social-status'];
+        $religion = $_POST['religion'];
+    }
+
+?>
