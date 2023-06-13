@@ -41,10 +41,17 @@ function checkAnswer(answer) {
     if (!finishedLesson) {
         if (answer) {
             sendUsingAjax(1);
+            document.getElementById("answer").innerHTML = "Congratulations! You completed this lesson!";
+            document.getElementById("answer").style.color = "blue";
+            showFinished(1);
         }
         else {
             document.getElementById("answer").innerHTML = "You must answer this question CORRECTLY";
             document.getElementById("answer").style.color = "red";
         }
+    }
+    else {
+        document.getElementById("answer").innerHTML = "You already completed this lesson!";
+        document.getElementById("answer").style.color = "green";
     }
 }

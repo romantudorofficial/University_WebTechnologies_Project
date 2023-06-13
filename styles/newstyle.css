@@ -1,0 +1,8 @@
+#contentEditor{
+    text-align: center;
+}
+
+input , label , textarea{
+    display: block;
+    text-align: center;
+}

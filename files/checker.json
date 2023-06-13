@@ -20,6 +20,30 @@
                 "email": [
                     "catalina.tiger25@gmail.com"
                 ]
+            },
+            {
+                "nameLesson": "Their meaning to different generations<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "The new era of emojis<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "When (not) to use emojis<span class=\"easy\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Emoji vs Emoticon<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
             }
         ]
     },
@@ -43,6 +67,17 @@
                 "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
                     "marimari@yahoo.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Messages",
+        "lessons": [
+            {
+                "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
                 ]
             }
         ]

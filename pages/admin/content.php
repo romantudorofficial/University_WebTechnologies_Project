@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="../../styles/main_style.css" />
         <link rel="stylesheet" href="../../styles/lessons_style.css" />
         <link rel="stylesheet" href="../../styles/admin_style.css" />
+        
     </head>
 
     <body>
@@ -42,20 +43,32 @@
                 the images will always be placed in the center.</p>
             <form action="" class="contentEditor">
                 <label for="categoryName">Write the whole category name:</label>
-                <input name="categoryName" id="categoryName"></input><br>
+                <input name="categoryName" id="categoryName"></input>
                 <label for="title">Write the title:</label>
-                <input name="title" id="title"></input><br>
-                <label for="content">Write the content:</label><br>
+                <input name="title" id="title"></input>
+                <label for="content">Write the content:</label>
                 <textarea name="content" rows="10" cols="60"></textarea><br>
+
+                <div class="helper"></div>
+
                 <!-- To select questions or image or content -> then adding what is necesary-->
-                <img class="adminPageIcons addMoreContent" src="../../assets/images/pen.png">
-                <img class="adminPageIcons addMoreQuestions" src="../../assets/images/question.png">
+                <img class="adminPageIcons addMoreContent" src="../../assets/images/pen.png" onclick="addImage()">
                 <img class="adminPageIcons addMoreImages" src="../../assets/images/picture.png">
             </form>
             <button type="submit">Add content</button>
             <button class="backButton"><a href="add.php">Back</a></button>
             <button class="backButton"><a href="menu.php">Admin Page</a></button>
         </div>
+        <script>
+            function addImage(){
+                var div =document.getElementById("helper");
+                alert("intra");
+                const node1 =document.createElement("label");
+                const text =document.createTextNode("Paste the URL below:");
+                node1.appendChild(text);
+                div.appendChild(node1);
+            }
+        </script>
     </body>
 
 </php>
