@@ -55,7 +55,8 @@
             {
                 "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
-                    "elenaberbeci@gmail.com"
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
                 ]
             }
         ]
@@ -89,6 +90,49 @@
         "lessons": [
             {
                 "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com",
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "How to text someone for the first time professionally<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "When is it acceptable to take your sweet time to reply?<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Group text message etiquette<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Why abbreviate?<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "olesea@gmail.com",
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Frequently asked texting do\u2019s and don\u2019ts questions (FAQ)<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "olesea@gmail.com",
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Texting etiquette: The 10 do\u2019s and don\u2019ts<span class=\"hard\"> \ud83d\udd34 <\/span>",
                 "email": [
                     "catalina.tiger25@gmail.com"
                 ]

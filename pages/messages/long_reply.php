@@ -183,7 +183,6 @@
             }
         }
     </script>
-    </div>
 </body>
 
 </html>

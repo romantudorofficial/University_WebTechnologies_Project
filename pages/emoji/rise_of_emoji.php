@@ -155,7 +155,6 @@
             }
         }
     </script>
-    </div>
 </body>
 
 </html>

@@ -205,7 +205,6 @@
             }
         }
     </script>
-    </div>
 </body>
 
 </html>
