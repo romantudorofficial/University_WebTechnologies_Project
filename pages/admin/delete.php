@@ -44,6 +44,7 @@
                     <option value="messages">Messages</option>
                 </select>
             </form>
+            <button type="submit">Delete Category</button>
             <p class="info"> If you want to delete a lesson:</p>
             <form action="">
                 <label for="category">Choose a lesson:</label>

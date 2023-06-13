@@ -6,6 +6,7 @@
     <title> Emoji Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
+    <script src="../../services/functionsForAjax.js"></script>
 </head>
 
 <body>
@@ -61,6 +62,13 @@
     <!-- The content of this page -->
     <div class="pageContent">
         <h1> Introduction </h1>
+        <h2 id="finished">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    sendUsingAjax(-1);
+                });
+            </script>
+        </h2>
         <p>
             Let's clear up some confusion first off:
             An "emoticon" is a typographic display of a facial expression, for example :-&par;.
@@ -93,19 +101,26 @@
                 <input type="radio" id="emoticon" name="option" value="emoticon" checked>
                 <label for="emoticon">:P</label>
             </div>
-            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
         </fieldset>
-        <button class="completeLesson">Complete Lesson</button>
+        <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
     </div>
     <!-- Just for demo -->
     <script>
-        function myFunction() {
-            if (document.getElementById("emoji").checked) {
-                document.getElementById("answer").innerHTML = "Your answer is correct";
+        function myFunction(validUser) {
+            if (validUser != 1) {
+                if (document.getElementById("emoji").checked) {
+                    document.getElementById("answer").innerHTML = "Your answer is correct";
+                    answeredCorrectly = true;
+                }
+                else {
+                    document.getElementById("answer").innerHTML = "Your answer is wrong";
+                    answeredCorrectly = false;
+                }
             }
             else {
-                document.getElementById("answer").innerHTML = "Your answer is wrong";
+                document.getElementById("answer").innerHTML = "You already answered this question";
             }
         }
     </script>

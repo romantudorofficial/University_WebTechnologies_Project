@@ -6,6 +6,7 @@
     <title> Emoji Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
+    <script src="../../services/functionsForAjax.js"></script>
 </head>
 
 <body>
@@ -61,6 +62,13 @@
     <!-- The content of this page -->
     <div class="pageContent">
         <h1> Introduction </h1>
+        <h2 id="finished">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    sendUsingAjax(-1);
+                });
+            </script>
+        </h2>
         <p>
             There’s anxiety around texting etiquette. When I talk to individuals and teams who text I always hear
             questions like:
@@ -107,18 +115,25 @@
                 <input type="radio" id="B" name="option" value="option" checked>
                 <label for="option">getting to be loved for how you write texts</label>
             </div>
-            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
         </fieldset>
-        <button class="completeLesson">Complete Lesson</button>
+        <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
     </div>
     <script>
-        function myFunction() {
-            if (document.getElementById("A").checked) {
-                document.getElementById("answer").innerHTML = "Your answer is correct";
+        function myFunction(validUser) {
+            if (validUser != 1) {
+                if (document.getElementById("A").checked) {
+                    document.getElementById("answer").innerHTML = "Your answer is correct";
+                    answeredCorrectly = true;
+                }
+                else {
+                    document.getElementById("answer").innerHTML = "Your answer is wrong";
+                    answeredCorrectly = false;
+                }
             }
             else {
-                document.getElementById("answer").innerHTML = "Your answer is wrong";
+                document.getElementById("answer").innerHTML = "You already answered this question";
             }
         }
     </script>

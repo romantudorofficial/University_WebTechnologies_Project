@@ -41,6 +41,7 @@
                 <label for="category">Choose a category:</label>
                 <input name="category" id="category"></input>
             </form>
+            <button type="submit">Add Category</button>
             <p class="info"> If you want to add a lesson:</p>
             <form action="">
                 <label for="category">Choose a lesson:</label>
@@ -51,7 +52,7 @@
                     <option value="messages">Messages</option>
                 </select>
             </form>
-            <button type="submit"><a href="content.php">Add Elements</a></button>
+            <button type="submit"><a href="content.php">Add Lesson</a></button>
             <button class="backButton"><a href="menu.php">Back</a></button>
         </div>
     </body>
