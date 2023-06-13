@@ -6,6 +6,7 @@
     <title> Virtual communities Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
+    <script src="../../services/functionsForAjax.js"></script>
 </head>
 
 <body>
@@ -64,6 +65,13 @@
     <!-- The content of this page -->
     <div class="pageContent">
         <h1> Engaging with Moderators </h1> <br>
+        <h2 id="finished">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    sendUsingAjax(-1);
+                });
+            </script>
+        </h2>
         <p>Virtual communities often have dedicated moderators who play a crucial role in maintaining a healthy 
             and inclusive environment. Engaging with moderators respectfully and cooperatively contributes to the 
             overall well-being of the community.</p><br>
@@ -96,18 +104,25 @@
                 <input type="radio" id="C" name="option" value="wrong" checked>
                 <label for="emoticon">Ignore their existence</label>
             </div>
-            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
         </fieldset>
-        <button class="completeLesson">Complete Lesson</button>
+        <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
     </div>
-    <script>
-        function myFunction() {
-            if (document.getElementById("B").checked) {
-                document.getElementById("answer").innerHTML = "Your answer is correct";
+    <script type="text/javascript">
+        function myFunction(validUser) {
+            if (validUser != 1) {
+                if (document.getElementById("B").checked) {
+                    document.getElementById("answer").innerHTML = "Your answer is correct";
+                    answeredCorrectly = true;
+                }
+                else {
+                    document.getElementById("answer").innerHTML = "Your answer is wrong";
+                    answeredCorrectly = false;
+                }
             }
             else {
-                document.getElementById("answer").innerHTML = "Your answer is wrong";
+                document.getElementById("answer").innerHTML = "You already answered this question";
             }
         }
     </script>

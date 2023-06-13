@@ -22,5 +22,29 @@
                 ]
             }
         ]
+    },
+    {
+        "nameCategory": "Video Conferences",
+        "lessons": [
+            {
+                "nameLesson": "Dress Professionally and Consider Your Background<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com",
+                    "marimari@yahoo.com"
+                ]
+            },
+            {
+                "nameLesson": "Find a Suitable Environment<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            },
+            {
+                "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "marimari@yahoo.com"
+                ]
+            }
+        ]
     }
 ]

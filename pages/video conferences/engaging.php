@@ -6,6 +6,7 @@
     <title> Emoji Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
+    <script src="../../services/functionsForAjax.js"></script>
 </head>
 
 <body>
@@ -64,6 +65,13 @@
     <!-- The content of this page -->
     <div class="pageContent">
         <h1> Engage and Participate Actively </h1> <br>
+        <h2 id="finished">
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    sendUsingAjax(-1);
+                });
+            </script>
+        </h2>
         <p>Active engagement and participation are key to a successful video conference. Contribute to the discussion
              by sharing your insights, asking relevant questions, and providing valuable input. Show enthusiasm and 
              interest in the topic being discussed. Your active participation not only adds value to the conversation
@@ -87,18 +95,25 @@
                 <input type="radio" id="C" name="option" value="wrong" checked>
                 <label for="emoticon">To ignore the meeting and remain passive</label>
             </div>
-            <button type="submit" onclick="myFunction()">Check Answer</button>
+            <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
         </fieldset>
-        <button class="completeLesson">Complete Lesson</button>
+        <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
     </div>
-    <script>
-        function myFunction() {
-            if (document.getElementById("A").checked) {
-                document.getElementById("answer").innerHTML = "Your answer is correct";
+    <script type="text/javascript">
+        function myFunction(validUser) {
+            if (validUser != 1) {
+                if (document.getElementById("A").checked) {
+                    document.getElementById("answer").innerHTML = "Your answer is correct";
+                    answeredCorrectly = true;
+                }
+                else {
+                    document.getElementById("answer").innerHTML = "Your answer is wrong";
+                    answeredCorrectly = false;
+                }
             }
             else {
-                document.getElementById("answer").innerHTML = "Your answer is wrong";
+                document.getElementById("answer").innerHTML = "You already answered this question";
             }
         }
     </script>
