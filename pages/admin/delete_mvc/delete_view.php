@@ -4,6 +4,7 @@
     <head>
         <meta charset="UTF-8" />
         <title> Emoji Tutorial </title>
+        
         <link rel="stylesheet" href="../../styles/main_style.css" />
         <link rel="stylesheet" href="../../styles/lessons_style.css" />
         <link rel="stylesheet" href="../../styles/admin_style.css" />
@@ -41,8 +42,8 @@
                 <label for="category">Choose a category:</label>
                 <select name="category" id="category">
                     <?php
-                    foreach($categories as $category){
-                        echo '<option name="category">'.$category.'</option>';
+                    foreach ($categories as $category) {
+                        echo '<option name="category">' . $category . '</option>';
                     }
                     ?>
                 </select>
@@ -51,23 +52,28 @@
             </form>
 
 
-
-
             <p class="info"> If you want to delete a lesson:</p>
-            <form action="">
-                <label for="category">Choose a lesson:</label>
-                <select name="category" id="category">
-                    <option value="emoji">Emoji</option>
-                    <option value="messages">Messages</option>
+            <form name="categoryLesson" action="./lessons/deleting.php" method="post">
+                <label for="category">Choose this category's lesson:</label>
+                <select name="category" onchange="callShowLessons()">
+                    <?php
+                    foreach ($categories as $category) {
+                        echo '<option name="category">' . $category . '</option>';
+                    }
+                    ?>
                 </select>
                 <select name="lesson" id="lesson">
-                    <option value="introduction">Introduction</option>
-                    <option value="brief_history">Brief History of Emojis</option>
+                    <?php
+                    foreach ($lessons as $lesson) {
+                        echo '<option name="lesson">' . $lesson . '</option>';
+                    }
+                    ?>
                 </select>
+                <br>
+                <button type="submit">Deleting Elements</button>
+                <button class="backButton"><a href="menu.php">Back</a></button>
             </form>
-            <button type="submit">Deleting Elements</button>
-            <button class="backButton"><a href="menu.php">Back</a></button>
         </div>
     </body>
-
+    <script src="./delete_mvc/ajaxFunction.js"></script>
 </php>
