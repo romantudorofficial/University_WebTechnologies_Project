@@ -68,6 +68,7 @@
         <form action = "show_suggestion.php" method="post">
             <label> Choose in which category fits:</label>
             <select name="category" id="category" onchange="showDescriptions(this.value)"> 
+            <option value="">Select a category:</option>
                 <?php
                     $i = 1;
                     foreach ($categories as $category) {

@@ -18,7 +18,7 @@ $result = mysqli_query($con,$sql);
 
 while($row = mysqli_fetch_array($result)) {
     echo "<div>
-    <input type='checkbox' name='suggestion' value='" . $row['description'] . "'>
+    <input type='checkbox' name='description[]' id='description' value='" . $row['description'] . "'>
     <label for='" . $row['description'] . "'>". $row['description'] . "</label>
     </div>";
 }

@@ -1,6 +1,36 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <file>
-    <1>
+    <s1>
+        <informal>
+            <female>
+                Feel free to use emojis that reflect your personality and the tone of the conversation. For instance, 
+                you can use a smiley face 😊 to convey friendliness or happiness. If you find something amusing, you can use a 
+                laughing face 😂. To show agreement or support, a thumbs-up 👍 can be an excellent choice. Remember to use emojis 
+                sparingly and in appropriate contexts, keeping in mind the overall professionalism of the conversation.
+            </female>
+            <male>
+                Feel free to use emojis that reflect your personality and the tone of the conversation. For instance, you can use a 
+                smiley face 😊 to convey friendliness or happiness. If you find something amusing, you can use a laughing face 😂. 
+                To show agreement or support, a thumbs-up 👍 can be an excellent choice. Remember to use emojis sparingly and in 
+                appropriate contexts, keeping in mind the overall professionalism of the conversation.
+            </male>
+        </informal>
+        <formal>
+            <female>
+                In a formal setting, it is advisable to use emojis sparingly. You can consider using a smiling face 🙂 at the end of 
+                a message to add a touch of warmth or friendliness. An occasional thumbs-up 👍 can be used to acknowledge agreement 
+                or approval. However, it's crucial to gauge the formality of the conversation and the expectations of the participants 
+                to ensure that emojis are appropriate.
+            </female>
+            <male>
+                In a formal setting, it is advisable to use emojis sparingly. You can consider using a smiling face 🙂 at the end of 
+                a message to add a touch of warmth or friendliness. An occasional thumbs-up 👍 can be used to acknowledge agreement 
+                or approval. However, it's crucial to gauge the formality of the conversation and the expectations of the participants 
+                to ensure that emojis are appropriate.
+            </male>
+        </formal>
+    </s1>
+    <s2>
         <informal>
             <female>
                 Opt for a comfortable yet presentable outfit such as a well-fitted blouse or a casual dress. 
@@ -29,34 +59,8 @@
                 minimal accessories.
             </male>
         </formal>
-    </1>
-    <2>
-        <informal>
-            <female>
-                Feel free to use emojis that reflect your personality and the tone of the conversation. For instance, 
-                you can use a smiley face 😊 to convey friendliness or happiness. If you find something amusing, you can use a 
-                laughing face 😂. To show agreement or support, a thumbs-up 👍 can be an excellent choice. Remember to use emojis 
-                sparingly and in appropriate contexts, keeping in mind the overall professionalism of the conversation.
-            </female>
-            <male>
-                Feel free to use emojis that reflect your personality and the tone of the conversation. For instance, you can use a 
-                smiley face 😊 to convey friendliness or happiness. If you find something amusing, you can use a laughing face 😂. 
-                To show agreement or support, a thumbs-up 👍 can be an excellent choice. Remember to use emojis sparingly and in 
-                appropriate contexts, keeping in mind the overall professionalism of the conversation.
-            </male>
-        </informal>
-        <formal>
-            <female>
-                In a formal setting, it is advisable to use emojis sparingly. You can consider using a smiling face 🙂 at the end of 
-                a message to add a touch of warmth or friendliness. An occasional thumbs-up 👍 can be used to acknowledge agreement 
-                or approval. However, it's crucial to gauge the formality of the conversation and the expectations of the participants 
-                to ensure that emojis are appropriate.
-            </female>
-            <male>
-            </male>
-        </formal>
-    </2>
-    <3>
+    </s2>
+    <s3>
         <informal>
             <female>
                 When selecting a space for your formal online video meeting, choose a quiet and dedicated room where you can control 
@@ -89,5 +93,5 @@
                 inviting atmosphere.
             </male>
         </formal>
-    </3>
+    </s3>
 </file>
