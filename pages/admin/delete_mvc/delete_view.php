@@ -33,40 +33,39 @@
             <li id="buttonLog"> <a href="../login_page.php?a=false"> Sign Out </a> </li>
         </ul>
 
-        <!-- Some warnings in case of something -->
-        <?php
-        $category = "";
-        if (!empty($_REQUEST["cat"])) {
-            $ok = $_GET["cat"];
-            if ($ok) {
-                $category = "The category already exists!";
-            }
-        }
-        ?>
-
         <!-- The content of this page -->
         <div class="adminContent">
-            <h1> Management Page. Adding elements </h1>
-            <p class="info"> If you want to add a category:</p>
-            <form action="./categories/adding.php" method="post">
+            <h1> Management Page. Deleting elemenets </h1>
+            <p class="info"> If you want to delete a category:</p>
+            <form action="./categories/deleting.php" method="post">
                 <label for="category">Choose a category:</label>
-                <input name="category" id="category"></input>
-                <p>
-                    <?php echo $category; ?>
-                </p>
-                <button type="submit">Add Category</button>
+                <select name="category" id="category">
+                    <?php
+                    foreach($categories as $category){
+                        echo '<option name="category">'.$category.'</option>';
+                    }
+                    ?>
+                </select>
+                <br>
+                <button type="submit">Delete Category</button>
             </form>
-            <p class="info"> If you want to add a lesson:</p>
+
+
+
+
+            <p class="info"> If you want to delete a lesson:</p>
             <form action="">
                 <label for="category">Choose a lesson:</label>
-                <input name="lesson" id="lesson"></input>
-                <label> for the category:</label>
                 <select name="category" id="category">
                     <option value="emoji">Emoji</option>
                     <option value="messages">Messages</option>
                 </select>
+                <select name="lesson" id="lesson">
+                    <option value="introduction">Introduction</option>
+                    <option value="brief_history">Brief History of Emojis</option>
+                </select>
             </form>
-            <button type="submit"><a href="content.php">Add Lesson</a></button>
+            <button type="submit">Deleting Elements</button>
             <button class="backButton"><a href="menu.php">Back</a></button>
         </div>
     </body>
