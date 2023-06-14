@@ -33,15 +33,27 @@
             <li id="buttonLog"> <a href="../login_page.php?a=false"> Sign Out </a> </li>
         </ul>
 
+        <!-- Some warnings in case of something -->
+        <?php
+        $category ="";
+        if (!empty($_REQUEST["cat"])) {
+            $ok = $_GET["cat"];
+            if($ok){
+                $category = "The category already exists!";
+            } 
+        }
+        ?>
+
         <!-- The content of this page -->
         <div class="adminContent">
             <h1> Management Page. Adding elements </h1>
             <p class="info"> If you want to add a category:</p>
-            <form action="">
+            <form action="./categories/adding.php" method="post">
                 <label for="category">Choose a category:</label>
                 <input name="category" id="category"></input>
+                <p><?php echo $category; ?></p>
+                <button type="submit">Add Category</button>
             </form>
-            <button type="submit">Add Category</button>
             <p class="info"> If you want to add a lesson:</p>
             <form action="">
                 <label for="category">Choose a lesson:</label>
