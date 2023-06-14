@@ -32,6 +32,8 @@
 		MaMa! Scoreboard
 	</article>
 
+	<a href="scoreboard_rss.php">Subscribe to RSS Feed</a>
+
 	<article class="categs">
 		<?php
 		$i = 1;
