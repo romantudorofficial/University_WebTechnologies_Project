@@ -79,7 +79,7 @@
 
 	<article class="categs">
 		<header>
-			<form method="POST" action="./suggestion/suggestion.php">
+			<form method="POST" action="./suggestion/suggestions_controller.php">
 				<input class="goToPage" type="submit" value="Suggestions For You" />
 			</form>
 		</header>
