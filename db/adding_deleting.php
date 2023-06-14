@@ -8,7 +8,13 @@ function addCategory($category)
         die('A survenit o eroare la interogare');
     }
 }
-
+function addLesson($id_category, $lesson, $difficulty)
+{
+    $mysql = connect();
+    if (!($rez = $mysql->query("INSERT into lessons (id_category ,lessonName , difficulty, type) VALUES ('$id_category','$lesson','$difficulty', 'not')"))) {
+        die('A survenit o eroare la interogare');
+    }
+}
 function deleteCategory($category)
 {
     $mysql = connect();

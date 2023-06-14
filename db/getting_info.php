@@ -117,4 +117,16 @@ function getIdCategory($category)
     }
     return $id;
 }
+function getIdLesson($category, $lesson)
+{
+    $mysql = connect();
+    if (!($rez = $mysql->query('select * from lessons where lessonName like "' . $lesson . '" and id_category=' . $category))) {
+        die('A survenit o eroare la interogare');
+    }
+    while ($inreg = $rez->fetch_assoc()) {
+        $id = $inreg["id_lesson"];
+        break;
+    }
+    return $id;
+}
 ?>
