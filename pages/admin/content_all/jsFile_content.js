@@ -129,7 +129,6 @@ function postDataUsingAjax() {
                         p.style.color = "blue";
                         break;
                     default:
-                        alert(this.responseText);
                         p.innerHTML = "The lesson got saved!";
                         p.style.color = "blue";
                 }

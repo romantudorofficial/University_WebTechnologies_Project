@@ -148,6 +148,7 @@ function getContent($lessonId)
     if (!($rez = $mysql->query('select * from content where id_lesson = "' . $lessonId . '"'))) {
         die('A survenit o eroare la interogare');
     }
+    $content = null;
     while ($inreg = $rez->fetch_assoc()) {
         $content = $inreg;
         break;
