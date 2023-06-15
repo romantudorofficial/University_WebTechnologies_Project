@@ -208,44 +208,48 @@ function addingInDB($elements, $result, $lessonId)
 
 
 //getting the variables
-$titles = $_POST['title'];
-$contents = $_POST['content'];
-$question = $_POST['question'];
-$options = $_POST['options'];
-$answer = $_POST['answer'];
-$images = $_POST['image'];
-$id = $_GET['id'];
+header("Content-Type: application/json; charset=UTF-8");
+$theJson = json_decode($_GET['postData']);
+$elements = (array) $theJson;
+$titles = $elements['title'];
+$contents = $elements['content'];
+$question = $elements['question'];
+$options = $elements['options'];
+$answer = $elements['answer'];
+$images = $elements['image'];
+$id = $elements['id'];
 
 //checking if the options are not identical
 $similar = checkSimilarity($options);
 
 if ($similar) {
-    header("Location: ../content.php?error=-2", true, 303);
+    //header("Location: ../content.php?error=-2", true, 303);
+    echo -2;
 } else {
     //getting the order
-    $elements = $_POST['elements'];
+    $elements = $elements['elements'];
     $result = createTheRightOrder($elements, $titles, $contents, $images, $question, $options, $answer);
     $elements = removingEmptySpaces($elements, $titles, $contents, $images, $question, $options, $answer);
 
     //checking if it has a question, a valid answer , a title , content [image is not mandatory]
     if ($elements == null) {
-        header("Location: ../content.php?id=" . $id . "&error=0", true, 303);
+        //header("Location: ../content.php?id=" . $id . "&error=0", true, 303);
+        echo 0;
     } else {
         $checker = checkingElements($elements);
         if ($checker) {
             //last check
             $last = checkQuestionValue($elements, $result);
             if ($last) {
-                //the actual code
-                //later using curl
-                //header("Location: ./adding_in_db.php?id=" . $id, true, 303);
-                //sendingViaCurl($elements, $result, $id);
                 addingInDB($elements, $result, $id);
+                echo 1;
             } else {
-                header("Location: ../content.php?id=" . $id . "&error=-3", true, 303);
+                //header("Location: ../content.php?id=" . $id . "&error=-3", true, 303);
+                echo -3;
             }
         } else {
-            header("Location: ../content.php?id=" . $id . "&error=-1", true, 303);
+            //header("Location: ../content.php?id=" . $id . "&error=-1", true, 303);
+            echo -1;
         }
     }
 }
