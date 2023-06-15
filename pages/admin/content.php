@@ -2,7 +2,7 @@
 <php>
 
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Emoji Tutorial </title>
         <link rel="stylesheet" href="../../styles/main_style.css" />
         <link rel="stylesheet" href="../../styles/lessons_style.css" />
@@ -76,16 +76,16 @@
             <p class="info">The options must be different. You will receive an error if you do not respect these
                 conditions.
             </p>
-            <form action=<?php echo "./content_all/check_data.php?id=" . $id ?> class="contentEditor" method="post">
+            <form action="" class="contentEditor" method="">
                 <label for="title">Write the header:</label>
-                <input name="title[]" id="title" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="title">
+                <input name="title[]" class="title" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="title" class="element">
                 <label for="content">Write the content:</label>
-                <textarea name="content[]" rows="10" cols="60" maxlength="1000"></textarea><br>
-                <input type="hidden" name="elements[]" value="content">
+                <textarea name="content[]" class="content" rows="10" cols="60" maxlength="1000"></textarea><br>
+                <input type="hidden" name="elements[]" value="content" class="element">
                 <label for="image">Paste the URL of the image:</label>
-                <input name="image[]" id="image" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="image">
+                <input name="image[]" class="image" id="image" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="image" class="element">
 
                 <div id="helper"></div>
 
@@ -97,34 +97,81 @@
 
                 <!-- FInal question-->
                 <label for="question">Write the final question:</label>
-                <input name="question" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="question">
+                <input name="question" id="question" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="question" class="element">
                 <label for="options">Option 1:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="options">Option 2:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="options">Option 3:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="options">Option 4:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="answer">Correct Answer:</label>
-                <input name="answer" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="answer">
+                <input name="answer" id="answer" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="answer" class="element">
                 <br>
                 <p>
                     <?php echo $error_type; ?>
                 </p>
-                <button class="backButton" type="submit">Add content</button>
+                <button class="backButton" type="button" onclick="postDataUsingAjax()">Add content</button>
                 <button class="backButton"><a href="add.php">Back</a></button>
                 <button class="backButton"><a href="menu.php">Admin Page</a></button>
             </form>
         </div>
         <script>
-            var x = 10;
+
+            function postDataUsingAjax() {
+
+                //preparing the data
+                var titles = [];
+                var i;
+                var helper = document.getElementsByClassName("title");
+                for(i=0;i<helper.length;i++){
+                    titles[i]=helper[i].value;
+                }
+
+
+                var content= [];
+                helper = document.getElementsByClassName("content");
+                for(i=0;i<helper.length;i++){
+                    content[i]=helper[i].value;
+                }
+
+
+                var images= [];
+                helper = document.getElementsByClassName("image");
+                for(i=0;i<helper.length;i++){
+                    images[i]=helper[i].value;
+                }
+
+
+                var question = document.getElementById("question");
+
+                var options= [];
+                helper = document.getElementsByClassName("option");
+                for(i=0;i<helper.length;i++){
+                    options[i]=helper[i].value;
+                }
+
+                var answer = document.getElementById("answer");
+
+                var elements= [];
+                helper = document.getElementsByClassName("element");
+                for(i=0;i<helper.length;i++){
+                    elements[i]=helper[i].value;
+                }
+
+                //creating the ajax call
+                for(i=0;i<elements.length;i++){
+                    alert(elements[i]);
+                }
+            }
+            var x=10;
             function addImage() {
                 if (x) {
                     var div = document.getElementById("helper");
@@ -134,6 +181,7 @@
                     const node2 = document.createElement("input");
                     node2.setAttribute("name", "image[]");
                     node2.setAttribute("maxlength", "100");
+                    node2.classList.add("image");
                     const node3 = document.createElement("br");
 
                     //elements for order
@@ -141,6 +189,7 @@
                     node4.setAttribute("type", "hidden");
                     node4.setAttribute("name", "elements[]");
                     node4.setAttribute("value", "image");
+                    node4.classList.add("element");
 
 
                     div.appendChild(node1).appendChild(node3);
@@ -167,6 +216,7 @@
                     const node2 = document.createElement("input");
                     node2.setAttribute("name", "title[]");
                     node2.setAttribute("maxlength", "100");
+                    node2.classList.add("title");
                     const node3 = document.createElement("label");
                     const textInput3 = document.createTextNode("Write the content:");
                     node3.appendChild(textInput3);
@@ -175,6 +225,7 @@
                     node4.setAttribute("rows", "10");
                     node4.setAttribute("maxlength", "1000");
                     node4.setAttribute("name", "content[]");
+                    node4.classList.add("content");
                     const node5 = document.createElement("br");
 
                     //elements for order
@@ -182,10 +233,12 @@
                     node6.setAttribute("type", "hidden");
                     node6.setAttribute("name", "elements[]");
                     node6.setAttribute("value", "title");
+                    node6.classList.add("element");
                     const node7 = document.createElement("input");
                     node7.setAttribute("type", "hidden");
                     node7.setAttribute("name", "elements[]");
                     node7.setAttribute("value", "content");
+                    node7.classList.add("element");
 
 
                     div.appendChild(node1).appendChild(node5);

@@ -35,7 +35,7 @@ function deleteLessonsFromThatCategory($category, $mysql)
 function deleteLesson($category, $lesson)
 {
     $mysql = connect();
-    modifyingLessonsQuestions($category, $mysql);
+    //modifyingLessonsQuestions($category, $mysql);
     if (!($rez = $mysql->query("DELETE FROM lessons where id_category = '$category' and lessonName like '$lesson'"))) {
         die('A survenit o eroare la interogare');
     }

@@ -193,20 +193,20 @@ function addingInDB($elements, $result, $lessonId)
 {
     include_once '../../../db/getting_info.php';
     include_once '../../../db/adding_deleting.php';
-    // $idCategory = getIdCategoryViaIdLesson($lessonId);
-    // echo $idCategory;
     addContent($lessonId, $elements, $result);
 
-    $lesson = getContent($lessonId);
+    /*$lesson = getContent($lessonId);
     $elementNew = unserialize($lesson['contentType']);
     $resulttNew = unserialize($lesson['contentLesson']);
     foreach ($elementNew as $content) {
         echo $content . "<br>";
     }
     $idQuestion = array_search("question",$elementNew);
-    echo "the question is:<br>".$resulttNew[$idQuestion];
+    echo "the question is:<br>".$resulttNew[$idQuestion];*/
 
 }
+
+
 //getting the variables
 $titles = $_POST['title'];
 $contents = $_POST['content'];
