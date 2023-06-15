@@ -124,7 +124,12 @@ function postDataUsingAjax() {
                     case "-3":
                         p.innerHTML = "Your answer does not match the number of valid options!";
                         break;
+                    case "2":
+                        p.innerHTML = "The lesson got updated!";
+                        p.style.color = "blue";
+                        break;
                     default:
+                        alert(this.responseText);
                         p.innerHTML = "The lesson got saved!";
                         p.style.color = "blue";
                 }

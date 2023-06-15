@@ -193,8 +193,8 @@ function addingInDB($elements, $result, $lessonId)
 {
     include_once '../../../db/getting_info.php';
     include_once '../../../db/adding_deleting.php';
-    addContent($lessonId, $elements, $result);
-
+    $ok = addContent($lessonId, $elements, $result);
+    return $ok;
     /*$lesson = getContent($lessonId);
     $elementNew = unserialize($lesson['contentType']);
     $resulttNew = unserialize($lesson['contentLesson']);
@@ -241,8 +241,12 @@ if ($similar) {
             //last check
             $last = checkQuestionValue($elements, $result);
             if ($last) {
-                addingInDB($elements, $result, $id);
-                echo 1;
+                $ok = addingInDB($elements, $result, $id);
+                if ($ok) {
+                    echo 1;
+                } else {
+                    echo 2;
+                }
             } else {
                 //header("Location: ../content.php?id=" . $id . "&error=-3", true, 303);
                 echo -3;
