@@ -35,7 +35,7 @@ function deleteLessonsFromThatCategory($category, $mysql)
 function deleteLesson($category, $lesson)
 {
     $mysql = connect();
-    modifyingLessonsQuestions($category, $mysql);
+    //modifyingLessonsQuestions($category, $mysql);
     if (!($rez = $mysql->query("DELETE FROM lessons where id_category = '$category' and lessonName like '$lesson'"))) {
         die('A survenit o eroare la interogare');
     }
@@ -61,8 +61,19 @@ function addContent($idLesson, $elements, $result)
     $mysql = connect();
     $serializedElements = serialize($elements);
     $serializedResult = serialize($result);
-    if (!($rez = $mysql->query("INSERT into content (id_lesson ,contentLesson , contentType) VALUES ('$idLesson','$serializedResult','$serializedElements')"))) {
-        die('A survenit o eroare la interogare');
+
+    //checkinf if it exists by using getcontent
+    $ok = getContent($idLesson);
+    if ($ok == null) {
+        if (!($rez = $mysql->query("INSERT into content (id_lesson ,contentLesson , contentType) VALUES ('$idLesson','$serializedResult','$serializedElements')"))) {
+            die('A survenit o eroare la interogare');
+        }
+        return 1;
+    } else {
+        if (!($rez = $mysql->query("UPDATE content SET contentLesson ='$serializedResult', contentType='$serializedElements' where id_lesson ='$idLesson'"))) {
+            die('A survenit o eroare la interogare');
+        }
+        return 0;
     }
 }
 ?>

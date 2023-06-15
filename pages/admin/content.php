@@ -2,7 +2,7 @@
 <php>
 
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
         <title> Emoji Tutorial </title>
         <link rel="stylesheet" href="../../styles/main_style.css" />
         <link rel="stylesheet" href="../../styles/lessons_style.css" />
@@ -34,28 +34,7 @@
             <li id="buttonLog"> <a href="../login_page.php?a=false"> Sign Out </a> </li>
         </ul>
 
-        <?php
-        $error_type = "";
-        if (!empty($_REQUEST["error"])) {
-            $ok = $_GET["error"]; // -1 -not completed all required spaces , 
-            // -2 -identical options , 
-            // -3 -the answer does not match the number of options, 
-            // 0 - the file got sent blank , 1 - correct
-            if ($ok == 0) {
-                $error_type = "Do not send the file blank!";
-            } else if ($ok == -1) {
-                $error_type = "You did not complete the required fields!";
-            } else if ($ok == -2) {
-                $error_type = "You have identical options!";
-            } else if ($ok == -3) {
-                $error_type = "Your answer does not match the number of options!";
-            } else {
-                $error_type = "The lesson got saved!";
-            }
-        }
 
-        $id = $_GET["id"];
-        ?>
 
         <!-- The content of this page -->
         <div class="adminContent">
@@ -76,16 +55,16 @@
             <p class="info">The options must be different. You will receive an error if you do not respect these
                 conditions.
             </p>
-            <form action=<?php echo "./content_all/check_data.php?id=" . $id ?> class="contentEditor" method="post">
+            <form action="" class="contentEditor" method="">
                 <label for="title">Write the header:</label>
-                <input name="title[]" id="title" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="title">
+                <input name="title[]" class="title" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="title" class="element">
                 <label for="content">Write the content:</label>
-                <textarea name="content[]" rows="10" cols="60" maxlength="1000"></textarea><br>
-                <input type="hidden" name="elements[]" value="content">
+                <textarea name="content[]" class="content" rows="10" cols="60" maxlength="1000"></textarea><br>
+                <input type="hidden" name="elements[]" value="content" class="element">
                 <label for="image">Paste the URL of the image:</label>
-                <input name="image[]" id="image" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="image">
+                <input name="image[]" class="image" id="image" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="image" class="element">
 
                 <div id="helper"></div>
 
@@ -97,115 +76,31 @@
 
                 <!-- FInal question-->
                 <label for="question">Write the final question:</label>
-                <input name="question" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="question">
+                <input name="question" id="question" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="question" class="element">
                 <label for="options">Option 1:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="options">Option 2:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="options">Option 3:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="options">Option 4:</label>
-                <input name="options[]" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="option">
+                <input name="options[]" class="option" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option" class="element">
                 <label for="answer">Correct Answer:</label>
-                <input name="answer" maxlength="100"></input>
-                <input type="hidden" name="elements[]" value="answer">
+                <input name="answer" id="answer" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="answer" class="element">
                 <br>
-                <p>
-                    <?php echo $error_type; ?>
-                </p>
-                <button class="backButton" type="submit">Add content</button>
+                <p id="error_type"> </p>
+                <button class="backButton" type="button" onclick="postDataUsingAjax()">Add content</button>
                 <button class="backButton"><a href="add.php">Back</a></button>
                 <button class="backButton"><a href="menu.php">Admin Page</a></button>
             </form>
         </div>
-        <script>
-            var x = 10;
-            function addImage() {
-                if (x) {
-                    var div = document.getElementById("helper");
-                    const node1 = document.createElement("label");
-                    const textInput = document.createTextNode("Paste the URL below:");
-                    node1.appendChild(textInput);
-                    const node2 = document.createElement("input");
-                    node2.setAttribute("name", "image[]");
-                    node2.setAttribute("maxlength", "100");
-                    const node3 = document.createElement("br");
-
-                    //elements for order
-                    const node4 = document.createElement("input");
-                    node4.setAttribute("type", "hidden");
-                    node4.setAttribute("name", "elements[]");
-                    node4.setAttribute("value", "image");
-
-
-                    div.appendChild(node1).appendChild(node3);
-                    div.appendChild(node2).appendChild(node3);
-                    div.appendChild(node4);
-                    x--;
-                    var p = document.getElementById('msg');
-                    if (!x) {
-                        p.style.color = "red";
-                        p.innerHTML = "No more times left";
-                    }
-                    else {
-                        p.innerHTML = x + " times left";
-                    }
-                }
-
-            }
-            function addSection() {
-                if (x) {
-                    var div = document.getElementById("helper");
-                    const node1 = document.createElement("label");
-                    const textInput = document.createTextNode("Write the header:");
-                    node1.appendChild(textInput);
-                    const node2 = document.createElement("input");
-                    node2.setAttribute("name", "title[]");
-                    node2.setAttribute("maxlength", "100");
-                    const node3 = document.createElement("label");
-                    const textInput3 = document.createTextNode("Write the content:");
-                    node3.appendChild(textInput3);
-                    const node4 = document.createElement("textarea");
-                    node4.setAttribute("cols", "60");
-                    node4.setAttribute("rows", "10");
-                    node4.setAttribute("maxlength", "1000");
-                    node4.setAttribute("name", "content[]");
-                    const node5 = document.createElement("br");
-
-                    //elements for order
-                    const node6 = document.createElement("input");
-                    node6.setAttribute("type", "hidden");
-                    node6.setAttribute("name", "elements[]");
-                    node6.setAttribute("value", "title");
-                    const node7 = document.createElement("input");
-                    node7.setAttribute("type", "hidden");
-                    node7.setAttribute("name", "elements[]");
-                    node7.setAttribute("value", "content");
-
-
-                    div.appendChild(node1).appendChild(node5);
-                    div.appendChild(node2).appendChild(node5);
-                    div.appendChild(node3).appendChild(node5);
-                    div.appendChild(node4).appendChild(node5);
-                    div.appendChild(node6);
-                    div.appendChild(node7);
-                    x--;
-                    var p = document.getElementById('msg');
-                    if (!x) {
-                        p.style.color = "red";
-                        p.innerHTML = "No more times left";
-                    }
-                    else {
-                        p.innerHTML = x + " times left";
-                    }
-                }
-            }
-        </script>
+        <script src="./content_all/jsFile_content.js"> </script>
     </body>
 
 </php>
