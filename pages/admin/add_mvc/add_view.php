@@ -1,5 +1,5 @@
-<!DOCTYPE php>
-<php>
+<!DOCTYPE html>
+<html>
 
     <head>
         <meta charset="UTF-8" />
@@ -90,9 +90,34 @@
                 </p>
                 <br>
                 <button type="submit">Add Lesson</button>
+            </form>
+
+
+
+            <p class="info"> If you want to add a suggestion:</p>
+            <form action="./suggestions/addingSuggestion.php" method="POST">
+                <label for="category">Write a short description:</label>
+                <input name="suggestion_description" id="suggestion_description">
+                <label for="category"> for the category:</label>
+                <select name="suggestion_category" id="category">
+                <?php
+                    foreach ($activeCategories as $activeCategory) {
+                    echo '<option value="' . $activeCategory . '">' . $activeCategory . '</option>';
+                }
+                ?>
+                </select>
+                <p>
+                <?php
+                    if ($error != "") {
+                        echo '<h2>' . $error . "</h2>";
+                    }
+                ?>
+                </p>
+                <br>
+                <button type="submit">Add Suggestion</button>
                 <button class="backButton"><a href="menu.php">Back</a></button>
             </form>
         </div>
     </body>
 
-</php>
+</html>
