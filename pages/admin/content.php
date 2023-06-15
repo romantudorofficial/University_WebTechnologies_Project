@@ -44,7 +44,7 @@
             if ($ok == 0) {
                 $error_type = "Do not send the file blank!";
             } else if ($ok == -1) {
-                $error_type = "You did not complete the required spaces!";
+                $error_type = "You did not complete the required fields!";
             } else if ($ok == -2) {
                 $error_type = "You have identical options!";
             } else if ($ok == -3) {

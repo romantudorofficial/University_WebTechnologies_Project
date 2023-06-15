@@ -55,4 +55,14 @@ function deleteQuestions($category, $lesson, $mysql)
         die('A survenit o eroare la interogare');
     }
 }
+
+function addContent($idLesson, $elements, $result)
+{
+    $mysql = connect();
+    $serializedElements = serialize($elements);
+    $serializedResult = serialize($result);
+    if (!($rez = $mysql->query("INSERT into content (id_lesson ,contentLesson , contentType) VALUES ('$idLesson','$serializedResult','$serializedElements')"))) {
+        die('A survenit o eroare la interogare');
+    }
+}
 ?>

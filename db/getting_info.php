@@ -129,4 +129,29 @@ function getIdLesson($category, $lesson)
     }
     return $id;
 }
+function getIdCategoryViaIdLesson($lesson)
+{
+    $mysql = connect();
+    if (!($rez = $mysql->query('select * from lessons where id_lesson = "' . $lesson . '"'))) {
+        die('A survenit o eroare la interogare');
+    }
+    while ($inreg = $rez->fetch_assoc()) {
+        $id = $inreg["id_category"];
+        break;
+    }
+    return $id;
+}
+
+function getContent($lessonId)
+{
+    $mysql = connect();
+    if (!($rez = $mysql->query('select * from content where id_lesson = "' . $lessonId . '"'))) {
+        die('A survenit o eroare la interogare');
+    }
+    while ($inreg = $rez->fetch_assoc()) {
+        $content = $inreg;
+        break;
+    }
+    return $content;
+}
 ?>

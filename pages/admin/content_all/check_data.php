@@ -154,6 +154,59 @@ function checkSimilarity($options)
     }
     return false;
 }
+
+function sendingViaCurl($elements, $result, $idLesson)
+{
+    $file_name = "./adding_in_db.php";
+    //The url you wish to send the POST request to
+    $url = $file_name;
+
+    //The data you want to send via POST
+    $fields = [
+        'elements' => $elements,
+        'content' => $result,
+        'idLesson' => $idLesson
+    ];
+
+    //url-ify the data for the POST
+    $fields_string = http_build_query($fields);
+
+    //open connection
+    $ch = curl_init();
+
+    //set the url, number of POST vars, POST data
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_POST, true);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields_string);
+
+    //So that curl_exec returns the contents of the cURL; rather than echoing it
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+    //execute post
+    $result = curl_exec($ch);
+    echo $result;
+
+    curl_close($ch);
+}
+
+function addingInDB($elements, $result, $lessonId)
+{
+    include_once '../../../db/getting_info.php';
+    include_once '../../../db/adding_deleting.php';
+    // $idCategory = getIdCategoryViaIdLesson($lessonId);
+    // echo $idCategory;
+    addContent($lessonId, $elements, $result);
+
+    $lesson = getContent($lessonId);
+    $elementNew = unserialize($lesson['contentType']);
+    $resulttNew = unserialize($lesson['contentLesson']);
+    foreach ($elementNew as $content) {
+        echo $content . "<br>";
+    }
+    $idQuestion = array_search("question",$elementNew);
+    echo "the question is:<br>".$resulttNew[$idQuestion];
+
+}
 //getting the variables
 $titles = $_POST['title'];
 $contents = $_POST['content'];
@@ -184,7 +237,10 @@ if ($similar) {
             $last = checkQuestionValue($elements, $result);
             if ($last) {
                 //the actual code
-                //header("Location: ../content.php?error=1", true, 303);
+                //later using curl
+                //header("Location: ./adding_in_db.php?id=" . $id, true, 303);
+                //sendingViaCurl($elements, $result, $id);
+                addingInDB($elements, $result, $id);
             } else {
                 header("Location: ../content.php?id=" . $id . "&error=-3", true, 303);
             }
