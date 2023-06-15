@@ -43,15 +43,20 @@
                 the images will always be placed in the center. Images use URL/link to attach them.</p>
             <p class="info"> Every lesson will end with a question that is displayed this way: 1-4 options, and at the
                 end which one
-                of those (1-4) is the correct answer.</p>
+                of those (1-4) is the correct answer. You must write a number between 1 and 4.</p>
             <p class="info">You have got 10 times for adding a specific type of content: header & section OR image.</p>
-            <p class="info">Remember: header & image URL = 100 characters at most ; section has a max of 1k characters.
+            <p class="info">Remember: header & image URL = 100 characters at most ; section has a max of 500 characters.
             </p>
             <form action="./content_all/check_data.php" class="contentEditor" method="post">
                 <label for="title">Write the header:</label>
                 <input name="title[]" id="title" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="title">
                 <label for="content">Write the content:</label>
                 <textarea name="content[]" rows="10" cols="60" maxlength="1000"></textarea><br>
+                <input type="hidden" name="elements[]" value="content">
+                <label for="image">Paste the URL of the image:</label>
+                <input name="image[]" id="image" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="image">
 
                 <div id="helper"></div>
 
@@ -63,18 +68,25 @@
 
                 <!-- FInal question-->
                 <label for="question">Write the final question:</label>
-                <input name="question[]" maxlength="100"></input>
+                <input name="question" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="question">
                 <label for="options">Option 1:</label>
                 <input name="options[]" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option">
                 <label for="options">Option 2:</label>
                 <input name="options[]" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option">
                 <label for="options">Option 3:</label>
                 <input name="options[]" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option">
                 <label for="options">Option 4:</label>
                 <input name="options[]" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="option">
                 <label for="answer">Correct Answer:</label>
-                <input name="answer[]" maxlength="100"></input>
+                <input name="answer" maxlength="100"></input>
+                <input type="hidden" name="elements[]" value="answer">
                 <br>
+                <p></p>
                 <button class="backButton" type="submit">Add content</button>
                 <button class="backButton"><a href="add.php">Back</a></button>
                 <button class="backButton"><a href="menu.php">Admin Page</a></button>
@@ -92,8 +104,17 @@
                     node2.setAttribute("name", "image[]");
                     node2.setAttribute("maxlength", "100");
                     const node3 = document.createElement("br");
+
+                    //elements for order
+                    const node4 = document.createElement("input");
+                    node4.setAttribute("type", "hidden");
+                    node4.setAttribute("name", "elements[]");
+                    node4.setAttribute("value", "image");
+
+
                     div.appendChild(node1).appendChild(node3);
                     div.appendChild(node2).appendChild(node3);
+                    div.appendChild(node4);
                     x--;
                     var p = document.getElementById('msg');
                     if (!x) {
@@ -124,10 +145,24 @@
                     node4.setAttribute("maxlength", "1000");
                     node4.setAttribute("name", "content[]");
                     const node5 = document.createElement("br");
+
+                    //elements for order
+                    const node6 = document.createElement("input");
+                    node6.setAttribute("type", "hidden");
+                    node6.setAttribute("name", "elements[]");
+                    node6.setAttribute("value", "title");
+                    const node7 = document.createElement("input");
+                    node7.setAttribute("type", "hidden");
+                    node7.setAttribute("name", "elements[]");
+                    node7.setAttribute("value", "content");
+
+
                     div.appendChild(node1).appendChild(node5);
                     div.appendChild(node2).appendChild(node5);
                     div.appendChild(node3).appendChild(node5);
                     div.appendChild(node4).appendChild(node5);
+                    div.appendChild(node6);
+                    div.appendChild(node7);
                     x--;
                     var p = document.getElementById('msg');
                     if (!x) {
