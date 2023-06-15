@@ -1,6 +1,6 @@
 <?php
 include_once '../../../db/connection.php';
-function checkingExistence($lesson, $id_category)
+function checkingExistence($id_category, $lesson)
 {
     $mysql = connect();
     if (!($rez = $mysql->query("select * from lessons where lessonName like  '$lesson' and id_category= '$id_category'"))) {

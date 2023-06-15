@@ -11,9 +11,11 @@ function addingLesson($nameLesson, $category, $difficulty)
         $ok = checkingExistence($id_category, $nameLesson);
         if (!$ok) {
             addLesson($id_category, $nameLesson, $difficulty);
+            $id = getIdLesson($id_category, $nameLesson);
+            header("Location: ../content.php?id=" . $id, true, 303);
+        } else {
+            header("Location: ../add.php?les=false", true, 303);
         }
-        $id = getIdLesson($id_category, $nameLesson);
-        header("Location: ../content.php?id=" . $id, true, 303);
     }
 }
 

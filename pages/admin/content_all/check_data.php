@@ -17,6 +17,9 @@ function createTheRightOrder($elements, $titles, $contents, $images, $question, 
         } else if ($element == "content") {
             if (!($contents[$i_content] == "" || $contents[$i_content] == null)) {
                 $final[$i_final] = $contents[$i_content];
+                if (strstr($final[$i_final], "\n")) {
+                    $final[$i_final] = str_replace("\n", "<br>", $final[$i_final]);
+                }
                 $i_final = $i_final + 1;
             }
             $i_content = $i_content + 1;
@@ -158,12 +161,13 @@ $question = $_POST['question'];
 $options = $_POST['options'];
 $answer = $_POST['answer'];
 $images = $_POST['image'];
+$id = $_GET['id'];
 
 //checking if the options are not identical
 $similar = checkSimilarity($options);
 
 if ($similar) {
-    echo "oh no";
+    header("Location: ../content.php?error=-2", true, 303);
 } else {
     //getting the order
     $elements = $_POST['elements'];
@@ -172,7 +176,7 @@ if ($similar) {
 
     //checking if it has a question, a valid answer , a title , content [image is not mandatory]
     if ($elements == null) {
-        echo 'not good';
+        header("Location: ../content.php?id=" . $id . "&error=0", true, 303);
     } else {
         $checker = checkingElements($elements);
         if ($checker) {
@@ -180,12 +184,12 @@ if ($similar) {
             $last = checkQuestionValue($elements, $result);
             if ($last) {
                 //the actual code
-                echo 'good lesson <3';
+                //header("Location: ../content.php?error=1", true, 303);
             } else {
-                echo 'suepr bad';
+                header("Location: ../content.php?id=" . $id . "&error=-3", true, 303);
             }
         } else {
-            echo "bad bad";
+            header("Location: ../content.php?id=" . $id . "&error=-1", true, 303);
         }
     }
 }

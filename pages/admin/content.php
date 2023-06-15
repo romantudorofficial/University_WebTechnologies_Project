@@ -34,6 +34,29 @@
             <li id="buttonLog"> <a href="../login_page.php?a=false"> Sign Out </a> </li>
         </ul>
 
+        <?php
+        $error_type = "";
+        if (!empty($_REQUEST["error"])) {
+            $ok = $_GET["error"]; // -1 -not completed all required spaces , 
+            // -2 -identical options , 
+            // -3 -the answer does not match the number of options, 
+            // 0 - the file got sent blank , 1 - correct
+            if ($ok == 0) {
+                $error_type = "Do not send the file blank!";
+            } else if ($ok == -1) {
+                $error_type = "You did not complete the required spaces!";
+            } else if ($ok == -2) {
+                $error_type = "You have identical options!";
+            } else if ($ok == -3) {
+                $error_type = "Your answer does not match the number of options!";
+            } else {
+                $error_type = "The lesson got saved!";
+            }
+        }
+
+        $id = $_GET["id"];
+        ?>
+
         <!-- The content of this page -->
         <div class="adminContent">
             <h1> Management Page. Adding lesson content </h1>
@@ -47,7 +70,13 @@
             <p class="info">You have got 10 times for adding a specific type of content: header & section OR image.</p>
             <p class="info">Remember: header & image URL = 100 characters at most ; section has a max of 500 characters.
             </p>
-            <form action="./content_all/check_data.php" class="contentEditor" method="post">
+            <p class="info">YOU have to write at least in: a header section, a content section, the question, at least 2
+                options and the answer.
+            </p>
+            <p class="info">The options must be different. You will receive an error if you do not respect these
+                conditions.
+            </p>
+            <form action=<?php echo "./content_all/check_data.php?id=" . $id ?> class="contentEditor" method="post">
                 <label for="title">Write the header:</label>
                 <input name="title[]" id="title" maxlength="100"></input>
                 <input type="hidden" name="elements[]" value="title">
@@ -86,7 +115,9 @@
                 <input name="answer" maxlength="100"></input>
                 <input type="hidden" name="elements[]" value="answer">
                 <br>
-                <p></p>
+                <p>
+                    <?php echo $error_type; ?>
+                </p>
                 <button class="backButton" type="submit">Add content</button>
                 <button class="backButton"><a href="add.php">Back</a></button>
                 <button class="backButton"><a href="menu.php">Admin Page</a></button>
