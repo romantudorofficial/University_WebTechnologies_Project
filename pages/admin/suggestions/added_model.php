@@ -37,13 +37,22 @@ function addingSuggestionInXML($I_F, $I_M, $F_F, $F_M, $s_description, $s_catego
 
 function addingSuggestionInDB($description, $categ) {
     $mysql = connect();
-    $sql = "INSERT INTO suggestions (category_name, description)
-    VALUES ('" . $categ . "', '" . $description . "')";
 
-    if ($mysql->query($sql) === TRUE) {
-        echo "Suggestion added successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $mysql->error;
+    if (!($rez = $mysql->query("SELECT * from suggestions WHERE description = '" . $description . "'and category_name = '" . $categ . "'"))) {
+        return false;
+    }
+    if ($rez->num_rows > 0) {
+        header("Location: ../add.php?exists=true", true, 303);
+        exit;
+    }
+    else {
+        $sql = "INSERT INTO suggestions (category_name, description) VALUES ('" . $categ . "', '" . $description . "')";
+
+        if ($mysql->query($sql) === TRUE) {
+            echo "Suggestion added successfully";
+        } else {
+            echo "Error: " . $sql . "<br>" . $mysql->error;
+        }
     }
 }
 ?>

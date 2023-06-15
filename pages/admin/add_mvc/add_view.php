@@ -106,6 +106,13 @@
                 }
                 ?>
                 </select>
+                <p>
+                <?php
+                    if ($error != "") {
+                        echo '<h2>' . $error . "</h2>";
+                    }
+                ?>
+                </p>
                 <br>
                 <button type="submit">Add Suggestion</button>
                 <button class="backButton"><a href="menu.php">Back</a></button>
