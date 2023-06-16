@@ -2,13 +2,10 @@
 <html>
 
 <head>
-    <title>MaMa! Lessons</title>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main_style.css" />
-    <link rel="stylesheet" href="../styles/index_style.css" />
-    <link rel="stylesheet" href="../styles/scoreboard_style.css" />
-    <link rel="stylesheet" href="../styles/lessonspage_style.css" />
-    <link rel="stylesheet" href="../styles/style_other.css" />
+    <link rel="stylesheet" href="../styles/lessons_style.css" />
+    <link rel="stylesheet" href="../styles/lesson_rest_style.css" />
 </head>
 
 <body>
@@ -42,21 +39,30 @@
                 <?php echo $type; ?>
             </a> </li>
     </ul>
-    <img id="down" src="../assets\images/newLogo.jpg" alt="logo icon">
-    <h1>Here are the available categories:</h1>
-    <div class="pageOther">
+    <!-- The navigation bar for lessons -->
+    <ul class="lessons">
+        <li class="titleLesson">
+            <?php include_once '../db/getting_info.php';
+            echo getNameCategory($id); ?>
+        </li>
         <?php
-        $letter = null;
-        $link = "./introduction.php?id_cat=";
-        foreach ($categories as $category) {
-            if (strtoupper($category[1][0]) != $letter) {
-                $letter = strtoupper($category[1][0]);
-                echo "<h2> - " . $letter . " - </h2><br>";
+        if ($lessons != null) {
+            foreach ($lessons as $lesson) {
+                echo "<li><a href=''>" . $lesson[2] . "</a></li>";
             }
-            echo "<p> <a href='".$link.$category[0]."'> " . $category[1] . "</a></p><br>";
         }
         ?>
-    </div>
+    </ul>
+    <!-- The content of this page -->
+    <div class="pageContent">
+        <?php
+        if ($lessons == null) {
+            echo "<br><br><h1> SORRY, but there are NOT any available lessons YET  </h1><br><br>";
+            echo "<img src='https://giffiles.alphacoders.com/773/77358.gif' class='picturesLessons'>";
+        } else { 
+            echo "<br><br><h1> Choose a lesson that you would like to read</h1><br><br>";
+            echo "<img src='https://media.tenor.com/_1KIbt_V2owAAAAC/fake-smile-forced-smile.gif' class='picturesLessons'>";
+        }?>
 </body>
 
 </html>

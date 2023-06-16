@@ -155,4 +155,16 @@ function getContent($lessonId)
     }
     return $content;
 }
+function getNameCategory($id)
+{
+    $mysql = connect();
+    if (!($rez = $mysql->query('select * from categories where id_category =' . $id))) {
+        die('A survenit o eroare la interogare');
+    }
+    while ($inreg = $rez->fetch_assoc()) {
+        $id = $inreg["categoryName"];
+        break;
+    }
+    return $id;
+}
 ?>
