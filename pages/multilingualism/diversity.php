@@ -51,8 +51,8 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Multilingualism</li>
-        <li><a href="introduction.php" class="active">The Power of Multilingualism in Online Communities<span class="easy"> 🟢 </span></a></li>
-        <li><a href="diversity.php">Respecting Language Diversity</a></li>
+        <li><a href="introduction.php">The Power of Multilingualism in Online Communities</a></li>
+        <li><a href="diversity.php" class="active">Respecting Language Diversity<span class="easy"> 🟢 </span></a></li>
         <li><a href="translation.php">Effective Translation and Interpretation</a></li>
         <li><a href="inclusive.php">Language Selection and Inclusive Communication</a></li>
         <li><a href="learning.php">Language Exchange and Learning Opportunities</a></li>
@@ -62,7 +62,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> The Power of Multilingualism in Online Communities </h1> <br>
+        <h1> Respecting Language Diversity </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -70,27 +70,28 @@
                 });
             </script>
         </h2>
-        <p>Multilingualism is a valuable asset in online communities, enabling effective communication and fostering inclusivity. 
-            Having members who speak different languages expands the reach and impact of the community, allowing for a diverse range 
-            of perspectives and experiences. Multilingual individuals can bridge language barriers, facilitate understanding, and 
-            encourage collaboration among community members. Embracing and celebrating multilingualism enriches the online community, 
-            creating a global platform for exchange and learning.</p> <br>
-            <img src="https://i0.wp.com/epthinktank.eu/wp-content/uploads/2019/09/eprs-briefing-642207-multilingualism-language-eu-final.jpg?fit=1000%2C693&ssl=1" alt="Picture!"
+        <p>In an online community with multilingual members, it is important to respect and appreciate language diversity. 
+            Avoid belittling or dismissing languages that you may not understand or speak. Value the contributions made in
+             various languages and recognize the effort put forth by individuals who engage in multilingual communication. 
+             Encourage others to use their preferred language, and be open to learning and understanding different linguistic 
+             backgrounds. By respecting language diversity, you create a welcoming environment that embraces the richness of
+              multiple languages.</p> <br>
+            <img src="https://static.wixstatic.com/media/42fb34_e3bf748312e3480bb1e8a8d12fa7161d~mv2.jpeg/v1/fill/w_596,h_336,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/42fb34_e3bf748312e3480bb1e8a8d12fa7161d~mv2.jpeg" alt="Picture!"
             class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is multilingualism valuable in online communities?</legend>
+            <legend for="Q2"> Why is it important to respect language diversity in online communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To create language barriers and exclude certain individuals</label>
+                <label for="emoji">To belittle and dismiss languages you do not understand</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To expand the reach and impact of the community, fostering inclusivity and collaboration</label>
+                <label for="emoticon">To create a welcoming environment that embraces the richness of multiple languages</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To limit perspectives and experiences within the community</label>
+                <label for="emoticon">To limit communication to a single language</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>

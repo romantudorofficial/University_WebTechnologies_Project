@@ -55,7 +55,8 @@
                 "nameLesson": "Brief history<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
                     "dan@gmail.com",
-                    "email@stef.ro"
+                    "email@stef.ro",
+                    "mariagheorghiu27@ymail.com"
                 ]
             },
             {
@@ -144,6 +145,18 @@
                 "nameLesson": "Texting etiquette: The 10 do\u2019s and don\u2019ts<span class=\"hard\"> \ud83d\udd34 <\/span>",
                 "email": [
                     "catalina.tiger25@gmail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Multilingualism",
+        "lessons": [
+            {
+                "nameLesson": "The Power of Multilingualism in Online Communities<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    null,
+                    "mariagheorghiu27@ymail.com"
                 ]
             }
         ]

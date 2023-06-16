@@ -11,6 +11,7 @@ $s_category = $_POST['suggestion_category'];
 addingSuggestionInDB($s_description, $s_category);
 addingSuggestionInXML($info_IF, $info_IM, $info_FF, $info_FM, $s_description, $s_category);
 
-include "added_view.php";
+header("Location: ../add.php?added=true", true, 303);
+exit;
 
 ?>

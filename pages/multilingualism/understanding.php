@@ -51,18 +51,18 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Multilingualism</li>
-        <li><a href="introduction.php" class="active">The Power of Multilingualism in Online Communities<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">The Power of Multilingualism in Online Communities</a></li>
         <li><a href="diversity.php">Respecting Language Diversity</a></li>
         <li><a href="translation.php">Effective Translation and Interpretation</a></li>
         <li><a href="inclusive.php">Language Selection and Inclusive Communication</a></li>
         <li><a href="learning.php">Language Exchange and Learning Opportunities</a></li>
-        <li><a href="understanding.php">Cultural Understanding through Language</a></li>
+        <li><a href="understanding.php" class="active">Cultural Understanding through Language<span class="easy"> 🟢 </span></a></li>
         <li><a href="empathy.php">Empathy and Patience in Multilingual Communication</a></li>
 
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> The Power of Multilingualism in Online Communities </h1> <br>
+        <h1> Cultural Understanding through Language </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -70,27 +70,27 @@
                 });
             </script>
         </h2>
-        <p>Multilingualism is a valuable asset in online communities, enabling effective communication and fostering inclusivity. 
-            Having members who speak different languages expands the reach and impact of the community, allowing for a diverse range 
-            of perspectives and experiences. Multilingual individuals can bridge language barriers, facilitate understanding, and 
-            encourage collaboration among community members. Embracing and celebrating multilingualism enriches the online community, 
-            creating a global platform for exchange and learning.</p> <br>
-            <img src="https://i0.wp.com/epthinktank.eu/wp-content/uploads/2019/09/eprs-briefing-642207-multilingualism-language-eu-final.jpg?fit=1000%2C693&ssl=1" alt="Picture!"
+        <p>Language is deeply intertwined with culture, and multilingualism provides a gateway to understanding different cultures 
+            within an online community. When engaging with others in their native language, take the opportunity to learn about their 
+            cultural customs, traditions, and perspectives. Be respectful and open-minded, recognizing that language reflects unique
+             cultural identities. Avoid making assumptions or stereotypes based on language use. By embracing language as a means to 
+             cultural understanding, you foster a community that appreciates and celebrates diverse cultures.</p> <br>
+            <img src="https://www.northeastohioparent.com/wp-content/uploads/2021/03/iStock-1215705539-copy.jpg" alt="Picture!"
             class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is multilingualism valuable in online communities?</legend>
+            <legend for="Q6">Why is language important for cultural understanding in multilingual online communities?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To create language barriers and exclude certain individuals</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To foster a community that appreciates and celebrates diverse cultures</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To expand the reach and impact of the community, fostering inclusivity and collaboration</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To make assumptions and stereotypes based on language use</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To limit perspectives and experiences within the community</label>
+                <label for="emoticon">To limit interactions to a single language</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -100,7 +100,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("A").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }

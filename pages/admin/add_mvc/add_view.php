@@ -111,6 +111,9 @@
                     if ($error != "") {
                         echo '<h2>' . $error . "</h2>";
                     }
+                    if (isset($_GET["added"]) && $_GET["added"] == "true") {
+                        echo "<h2> Suggestion added successfully! <h2>";
+                    }
                 ?>
                 </p>
                 <br>

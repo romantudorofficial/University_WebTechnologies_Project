@@ -51,9 +51,9 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Multilingualism</li>
-        <li><a href="introduction.php" class="active">The Power of Multilingualism in Online Communities<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">The Power of Multilingualism in Online Communities</a></li>
         <li><a href="diversity.php">Respecting Language Diversity</a></li>
-        <li><a href="translation.php">Effective Translation and Interpretation</a></li>
+        <li><a href="translation.php" class="active">Effective Translation and Interpretation<span class="easy"> 🟢 </span></a></li>
         <li><a href="inclusive.php">Language Selection and Inclusive Communication</a></li>
         <li><a href="learning.php">Language Exchange and Learning Opportunities</a></li>
         <li><a href="understanding.php">Cultural Understanding through Language</a></li>
@@ -62,7 +62,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1> The Power of Multilingualism in Online Communities </h1> <br>
+        <h1> Effective Translation and Interpretation </h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -70,27 +70,28 @@
                 });
             </script>
         </h2>
-        <p>Multilingualism is a valuable asset in online communities, enabling effective communication and fostering inclusivity. 
-            Having members who speak different languages expands the reach and impact of the community, allowing for a diverse range 
-            of perspectives and experiences. Multilingual individuals can bridge language barriers, facilitate understanding, and 
-            encourage collaboration among community members. Embracing and celebrating multilingualism enriches the online community, 
-            creating a global platform for exchange and learning.</p> <br>
-            <img src="https://i0.wp.com/epthinktank.eu/wp-content/uploads/2019/09/eprs-briefing-642207-multilingualism-language-eu-final.jpg?fit=1000%2C693&ssl=1" alt="Picture!"
+        <p>Translation and interpretation play crucial roles in facilitating multilingual communication within online 
+            communities. When sharing important information or engaging in discussions, ensure that accurate translations 
+            are provided to allow everyone to fully participate. Rely on professional translators or translation tools to 
+            maintain the integrity and clarity of the content. Respect the work of translators and interpreters, as they 
+            enable seamless communication among members. By ensuring effective translation and interpretation, you enhance 
+            understanding and promote inclusivity within the community.</p> <br>
+            <img src="https://www.ccjk.com/wp-content/uploads/2021/05/Difference-between-Translator-and-Interpreter.png" alt="Picture!"
             class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1"> Why is multilingualism valuable in online communities?</legend>
+            <legend for="Q3"> Why is effective translation and interpretation important in online communities?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To create language barriers and exclude certain individuals</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To enhance understanding and promote inclusivity within the community</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To expand the reach and impact of the community, fostering inclusivity and collaboration</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To exclude non-English speakers from participating</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To limit perspectives and experiences within the community</label>
+                <label for="emoticon">To rely solely on machine translations for accuracy</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -100,7 +101,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("A").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }
