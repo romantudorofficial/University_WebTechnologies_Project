@@ -49,10 +49,11 @@
         <?php
         if ($lessons != null) {
             foreach ($lessons as $lesson) {
+                $link = "./lesson.php?id=" . $id . "&id_les=";
                 if (getIdLesson($id, $lesson[2]) == $id_lesson) {
-                    echo "<li><a href='' class='active'>" . $lesson[2] . "</a></li>"; //mai incolo si cu span
+                    echo "<li><a href='" . $link . $lesson[1] . "' class='active'>" . $lesson[2] . "</a></li>"; //mai incolo si cu span
                 } else {
-                    echo "<li><a href=''>" . $lesson[2] . "</a></li>";
+                    echo "<li><a href='" . $link . $lesson[1] . "'>" . $lesson[2] . "</a></li>";
                 }
             }
         }
@@ -61,9 +62,9 @@
     <!-- The content of this page -->
     <div class="pageContent">
         <?php
-        if ($lessons == null) {
-            echo "<br><br><h1> SORRY, but there are NOT any available lessons YET  </h1><br><br>";
-            echo "<img src='https://giffiles.alphacoders.com/773/77358.gif' class='picturesLessons'>";
+        if ($content == null) {
+            echo "<br><br><h1> SORRY, but it has not any content available  </h1><br><br>";
+            echo "<img src='https://media.tenor.com/Uz5iy1iEKAoAAAAM/shikimoris-not-just-cute-shikimori.gif' class='picturesLessons'>";
         } else {
             $counter = 0;
             foreach ($content[0][3] as $type) {
@@ -89,36 +90,38 @@
                     <?php
                 }
             }
-        } ?>
-        <h6>QUESTION</h6>
-        <fieldset>
-            <legend for="Q1">
-                <?php echo $content[0][2][$counter];
-                $counter = $counter + 1; ?>
-            </legend>
-            <?php
-            $id = 1;
-            for ($counter; $counter < count($content[0][2]); $counter = $counter + 1) {
-                if ($content[0][3][$counter] == "option") {
-                    ?>
-                    <div>
-                        <input type="radio" id=<?php echo $id; ?> name="option" value="option" checked>
-                        <label for="option">
-                            <?php echo $content[0][2][$counter]; ?>
-                        </label>
-                    </div>
-                    <?php
-                    $id = $id + 1;
-                } else {
-                    $answer = $content[0][2][$counter];
+            ?>
+            <h6>QUESTION</h6>
+            <fieldset>
+                <legend for="Q1">
+                    <?php echo $content[0][2][$counter];
+                    $counter = $counter + 1; ?>
+                </legend>
+                <?php
+                $id = 1;
+                for ($counter; $counter < count($content[0][2]); $counter = $counter + 1) {
+                    if ($content[0][3][$counter] == "option") {
+                        ?>
+                        <div>
+                            <input type="radio" id=<?php echo $id; ?> name="option" value="option" checked>
+                            <label for="option">
+                                <?php echo $content[0][2][$counter]; ?>
+                            </label>
+                        </div>
+                        <?php
+                        $id = $id + 1;
+                    } else {
+                        $answer = $content[0][2][$counter];
+                    }
                 }
-            } ?>
-            <input type="hidden" id="ans" value=<?php echo $answer; ?>>
-            <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
-            <div id="answer"></div>
-        </fieldset>
-        <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
-    </div>
+                ?>
+                <input type="hidden" id="ans" value=<?php echo $answer; ?>>
+                <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
+                <div id="answer"></div>
+            </fieldset>
+            <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
+        </div>
+    <?php } ?>
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {

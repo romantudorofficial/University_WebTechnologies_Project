@@ -30,10 +30,19 @@ class Lesson
 
     function getLessons($id_category)
     {
+        $result = [];
         $resultEasy = $this->parsingJson($this->getEasyLessons($id_category));
+        if ($resultEasy['lessons'] != null) {
+            $result = $result + $resultEasy;
+        }
         $resultMedium = $this->parsingJson($this->getMediumLessons($id_category));
+        if ($resultMedium['lessons'] != null) {
+            $result = $result + $resultMedium;
+        }
         $resultHard = $this->parsingJson($this->getHardLessons($id_category));
-        $result = $resultEasy + $resultMedium + $resultHard;
+        if ($resultHard['lessons'] != null) {
+            $result = $result + $resultHard;
+        }
         return $result;
     }
     function getEasyLessons($id_category)

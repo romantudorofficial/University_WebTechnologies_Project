@@ -47,8 +47,9 @@
         </li>
         <?php
         if ($lessons != null) {
+            $link = "./lesson.php?id=" . $id . "&id_les=";
             foreach ($lessons as $lesson) {
-                echo "<li><a href=''>" . $lesson[2] . "</a></li>";
+                echo "<li><a href='" . $link . $lesson[1] . "'>" . $lesson[2] . "</a></li>";
             }
         }
         ?>
@@ -59,10 +60,10 @@
         if ($lessons == null) {
             echo "<br><br><h1> SORRY, but there are NOT any available lessons YET  </h1><br><br>";
             echo "<img src='https://giffiles.alphacoders.com/773/77358.gif' class='picturesLessons'>";
-        } else { 
+        } else {
             echo "<br><br><h1> Choose a lesson that you would like to read</h1><br><br>";
             echo "<img src='https://media.tenor.com/_1KIbt_V2owAAAAC/fake-smile-forced-smile.gif' class='picturesLessons'>";
-        }?>
+        } ?>
 </body>
 
 </html>
