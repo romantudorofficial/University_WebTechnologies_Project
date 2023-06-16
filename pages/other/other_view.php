@@ -47,12 +47,13 @@
     <div class="pageOther">
         <?php
         $letter = null;
+        $link = "./introduction.php?id_cat=";
         foreach ($categories as $category) {
             if (strtoupper($category[1][0]) != $letter) {
                 $letter = strtoupper($category[1][0]);
                 echo "<h2> - " . $letter . " - </h2><br>";
             }
-            echo "<p> <a href=''> " . $category[1] . "</a></p><br>";
+            echo "<p> <a href='".$link.$category[0]."'> " . $category[1] . "</a></p><br>";
         }
         ?>
     </div>

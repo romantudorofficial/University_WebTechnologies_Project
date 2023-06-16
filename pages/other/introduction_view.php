@@ -57,55 +57,12 @@
     <div class="pageContent">
         <?php
         if ($lessons == null) {
-            echo "<h1> SORRY, but  </h1><br>";
-            echo "<h1> there are  </h1><br>";
-            echo "<h1> NOT </h1><br>";
-            echo "<h1> any available lessons </h1><br>";
-            echo "<h1> YET </h1><br>";
+            echo "<br><br><h1> SORRY, but there are NOT any available lessons YET  </h1><br><br>";
             echo "<img src='https://giffiles.alphacoders.com/773/77358.gif' class='picturesLessons'>";
-        } else { ?>
-            <h1> Emoji vs Emoticon </h1>
-            <h2 id="finished">
-                <script>
-                    document.addEventListener("DOMContentLoaded", function () {
-                        sendUsingAjax(-1);
-                    });
-                </script>
-            </h2>
-            <h6>QUESTION</h6>
-            <fieldset>
-                <legend for="Q1"> Which one of the following is an emoticon?</legend>
-                <div>
-                    <input type="radio" id="emoji" name="option" value="emoji" checked>
-                    <label for="emoji">🦚</label>
-                </div>
-                <div>
-                    <input type="radio" id="emoticon" name="option" value="emoticon" checked>
-                    <label for="emoticon">:P</label>
-                </div>
-                <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
-                <div id="answer"></div>
-            </fieldset>
-            <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
-        <?php } ?>
-    </div>
-    <script>
-        function myFunction(validUser) {
-            if (validUser != 1) {
-                if (document.getElementById("emoticon").checked) {
-                    document.getElementById("answer").innerHTML = "Your answer is correct";
-                    answeredCorrectly = true;
-                }
-                else {
-                    document.getElementById("answer").innerHTML = "Your answer is wrong";
-                    answeredCorrectly = false;
-                }
-            }
-            else {
-                document.getElementById("answer").innerHTML = "You already answered this question";
-            }
-        }
-    </script>
+        } else { 
+            echo "<br><br><h1> Choose a lesson that you would like to read</h1><br><br>";
+            echo "<img src='https://media.tenor.com/_1KIbt_V2owAAAAC/fake-smile-forced-smile.gif' class='picturesLessons'>";
+        }?>
 </body>
 
 </html>
