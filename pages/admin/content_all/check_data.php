@@ -195,21 +195,13 @@ function addingInDB($elements, $result, $lessonId)
     include_once '../../../db/adding_deleting.php';
     $ok = addContent($lessonId, $elements, $result);
     return $ok;
-    /*$lesson = getContent($lessonId);
-    $elementNew = unserialize($lesson['contentType']);
-    $resulttNew = unserialize($lesson['contentLesson']);
-    foreach ($elementNew as $content) {
-        echo $content . "<br>";
-    }
-    $idQuestion = array_search("question",$elementNew);
-    echo "the question is:<br>".$resulttNew[$idQuestion];*/
 
 }
 
 
 //getting the variables
 header("Content-Type: application/json; charset=UTF-8");
-$theJson = json_decode($_GET['postData']);
+$theJson = json_decode(file_get_contents('php://input'), true);
 $elements = (array) $theJson;
 $titles = $elements['title'];
 $contents = $elements['content'];
