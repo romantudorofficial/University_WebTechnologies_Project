@@ -147,5 +147,16 @@
                 ]
             }
         ]
+    },
+    {
+        "nameCategory": "okay",
+        "lessons": [
+            {
+                "nameLesson": "undefined",
+                "email": [
+                    "michelejr@gmail.com"
+                ]
+            }
+        ]
     }
 ]

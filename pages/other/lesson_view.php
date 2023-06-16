@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../styles/main_style.css" />
     <link rel="stylesheet" href="../styles/lessons_style.css" />
     <link rel="stylesheet" href="../styles/lesson_rest_style.css" />
+    <script src="../services/functionsForAjax.js"></script>
 </head>
 
 <body>
@@ -96,8 +97,8 @@
                 $counter = $counter + 1; ?>
             </legend>
             <?php
-            for ($counter; $counter < count($content[0][2]); $counter=$counter+1) {
-                $id = 0;
+            $id = 1;
+            for ($counter; $counter < count($content[0][2]); $counter = $counter + 1) {
                 if ($content[0][3][$counter] == "option") {
                     ?>
                     <div>
@@ -107,18 +108,35 @@
                         </label>
                     </div>
                     <?php
-                }
-                else{
+                    $id = $id + 1;
+                } else {
                     $answer = $content[0][2][$counter];
                 }
-                $id = $id + 1;
-            }
-            ?>
+            } ?>
+            <input type="hidden" id="ans" value=<?php echo $answer; ?>>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
         </fieldset>
         <button class="completeLesson" onclick="checkAnswer(answeredCorrectly)">Complete Lesson</button>
     </div>
+    <script type="text/javascript">
+        function myFunction(validUser) {
+            if (validUser != 1) {
+                var ans = document.getElementById("ans").value;
+                if (document.getElementById(ans).checked) {
+                    document.getElementById("answer").innerHTML = "Your answer is correct";
+                    answeredCorrectly = true;
+                }
+                else {
+                    document.getElementById("answer").innerHTML = "Your answer is wrong";
+                    answeredCorrectly = false;
+                }
+            }
+            else {
+                document.getElementById("answer").innerHTML = "You already answered this question";
+            }
+        }
+    </script>
 </body>
 
 </html>
