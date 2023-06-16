@@ -41,14 +41,16 @@
                 "nameLesson": "When (not) to use emojis<span class=\"easy\"> \ud83d\udfe1 <\/span>",
                 "email": [
                     "catalina.tiger25@gmail.com",
-                    "email@stef.ro"
+                    "email@stef.ro",
+                    "mariagheorghiu27@ymail.com"
                 ]
             },
             {
                 "nameLesson": "Emoji vs Emoticon<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
                     "catalina.tiger25@gmail.com",
-                    "email@stef.ro"
+                    "email@stef.ro",
+                    "mariagheorghiu27@ymail.com"
                 ]
             },
             {
@@ -66,7 +68,8 @@
                     "olesea@gmail.com",
                     "catalina.tiger25@gmail.com",
                     "email@stef.ro",
-                    "michelejr@gmail.com"
+                    "michelejr@gmail.com",
+                    "mariagheorghiu27@ymail.com"
                 ]
             }
         ]
@@ -156,6 +159,35 @@
                 "nameLesson": "The Power of Multilingualism in Online Communities<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
                     null,
+                    "mariagheorghiu27@ymail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Virtual Community",
+        "lessons": [
+            {
+                "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            },
+            {
+                "nameLesson": "Engaging with Moderators<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            },
+            {
+                "nameLesson": "Being a Good Community Member<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            },
+            {
+                "nameLesson": "Privacy and Consent<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
                     "mariagheorghiu27@ymail.com"
                 ]
             }

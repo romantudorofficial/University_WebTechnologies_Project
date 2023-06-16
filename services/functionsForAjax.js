@@ -47,6 +47,7 @@ function checkAnswer(answer) {
             document.getElementById("answer").innerHTML = "Congratulations! You completed this lesson!";
             document.getElementById("answer").style.color = "blue";
             showFinished(1);
+            finishedLesson = true;
         }
         else {
             document.getElementById("answer").innerHTML = "You must answer this question CORRECTLY";
