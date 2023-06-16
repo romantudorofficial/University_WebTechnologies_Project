@@ -87,7 +87,7 @@
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="wrong" checked>
-                <label for="emoticon">To build bridges of communication and strengthen the multilingual fabric of the community</label>
+                <label for="emoticon">To disregard language proficiency differences among community members</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="right" checked>
