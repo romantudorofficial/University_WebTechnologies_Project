@@ -1,7 +1,7 @@
 <?php
-function getCategories()
+function getLessons($id)
 {
-    define('url', 'http://localhost/University_WebTechnologies_Project/pages/api/categories/read.php');
+    define('url', 'http://localhost/University_WebTechnologies_Project/pages/api/categories/read.php?id_cat=' . $id);
     $c = curl_init(); // initializam biblioteca
     curl_setopt($c, CURLOPT_URL, url); // stabilim URL-ul serviciului
     curl_setopt($c, CURLOPT_RETURNTRANSFER, true); // rezultatul cererii va fi disponibil ca șir de caractere
@@ -11,18 +11,22 @@ function getCategories()
     $jsonFile = json_decode($res);
     return $jsonFile;
 }
-function returnCategoriesAsArray()
+function returnLessonsAsArray($id)
 {
-    $jsonFile = (array) getCategories();
+    $jsonFile = (array) getLessons($id);
     $result = null;
     $i = 0;
     foreach ($jsonFile as $instance) {
         foreach ($instance as $category) {
             $noJson = (array) $category;
-            $result[$i][1] = $noJson['categoryName'];
+            $result[$i][1] = $noJson['id_lesson'];
             $result[$i][0] = $noJson['id_category'];
+            $result[$i][2] = $noJson['lessonName'];
+            $result[$i][3] = $noJson['difficulty'];
+
             $i = $i + 1;
         }
+
     }
     return $result;
 }
