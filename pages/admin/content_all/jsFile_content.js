@@ -114,29 +114,38 @@ function postDataUsingAjax() {
                 switch (res) {
                     case "0":
                         p.innerHTML = "Do not send the file blank!";
+                        p.style.color = "red";
                         break;
                     case "-1":
                         p.innerHTML = "You did not complete the required fields!";
+                        p.style.color = "red";
                         break;
                     case "-2":
                         p.innerHTML = "You have identical options!";
+                        p.style.color = "red";
                         break;
                     case "-3":
                         p.innerHTML = "Your answer does not match the number of valid options!";
+                        p.style.color = "red";
                         break;
                     case "2":
                         p.innerHTML = "The lesson got updated!";
                         p.style.color = "blue";
                         break;
-                    default:
+                    case "1":
                         p.innerHTML = "The lesson got saved!";
                         p.style.color = "blue";
+                        break;
+                    default:
+                        alert(res);
+                        p.innerHTML = "You've got an error!";
+                        p.style.color = "red";
                 }
             }
         };
-        xhr.open("GET", "http://localhost/University_WebTechnologies_Project/pages/admin/content_all/check_data.php?postData=" + jsonThing, true);
+        xhr.open("POST", "http://localhost/University_WebTechnologies_Project/pages/admin/content_all/check_data.php", true);
         xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
-        xhr.send();
+        xhr.send(jsonThing);
     }
 }
 var x = 10;
@@ -148,8 +157,9 @@ function addImage() {
         node1.appendChild(textInput);
         const node2 = document.createElement("input");
         node2.setAttribute("name", "image[]");
-        node2.setAttribute("maxlength", "100");
+        node2.setAttribute("maxlength", "300");
         node2.classList.add("image");
+        node2.setAttribute("type", "url"); //
         const node3 = document.createElement("br");
 
         //elements for order

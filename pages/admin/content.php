@@ -63,7 +63,7 @@
                 <textarea name="content[]" class="content" rows="10" cols="60" maxlength="1000"></textarea><br>
                 <input type="hidden" name="elements[]" value="content" class="element">
                 <label for="image">Paste the URL of the image:</label>
-                <input name="image[]" class="image" id="image" maxlength="100"></input>
+                <input name="image[]" class="image" id="image" maxlength="300" type="url"></input>
                 <input type="hidden" name="elements[]" value="image" class="element">
 
                 <div id="helper"></div>

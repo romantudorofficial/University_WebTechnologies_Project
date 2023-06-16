@@ -20,7 +20,8 @@ if (array_search('categories', $url) == 4) {
         $lessonsOfACategory = array();
         $lessonsOfACategory["lessons"] = array();
         $lesson = new Lesson($database);
-        echo json_encode( $lesson->getLessons($id));
+        $arrayLesson = $lesson->getLessons($id);
+        echo json_encode($arrayLesson);
     } else {
         $itemRecords = array();
         $itemRecords["categories"] = array();
