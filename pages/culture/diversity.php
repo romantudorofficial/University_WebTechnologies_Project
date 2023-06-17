@@ -51,7 +51,7 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Cultural Differences</li>
-        <li><a href="introduction.php" class="active">Cultural Sensitivity in Online Communication<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Cultural Sensitivity in Online Communication</a></li>
         <li><a href="respect.php">Respect for Cultural Differences</a></li>
         <li><a href="stereotypes.php">Avoid Stereotyping and Generalizations</a></li>
         <li><a href="humour.php">Mindful Use of Humor and Sarcasm</a></li>
@@ -59,13 +59,13 @@
         <li><a href="time.php">Time Zone Considerations</a></li>
         <li><a href="taboos.php">Awareness of Taboos and Sensitive Topics</a></li>
         <li><a href="patience.php">Patience and Understanding</a></li>
-        <li><a href="diversity.php">Embrace Diversity and Learn from Others</a></li>
+        <li><a href="diversity.php" class="active">Embrace Diversity and Learn from Others<span class="easy"> 🟢 </span></a></li>
         <li><a href="collaboration.php">Collaboration and Cultural Exchange</a></li>
 
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1>Cultural Sensitivity in Online Communication</h1> <br>
+        <h1>Embrace Diversity and Learn from Others</h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -73,27 +73,26 @@
                 });
             </script>
         </h2>
-        <p>Culture plays a significant role in online communication, and it is essential to be culturally sensitive and respectful when 
-            interacting with individuals from diverse backgrounds. Understand that cultural norms, values, and communication styles can 
-            vary greatly. Avoid making assumptions or generalizations about others based on their cultural background. Take the time to 
-            learn about different cultures, their customs, and appropriate forms of address. By being culturally sensitive, you foster 
-            a welcoming and inclusive online environment.</p> <br>
-            <img src="https://www.onlinemswprograms.com/wp-content/uploads/sites/55/2021/05/5296_MSW-Minisite_Cultural-Sensitivity-Hero.jpg" alt="Picture!"
+        <p>Cultural diversity in online communities offers an opportunity to learn from one another and broaden your perspectives. 
+            Embrace diversity by actively seeking knowledge about different cultures, traditions, and practices. Engage in respectful 
+            conversations and ask questions to gain insights from individuals with diverse backgrounds. By embracing diversity and 
+            learning from others, you create an enriching and inclusive online environment.</p> <br>
+            <img src="https://media.licdn.com/dms/image/C4D12AQEwM7lR8REVjw/article-cover_image-shrink_600_2000/0/1621781451466?e=2147483647&v=beta&t=3_yVBwv_VVlXrvh3wid7-HETjhZjEp2ENto4px56Z-w" alt="Picture!"
             class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1">Why is it important to be culturally sensitive in online communication?</legend>
+            <legend for="Q9">Why is it important to embrace diversity and learn from others in online communities?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To make assumptions about others based on their cultural background</label>
+                <label for="emoji">To dismiss and ignore individuals with diverse backgrounds</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a welcoming and inclusive online environment</label>
+                <label for="emoticon">To create an enriching and inclusive online environment</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To disregard cultural norms and values</label>
+                <label for="emoticon">To avoid engaging in respectful conversations</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>

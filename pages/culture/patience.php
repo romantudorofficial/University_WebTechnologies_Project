@@ -51,21 +51,21 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Cultural Differences</li>
-        <li><a href="introduction.php" class="active">Cultural Sensitivity in Online Communication<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Cultural Sensitivity in Online Communication</a></li>
         <li><a href="respect.php">Respect for Cultural Differences</a></li>
         <li><a href="stereotypes.php">Avoid Stereotyping and Generalizations</a></li>
         <li><a href="humour.php">Mindful Use of Humor and Sarcasm</a></li>
         <li><a href="communication.php">Adapting Communication Styles</a></li>
         <li><a href="time.php">Time Zone Considerations</a></li>
         <li><a href="taboos.php">Awareness of Taboos and Sensitive Topics</a></li>
-        <li><a href="patience.php">Patience and Understanding</a></li>
+        <li><a href="patience.php" class="active">Patience and Understanding<span class="easy"> 🟢 </span></a></li>
         <li><a href="diversity.php">Embrace Diversity and Learn from Others</a></li>
         <li><a href="collaboration.php">Collaboration and Cultural Exchange</a></li>
 
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1>Cultural Sensitivity in Online Communication</h1> <br>
+        <h1>Patience and Understanding</h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -73,27 +73,27 @@
                 });
             </script>
         </h2>
-        <p>Culture plays a significant role in online communication, and it is essential to be culturally sensitive and respectful when 
-            interacting with individuals from diverse backgrounds. Understand that cultural norms, values, and communication styles can 
-            vary greatly. Avoid making assumptions or generalizations about others based on their cultural background. Take the time to 
-            learn about different cultures, their customs, and appropriate forms of address. By being culturally sensitive, you foster 
-            a welcoming and inclusive online environment.</p> <br>
-            <img src="https://www.onlinemswprograms.com/wp-content/uploads/sites/55/2021/05/5296_MSW-Minisite_Cultural-Sensitivity-Hero.jpg" alt="Picture!"
+        <p>Cultural differences can sometimes lead to misunderstandings or misinterpretations in online communication. 
+            Practice patience and understanding when encountering cultural variations in behavior, language, or communication 
+            styles. Ask for clarification if something seems unclear or ambiguous. Assume positive intent and avoid jumping to 
+            conclusions. By exercising patience and understanding, you build bridges of communication and foster a supportive 
+            online community.</p> <br>
+            <img src="https://vox.divinity.edu.au/wp-content/uploads/2020/08/bigstock-Wooden-Block-With-The-Word-Pat-348338140-e1597282163330.jpg" alt="Picture!"
             class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1">Why is it important to be culturally sensitive in online communication?</legend>
+            <legend for="Q8">Why is it important to practice patience and understanding in online communication?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To make assumptions about others based on their cultural background</label>
+                <label for="emoji">To jump to conclusions based on cultural differences</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a welcoming and inclusive online environment</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To assume negative intent in all online interactions</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To disregard cultural norms and values</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">To build bridges of communication and foster a supportive online community</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -103,7 +103,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("C").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }

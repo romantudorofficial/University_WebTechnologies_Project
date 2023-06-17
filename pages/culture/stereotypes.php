@@ -51,9 +51,9 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Cultural Differences</li>
-        <li><a href="introduction.php" class="active">Cultural Sensitivity in Online Communication<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Cultural Sensitivity in Online Communication</a></li>
         <li><a href="respect.php">Respect for Cultural Differences</a></li>
-        <li><a href="stereotypes.php">Avoid Stereotyping and Generalizations</a></li>
+        <li><a href="stereotypes.php" class="active">Avoid Stereotyping and Generalizations<span class="easy"> 🟢 </span></a></li>
         <li><a href="humour.php">Mindful Use of Humor and Sarcasm</a></li>
         <li><a href="communication.php">Adapting Communication Styles</a></li>
         <li><a href="time.php">Time Zone Considerations</a></li>
@@ -65,7 +65,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1>Cultural Sensitivity in Online Communication</h1> <br>
+        <h1>Avoid Stereotyping and Generalizations</h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -73,27 +73,28 @@
                 });
             </script>
         </h2>
-        <p>Culture plays a significant role in online communication, and it is essential to be culturally sensitive and respectful when 
-            interacting with individuals from diverse backgrounds. Understand that cultural norms, values, and communication styles can 
-            vary greatly. Avoid making assumptions or generalizations about others based on their cultural background. Take the time to 
-            learn about different cultures, their customs, and appropriate forms of address. By being culturally sensitive, you foster 
-            a welcoming and inclusive online environment.</p> <br>
-            <img src="https://www.onlinemswprograms.com/wp-content/uploads/sites/55/2021/05/5296_MSW-Minisite_Cultural-Sensitivity-Hero.jpg" alt="Picture!"
+        <p>Stereotyping and making generalizations based on cultural backgrounds can lead to misunderstandings 
+            and perpetuate biases. Recognize that each individual is unique and should be approached with an open mind.
+             Avoid making assumptions about someone's behavior or beliefs solely based on their cultural background. 
+             Engage in active listening and seek to understand individuals on an individual level rather than relying on
+              stereotypes. By avoiding stereotypes and generalizations, you contribute to a more inclusive and respectful 
+              online environment.</p> <br>
+            <img src="https://www.simplypsychology.org/wp-content/uploads/stereotype1.jpeg" alt="Picture!"
             class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1">Why is it important to be culturally sensitive in online communication?</legend>
+            <legend for="Q3">Why should you avoid stereotyping and making generalizations based on cultural backgrounds?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To make assumptions about others based on their cultural background</label>
+                <label for="emoji">To perpetuate biases and misunderstandings</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a welcoming and inclusive online environment</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To rely solely on cultural stereotypes for understanding</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To disregard cultural norms and values</label>
+                <input type="radio" id="C" name="option" value="right" checked>
+                <label for="emoticon">To approach individuals with an open mind and understand them as unique individuals</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -103,7 +104,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("C").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }

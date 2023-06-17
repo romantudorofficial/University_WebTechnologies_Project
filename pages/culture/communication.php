@@ -51,11 +51,11 @@
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">Cultural Differences</li>
-        <li><a href="introduction.php" class="active">Cultural Sensitivity in Online Communication<span class="easy"> 🟢 </span></a></li>
+        <li><a href="introduction.php">Cultural Sensitivity in Online Communication</a></li>
         <li><a href="respect.php">Respect for Cultural Differences</a></li>
         <li><a href="stereotypes.php">Avoid Stereotyping and Generalizations</a></li>
         <li><a href="humour.php">Mindful Use of Humor and Sarcasm</a></li>
-        <li><a href="communication.php">Adapting Communication Styles</a></li>
+        <li><a href="communication.php" class="active">Adapting Communication Styles<span class="easy"> 🟢 </span></a></li>
         <li><a href="time.php">Time Zone Considerations</a></li>
         <li><a href="taboos.php">Awareness of Taboos and Sensitive Topics</a></li>
         <li><a href="patience.php">Patience and Understanding</a></li>
@@ -65,7 +65,7 @@
     </ul>
     <!-- The content of this page -->
     <div class="pageContent">
-        <h1>Cultural Sensitivity in Online Communication</h1> <br>
+        <h1>Adapting Communication Styles</h1> <br>
         <h2 id="finished">
             <script>
                 document.addEventListener("DOMContentLoaded", function () {
@@ -73,27 +73,27 @@
                 });
             </script>
         </h2>
-        <p>Culture plays a significant role in online communication, and it is essential to be culturally sensitive and respectful when 
-            interacting with individuals from diverse backgrounds. Understand that cultural norms, values, and communication styles can 
-            vary greatly. Avoid making assumptions or generalizations about others based on their cultural background. Take the time to 
-            learn about different cultures, their customs, and appropriate forms of address. By being culturally sensitive, you foster 
-            a welcoming and inclusive online environment.</p> <br>
-            <img src="https://www.onlinemswprograms.com/wp-content/uploads/sites/55/2021/05/5296_MSW-Minisite_Cultural-Sensitivity-Hero.jpg" alt="Picture!"
+        <p>Adapting your communication style is crucial when interacting with individuals from diverse cultures online. 
+            Be aware of differences in directness, formality, and hierarchy within different cultures. Some cultures may 
+            value direct and assertive communication, while others may prefer more indirect and polite approaches. Adjust 
+            your communication style to accommodate these cultural differences, ensuring clarity and respect. By adapting 
+            your communication style, you foster effective cross-cultural understanding and minimize misunderstandings.</p> <br>
+            <img src="https://www.getmailbird.com/wp-content/uploads/2020/09/Video-and-audio-calls.jpg" alt="Picture!"
             class="picturesLessons">
         <h6>QUESTION</h6>
         <fieldset>
-            <legend for="Q1">Why is it important to be culturally sensitive in online communication?</legend>
+            <legend for="Q5">Why is it important to adapt your communication style when interacting with individuals from diverse cultures online?</legend>
             <div>
-                <input type="radio" id="A" name="option" value="wrong" checked>
-                <label for="emoji">To make assumptions about others based on their cultural background</label>
+                <input type="radio" id="A" name="option" value="right" checked>
+                <label for="emoji">To foster effective cross-cultural understanding and minimize misunderstandings</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="right" checked>
-                <label for="emoticon">To foster a welcoming and inclusive online environment</label>
+                <input type="radio" id="B" name="option" value="wrong" checked>
+                <label for="emoticon">To enforce your own communication style onto others</label>
             </div>
             <div>
                 <input type="radio" id="C" name="option" value="wrong" checked>
-                <label for="emoticon">To disregard cultural norms and values</label>
+                <label for="emoticon">To disregard cultural differences in communication styles</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
             <div id="answer"></div>
@@ -103,7 +103,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("B").checked) {
+                if (document.getElementById("A").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }
