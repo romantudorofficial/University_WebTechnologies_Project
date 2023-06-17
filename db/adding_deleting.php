@@ -20,6 +20,7 @@ function deleteCategory($category)
     $mysql = connect();
     $id_category = getIdCategory($category);
     deleteLessonsFromThatCategory($id_category, $mysql);
+    deleteSuggestionsFromCategory($category, $mysql);
     if (!($rez = $mysql->query("DELETE FROM categories where categoryName like '$category'"))) {
         die('A survenit o eroare la interogare');
     }
@@ -76,4 +77,29 @@ function addContent($idLesson, $elements, $result)
         return 0;
     }
 }
+
+function deleteSuggestionsFromCategory($category, $mysql)
+{
+    if (!($rez1 = $mysql->query("SELECT id_suggestion FROM suggestions WHERE category_name = '$category'"))) {
+        die('A survenit o eroare la interogare');
+    }
+    
+    $xmlDoc = new DOMDocument();
+    $xmlDoc->load("../../suggestion/suggestionsFile.xml");
+
+    while ($inreg = $rez1->fetch_assoc()) {
+        $id_suggestion = $inreg['id_suggestion'];
+        $x = $xmlDoc->getElementsByTagName("file")->item(0);
+        $y = $x->getElementsByTagName("s".$id_suggestion)->item(0);
+        $x->removeChild($y);
+    }
+
+    $xmlDoc->save("../../suggestion/suggestionsFile.xml");
+
+    if (!($rez2 = $mysql->query("DELETE FROM suggestions WHERE category_name = '$category'"))) {
+        die('A survenit o eroare la interogare');
+    }
+}
+
 ?>
+
