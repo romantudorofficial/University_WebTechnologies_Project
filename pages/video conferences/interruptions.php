@@ -88,11 +88,11 @@
                 <label for="emoji">To interrupt others and dominate the conversation</label>
             </div>
             <div>
-                <input type="radio" id="B" name="option" value="wrong" checked>
+                <input type="radio" id="B" name="option" value="right" checked>
                 <label for="emoticon">To foster a collaborative and inclusive environment</label>
             </div>
             <div>
-                <input type="radio" id="C" name="option" value="right" checked>
+                <input type="radio" id="C" name="option" value="wrong" checked>
                 <label for="emoticon">To ignore the need for active listening</label>
             </div>
             <button type="button" onclick="sendUsingAjax(0)">Check Answer</button>
@@ -103,7 +103,7 @@
     <script type="text/javascript">
         function myFunction(validUser) {
             if (validUser != 1) {
-                if (document.getElementById("C").checked) {
+                if (document.getElementById("B").checked) {
                     document.getElementById("answer").innerHTML = "Your answer is correct";
                     answeredCorrectly = true;
                 }
