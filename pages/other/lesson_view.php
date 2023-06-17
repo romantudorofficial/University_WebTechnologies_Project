@@ -51,7 +51,20 @@
             foreach ($lessons as $lesson) {
                 $link = "./lesson.php?id=" . $id . "&id_les=";
                 if (getIdLesson($id, $lesson[2]) == $id_lesson) {
-                    echo "<li><a href='" . $link . $lesson[1] . "' class='active'>" . $lesson[2] . "</a></li>"; //mai incolo si cu span
+                    switch ($lesson[3]) {
+                        case 'easy':
+                            $span = '<span class="easy"> 🟢 </span>';
+                            break;
+                        case 'medium':
+                            $span = '<span class="medium"> 🟡 </span>';
+                            break;
+                        case 'hard':
+                            $span = '<span class="medium"> 🔴 </span>';
+                            break;
+                        default:
+                            $span = "";
+                    }
+                    echo "<li><a href='" . $link . $lesson[1] . "' class='active'>" . $lesson[2] . $span . "</a></li>"; //mai incolo si cu span
                 } else {
                     echo "<li><a href='" . $link . $lesson[1] . "'>" . $lesson[2] . "</a></li>";
                 }
