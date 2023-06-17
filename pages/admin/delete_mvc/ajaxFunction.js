@@ -10,7 +10,6 @@ function callShowLessons() {
     xmlhttp.open("GET", "http://localhost/University_WebTechnologies_Project/pages/admin/delete_mvc/categoryLesson.php?category=" + category, true);
     xmlhttp.send();
 }
-
 function createDiv(lesson) {
     var select = document.querySelector("#lesson");
     var len = select.length;
