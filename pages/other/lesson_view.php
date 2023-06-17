@@ -40,10 +40,16 @@
                 <?php echo $type; ?>
             </a> </li>
     </ul>
+    <?php
+    include_once '../db/getting_info.php';
+    ?>
+    <form action="">
+        <input type="hidden" class="active" value=<?php getNameCategory($id) ?>>
+    </form>
     <!-- The navigation bar for lessons -->
     <ul class="lessons">
         <li class="titleLesson">
-            <?php include_once '../db/getting_info.php';
+            <?php
             echo getNameCategory($id); ?>
         </li>
         <?php

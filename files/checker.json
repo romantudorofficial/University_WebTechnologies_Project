@@ -94,7 +94,8 @@
             {
                 "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
-                    "marimari@yahoo.com"
+                    "marimari@yahoo.com",
+                    "catalina.tiger25@gmail.com"
                 ]
             }
         ]
@@ -212,6 +213,28 @@
                 "nameLesson": "undefined",
                 "email": [
                     "elenaberbeci@gmail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Bunele Maniere<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+        "lessons": [
+            {
+                "nameLesson": "undefined",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "",
+        "lessons": [
+            {
+                "nameLesson": "Bunele Maniere<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
                 ]
             }
         ]
