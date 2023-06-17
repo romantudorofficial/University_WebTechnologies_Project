@@ -33,15 +33,31 @@ class Lesson
         $result = [];
         $resultEasy = $this->parsingJson($this->getEasyLessons($id_category));
         if ($resultEasy['lessons'] != null) {
-            $result = $result + $resultEasy;
+            $result = $resultEasy['lessons'];
         }
         $resultMedium = $this->parsingJson($this->getMediumLessons($id_category));
         if ($resultMedium['lessons'] != null) {
-            $result = $result + $resultMedium;
+            if ($result == null) {
+                $result = $resultMedium;
+            } else {
+                $idx = count($result) + 1;
+                for ($counter = 0; $counter < count($resultMedium['lessons']); $counter = $counter + 1) {
+                    $result[$idx] = $resultMedium['lessons'][$counter];
+                    $idx = $idx + 1;
+                }
+            }
         }
         $resultHard = $this->parsingJson($this->getHardLessons($id_category));
         if ($resultHard['lessons'] != null) {
-            $result = $result + $resultHard;
+            if ($result == null) {
+                $result = $resultHard['lessons'];
+            } else {
+                $idx = count($result);
+                for ($counter = 0; $counter < count($resultHard['lessons']); $counter = $counter + 1) {
+                    $result['lessons'][$idx] = $resultHard['lessons'][$counter];
+                    $idx = $idx + 1;
+                }
+            }
         }
         return $result;
     }
