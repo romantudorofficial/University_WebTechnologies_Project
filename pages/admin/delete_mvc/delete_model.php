@@ -32,4 +32,18 @@ function categoryLessons($category)
     }
     return $lesson;
 }
+
+function allCategories(){
+    $mysql = connect();
+    if (!($rez = $mysql->query('SELECT * from categories'))) {
+        die('A survenit o eroare la interogare');
+    }
+    $i = 1;
+    $category = null;
+    while ($inreg = $rez->fetch_assoc()) {
+        $category[$i] = $inreg['categoryName'];
+        $i = $i + 1;
+    }
+    return $category;
+}
 ?>

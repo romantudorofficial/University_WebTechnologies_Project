@@ -65,7 +65,7 @@
     <div class="adminContent">
         <h1> Suggestion Page </h1>
         <p class="info"> If you want to search for a specific situation, please complete the following form:</p>
-        <form action = "show_suggestion_controller.php" method="post">
+        <form action = "show_suggestion.php" method="post">
             <label> Choose in which category fits:</label>
             <select name="category" id="category" onchange="showDescriptions(this.value)"> 
             <option value="">Select a category:</option>

@@ -7,18 +7,6 @@
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
     <link rel="stylesheet" href="../../styles/admin_style.css" />
-    <script>
-        function showDescriptions(category) {
-            var xmlhttp = new XMLHttpRequest();
-            xmlhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    document.getElementById("txtHint").innerHTML = this.responseText;
-                }
-            };
-            xmlhttp.open("GET","get_descriptions.php?q="+category,true);
-            xmlhttp.send();
-        }
-    </script>
 </head>
 
 <body>

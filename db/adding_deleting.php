@@ -101,5 +101,28 @@ function deleteSuggestionsFromCategory($category, $mysql)
     }
 }
 
+function deleteOneSuggestion($description, $category, $mysql)
+{
+    if (!($rez1 = $mysql->query("SELECT id_suggestion FROM suggestions WHERE description = '$description' and category_name = '$category'"))) {
+        die('A survenit o eroare la interogare');
+    }
+    
+    $xmlDoc = new DOMDocument();
+    $xmlDoc->load("../../suggestion/suggestionsFile.xml");
+
+    while ($inreg = $rez1->fetch_assoc()) {
+        $id_suggestion = $inreg['id_suggestion'];
+        $x = $xmlDoc->getElementsByTagName("file")->item(0);
+        $y = $x->getElementsByTagName("s".$id_suggestion)->item(0);
+        $x->removeChild($y);
+    }
+
+    $xmlDoc->save("../../suggestion/suggestionsFile.xml");
+
+    if (!($rez2 = $mysql->query("DELETE FROM suggestions WHERE description = '$description'"))) {
+        die('A survenit o eroare la interogare');
+    }
+}
+
 ?>
 

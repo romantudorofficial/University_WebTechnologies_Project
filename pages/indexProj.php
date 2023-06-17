@@ -99,6 +99,17 @@
 			This is where you can see the leaderboard.
 		</p>
 	</article>
+
+	<article class="categs">
+		<header>
+			<form method="POST" action="admin_applications/admin_application_controller.php">
+				<input class="goToPage" type="submit" value="Admin Application" />
+			</form>
+		</header>
+		<p>
+			This is where you can apply to become an admin.
+		</p>
+	</article>
 </body>
 
 </html>
