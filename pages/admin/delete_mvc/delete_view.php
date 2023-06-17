@@ -76,7 +76,7 @@
 
 
             <p class="info"> If you want to delete a suggestion:</p>
-            <form name="categorySuggestion" action="./suggestions/addingSuggestion.php" method="POST">
+            <form name="categorySuggestion" action="./delete_mvc/delete_done.php" method="POST">
                 <label for="category">Choose the category's suggestion:</label>
                 <select name="category_sug" onchange="callShowSuggestions()">
                     <?php
@@ -96,6 +96,11 @@
                 <button type="submit">Delete Suggestion</button>
                 <button class="backButton"><a href="menu.php">Back</a></button>
             </form>
+            <?php
+            if (isset($message)) {
+                echo $message;
+            }           
+            ?>
         </div>
     </body>
     <script src="./delete_mvc/ajaxFunction.js"></script>

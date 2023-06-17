@@ -3,7 +3,7 @@ include_once '../../../db/connection.php';
 function categorySuggestions($category)
 {
     $mysql = connect();
-    if (!($rez = $mysql->query("SELECT * from suggestions where  category_name like '" . $category . "'"))) {
+    if (!($rez = $mysql->query("SELECT * from suggestions where category_name like '" . $category . "'"))) {
         die('A survenit o eroare la interogare');
     }
     $i = 0;

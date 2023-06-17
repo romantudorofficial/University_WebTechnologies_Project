@@ -17,5 +17,12 @@ if ($categories_all != null) {
 
 $allCategories = allCategories();
 
+if (isset($_REQUEST['deleted']) && $_REQUEST['deleted'] == true) {
+    $message = '<p class="info"> The suggestion was deleted successfully! </p>';
+}
+else if (isset($_REQUEST['error']) && $_REQUEST['error'] == true) {
+    $message = '<p class="info"> The suggestion was not deleted, an error occured! Try again later. </p>';
+}
+
 include './delete_mvc/delete_view.php';
 ?>

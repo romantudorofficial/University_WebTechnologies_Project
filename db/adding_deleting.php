@@ -103,7 +103,7 @@ function deleteSuggestionsFromCategory($category, $mysql)
 
 function deleteOneSuggestion($description, $category, $mysql)
 {
-    if (!($rez1 = $mysql->query("SELECT id_suggestion FROM suggestions WHERE description = '$description' and category_name = '$category'"))) {
+    if (!($rez1 = $mysql->query("SELECT id_suggestion FROM suggestions WHERE description = '$description' "))) {
         die('A survenit o eroare la interogare');
     }
     
@@ -114,7 +114,11 @@ function deleteOneSuggestion($description, $category, $mysql)
         $id_suggestion = $inreg['id_suggestion'];
         $x = $xmlDoc->getElementsByTagName("file")->item(0);
         $y = $x->getElementsByTagName("s".$id_suggestion)->item(0);
-        $x->removeChild($y);
+
+        if ($y != null) {
+            $x->removeChild($y);
+        }
+        
     }
 
     $xmlDoc->save("../../suggestion/suggestionsFile.xml");
