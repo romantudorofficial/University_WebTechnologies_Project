@@ -137,7 +137,6 @@ function postDataUsingAjax() {
                         p.style.color = "blue";
                         break;
                     default:
-                        alert(res);
                         p.innerHTML = "You've got an error!";
                         p.style.color = "red";
                 }
