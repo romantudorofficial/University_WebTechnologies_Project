@@ -49,11 +49,12 @@ function addUserInfo($mysql, $id){
 function updateUserBasicInformation ($mysql, $initialEmail, $newEmail, $firstName, $lastName)
 {
     $userId = getId($initialEmail);
-    
-    if (($result = $mysql->query('UPDATE users
-        SET firstName = "'.$firstName.'", lastName = "'.$lastName.'", email = "'.$newEmail.'"
-        WHERE id_user LIKE "'.$userId.'"')))
 
+    $result = $mysql->prepare("UPDATE users SET firstName = ?, lastName = ?, email = ? WHERE id_user = ?;");
+    $result -> bind_param("sssi", $firstName, $lastName, $newEmail, $userId);
+    $result -> execute();
+
+    if ($result)
         return true;
     
     return false;

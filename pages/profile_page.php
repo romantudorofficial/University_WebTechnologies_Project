@@ -153,9 +153,36 @@
 
     ### Update the profile information.
 
-    # To be repaired.
+    include_once '../db/getting_info.php';
+    include_once '../db/adding_data.php';
+    
+    $mysql = connect();
 
     $initialEmail = 'tudorgalatan@gmail.com';
+
+    $userId = getId($initialEmail);
+
+    # Get the initial data from the database.
+
+    $firstNameDB = $mysql->query('SELECT firstName FROM users WHERE id_user LIKE "'.$userId.'"');
+    $lastNameDB = $mysql->query('SELECT lastName FROM users WHERE id_user LIKE "'.$userId.'"');
+    $emailDB = $mysql->query('SELECT email FROM users WHERE id_user LIKE "'.$userId.'"');
+    $nationalityDB = $mysql->query('SELECT nationality FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $countryOfResidenceDB = $mysql->query('SELECT countryResidence FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $genderDB = $mysql->query('SELECT gender FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $occupationDB = $mysql->query('SELECT occupation FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $socialStatusDB = $mysql->query('SELECT socialStatus FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $religionDB = $mysql->query('SELECT religion FROM user_info WHERE id_user LIKE "'.$userId.'"');
+
+    $firstNameDB = mysqli_fetch_array($firstNameDB)[0];
+    $lastNameDB = mysqli_fetch_array($lastNameDB)[0];
+    $emailDB = mysqli_fetch_array($emailDB)[0];
+    $nationalityDB = mysqli_fetch_array($nationalityDB)[0];
+    $countryOfResidenceDB = mysqli_fetch_array($countryOfResidenceDB)[0];
+    $genderDB = mysqli_fetch_array($genderDB)[0];
+    $occupationDB = mysqli_fetch_array($occupationDB)[0];
+    $socialStatusDB = mysqli_fetch_array($socialStatusDB)[0];
+    $religionDB = mysqli_fetch_array($religionDB)[0];
 
 
     if (isset($_POST['submit']))
@@ -164,7 +191,7 @@
 
         $firstName = $_POST['first-name'];
         $lastName = $_POST['last-name'];
-        $newEmail = $_POST['email'];
+        $email = $_POST['email'];
         $nationality = $_POST['nationality'];
         $countryOfResidence = $_POST['country-of-residence'];
         $gender = $_POST['gender'];
@@ -173,18 +200,42 @@
         $religion = $_POST['religion'];
 
 
+        # Keep only the new changes.
+
+        if ($firstName == null)
+            $firstName = $firstNameDB;
+
+        if ($lastName == null)
+            $lastName = $lastNameDB;
+
+        if ($email == null)
+            $email = $emailDB;
+
+        if ($nationality == null)
+            $nationality = $nationalityDB;
+
+        if ($countryOfResidence == null)
+            $countryOfResidence = $countryOfResidenceDB;
+
+        if ($gender == null)
+            $gender = $genderDB;
+
+        if ($occupation == null)
+            $occupation = $occupationDB;
+
+        if ($socialStatus == null)
+            $socialStatus = $socialStatusDB;
+
+        if ($religion == null)
+            $religion = $religionDB;
+
+
         # Update the database with the new data.
         
-        include_once '../db/getting_info.php';
-        include_once '../db/adding_data.php';
-        
-        $mysql = connect();
-        $id = getId($initialEmail);
-        
-        if (!updateUserBasicInformation($mysql, $initialEmail, $newEmail, $firstName, $lastName))
+        if (!updateUserBasicInformation($mysql, $initialEmail, $email, $firstName, $lastName))
             die("Error - Update User's Basic Information");
         else
-            $initialEmail = $newEmail;
+            $initialEmail = $email;
 
         if (!updateUserExtendedInformation($mysql, $initialEmail, $nationality, $countryOfResidence, $gender, $occupation, $socialStatus, $religion))
             die("Error - Update User's Extended Information");
