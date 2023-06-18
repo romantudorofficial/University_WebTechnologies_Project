@@ -216,7 +216,7 @@ $similar = checkSimilarity($options);
 
 if ($similar) {
     //header("Location: ../content.php?error=-2", true, 303);
-    echo -2;
+    echo "-2";
 } else {
     //getting the order
     $elements = $elements['elements'];
@@ -226,7 +226,7 @@ if ($similar) {
     //checking if it has a question, a valid answer , a title , content [image is not mandatory]
     if ($elements == null) {
         //header("Location: ../content.php?id=" . $id . "&error=0", true, 303);
-        echo 0;
+        echo "0";
     } else {
         $checker = checkingElements($elements);
         if ($checker) {
@@ -235,17 +235,17 @@ if ($similar) {
             if ($last) {
                 $ok = addingInDB($elements, $result, $id);
                 if ($ok) {
-                    echo 1;
+                    echo "1";
                 } else {
-                    echo 2;
+                    echo "2";
                 }
             } else {
                 //header("Location: ../content.php?id=" . $id . "&error=-3", true, 303);
-                echo -3;
+                echo "-3";
             }
         } else {
             //header("Location: ../content.php?id=" . $id . "&error=-1", true, 303);
-            echo -1;
+            echo "-1";
         }
     }
 }

@@ -100,7 +100,7 @@
                 <button class="backButton"><a href="menu.php">Admin Page</a></button>
             </form>
         </div>
-        <script src="./content_all/jsFile_content.js"> </script>
+        <script src="./content_all/jsFile_content2.js"> </script>
     </body>
 
 </php>
