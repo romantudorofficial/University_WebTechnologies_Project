@@ -34,9 +34,19 @@
                 </a>
             </li>
 
-            <li id="buttonLog">
-                <a href="login_page.php?a=false">Sign Out</a>
-            </li>
+            <?php
+            if (isset($_COOKIE['Email'])) {
+                $type = returnTypeSign($_COOKIE['Email']);
+            } else {
+                $type = "Sign in";
+            }
+            ?>
+
+
+            <!-- end admin -->
+            <li id="buttonLog"> <a href="login_page.php?a=false">
+                    <?php echo $type; ?>
+                </a> </li>
 
         </ul>
 
