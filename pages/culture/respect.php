@@ -85,7 +85,7 @@
             <legend for="Q2">Why is it important to respect cultural differences in online interactions?</legend>
             <div>
                 <input type="radio" id="A" name="option" value="right" checked>
-                <label for="emoji">To impose your own cultural norms onto others</label>
+                <label for="emoji">To promote understanding and collaboration in online communities</label>
             </div>
             <div>
                 <input type="radio" id="B" name="option" value="wrong" checked>
