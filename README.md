@@ -1,3 +1,6 @@
+## Details
+Here is a link with the tasks backlog: https://github.com/users/tudorgalatan/projects/6/.
+Here is a link for the video presentation: https://drive.google.com/file/d/1ExVIlM3C8xRh4xuEPKr6NfKcKZtlRfKi/view?usp=sharing
 # Proiectul
 Acesta propune implementarea unei aplicații web pentru utilizatorii care sunt dispuși să învețe bunele maniere sub o forma interactivă.
 # Soluția
@@ -177,43 +180,5 @@ Aici s-au folosit:
 - SQL
 ![Alt text](images_README/image18.png)
 
-<<<<<<< Updated upstream
-### Tasks
-1. Create the database called `project`
-2. Create the tables like in : https://docs.google.com/document/d/15mzF2AO19qKVUY87MHRoZNO1PCOv84kD5HTkh1ukZfA/edit?usp=sharing  (copy-paste)
-3. For creating the admins: we will just create an account using our names and a password , for not forgetting about it, complete below (should be a proper email that contains `@gmail.com` or `@smth.com`)
-
-*Maria* <br />
-first name: Maria<br />
-last name: Gheorghiu<br />
-email: mariagheorghiu27@ymail.com<br />
-password: admin123<br />
-
-*Tudor* <br />
-first name: Tudor<br />
-last name: Gălățan<br />
-email: tudorgalatan@gmail.com<br />
-password: admin321<br />
-
-*Catalina* <br />
-first name: Catalina-Cristina<br />
-last name:Vornicu<br />
-email:catalina.tiger25@gmail.com<br />
-password:admin123<br />
-
-4. For checking the correctness of the email or making them as checked, we must remember that we will use Ajax and it will be learned at this lab12, so we will do this after 
-5. Write `done` next to your name when you finished this first task
-
-`Maria` : done<br />
-`Tudor` : done<br />
-`Catalina` : done<br />
-
-## Details
-
-Here is a link with the tasks backlog: https://github.com/users/tudorgalatan/projects/6/.
-
-Here is a link for the video presentation: https://drive.google.com/file/d/1ExVIlM3C8xRh4xuEPKr6NfKcKZtlRfKi/view?usp=sharing
-=======
 # Concluzie
 Prin acest proiect, au putut fi acumulate numeroase cunoștințe ce tin de domeniul WEB. Am aflata utilitatea unui REST API, cat de ușoară este folosirea acestuia pentru a evita multitudinea de fisiere de pe mașină. Pentru a ajuta dinamica paginii sa se plieze pe necesitatea utilizatorului, in functie de id-ul acestuia. Modul de template-izare pentru usuararea muncii este un factor important, cum se fac schimburile de informații prin metodele GET si POST. Am descoperit cum se conectează PHP cu JS, si cat de complex este procesul de lucru cu ambele.
->>>>>>> Stashed changes
