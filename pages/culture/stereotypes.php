@@ -19,8 +19,8 @@
         <li> <a href="../virtual community/introduction.php">Virtual Community</a> </li>
         <li> <a href="../emoji/introduction.php">Emoji</a> </li>
         <li> <a href="../video conferences/introduction.php">Video Conferences</a> </li>
-        <li> <a href="../culture/introduction.php">Culture</a> </li>
-        <li> <a href="../multilingualism/introduction.php" class="active">Multilingualism</a> </li>
+        <li> <a href="../culture/introduction.php" class="active">Culture</a> </li>
+        <li> <a href="../multilingualism/introduction.php">Multilingualism</a> </li>
         <li>
             <a href="../other.php" id="other">Other</a>
         </li>
