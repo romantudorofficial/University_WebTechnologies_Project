@@ -3,10 +3,12 @@
 
 <head>
     <title>MaMa! Lessons</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styles/main_style.css" />
     <link rel="stylesheet" href="../styles/index_style.css" />
     <link rel="stylesheet" href="../styles/scoreboard_style.css" />
     <link rel="stylesheet" href="../styles/lessonspage_style.css" />
+    <link rel="stylesheet" href="../styles/style_other.css" />
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         include '../db/getting_info.php';
         if (isset($_COOKIE['Email']) && isActive($_COOKIE['Email']) && isAdmin(($_COOKIE['Email']))) { ?>
             <li id="commands">
-                <a href="../admin/menu.php">Admin Commands</a>
+                <a href="./admin/menu.php">Admin Commands</a>
             </li>
         <?php } ?>
         <?php
@@ -40,6 +42,21 @@
                 <?php echo $type; ?>
             </a> </li>
     </ul>
+    <img id="down" src="../assets\images/newLogo.jpg" alt="logo icon">
+    <h1>Here are the available categories:</h1>
+    <div class="pageOther">
+        <?php
+        $letter = null;
+        $link = "./introduction.php?id_cat=";
+        foreach ($categories as $category) {
+            if (strtoupper($category[1][0]) != $letter) {
+                $letter = strtoupper($category[1][0]);
+                echo "<h2> - " . $letter . " - </h2><br>";
+            }
+            echo "<p> <a href='".$link.$category[0]."'> " . $category[1] . "</a></p><br>";
+        }
+        ?>
+    </div>
 </body>
 
 </html>

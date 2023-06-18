@@ -1,0 +1,46 @@
+a {
+    color: palevioletred;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: #c2a7e0;
+}
+
+a:active {
+    text-decoration: none;
+}
+body{
+    background-color: bisque;
+}
+
+.pageOther{
+    text-align: left;
+    font-family: cursive;
+    font-style: italic;
+    font-weight: bolder;
+    height: fit-content;
+}
+#down{
+    height: fit-content;
+    float: right;
+}
+
+h2{
+    width: fit-content;
+    color: #75008D;
+    border-radius: 25%;
+    border-color: black;
+    border-style: dotted;
+    text-align: left;
+    float: left;
+    font-style: oblique;
+}

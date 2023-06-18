@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title> Emoji Tutorial </title>
     <link rel="stylesheet" href="../../styles/main_style.css" />
     <link rel="stylesheet" href="../../styles/lessons_style.css" />
@@ -35,10 +35,10 @@
     <!-- The content of this page -->
     <div class="adminContent">
         <h1> Management Page </h1>
-        <p class="info"> If you want to add a category or a new lesson to an exitent category please click the following
+        <p class="info"> If you want to add a category, a suggestion or a new lesson to an existent category, please click the following
             button:</p>
         <button><a href="add.php">ADD</a></button>
-        <p class="info"> If you want to delete a category or a lesson to an exitent category please click the following
+        <p class="info"> If you want to delete a category or a lesson to an existent category please click the following
             button:</p>
         <button><a href="delete.php">DELETE</a></button>
         <p class="info"> If you need to check who is worth to become an admin , click the following button:</p>

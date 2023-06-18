@@ -18,44 +18,59 @@
             {
                 "nameLesson": "Rules<span class=\"hard\"> \ud83d\udd34 <\/span>",
                 "email": [
-                    "catalina.tiger25@gmail.com"
+                    "catalina.tiger25@gmail.com",
+                    "email@stef.ro"
                 ]
             },
             {
                 "nameLesson": "Their meaning to different generations<span class=\"medium\"> \ud83d\udfe1 <\/span>",
                 "email": [
                     "catalina.tiger25@gmail.com",
-                    "elenaberbeci@gmail.com"
+                    "elenaberbeci@gmail.com",
+                    "email@stef.ro"
                 ]
             },
             {
                 "nameLesson": "The new era of emojis<span class=\"hard\"> \ud83d\udd34 <\/span>",
                 "email": [
-                    "catalina.tiger25@gmail.com"
+                    "catalina.tiger25@gmail.com",
+                    "email@stef.ro"
                 ]
             },
             {
                 "nameLesson": "When (not) to use emojis<span class=\"easy\"> \ud83d\udfe1 <\/span>",
                 "email": [
-                    "catalina.tiger25@gmail.com"
+                    "catalina.tiger25@gmail.com",
+                    "email@stef.ro",
+                    "mariagheorghiu27@ymail.com",
+                    "elenaberbeci@gmail.com"
                 ]
             },
             {
                 "nameLesson": "Emoji vs Emoticon<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
-                    "catalina.tiger25@gmail.com"
+                    "catalina.tiger25@gmail.com",
+                    "email@stef.ro",
+                    "mariagheorghiu27@ymail.com"
                 ]
             },
             {
                 "nameLesson": "Brief history<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
-                    "dan@gmail.com"
+                    "dan@gmail.com",
+                    "email@stef.ro",
+                    "mariagheorghiu27@ymail.com"
                 ]
             },
             {
                 "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
-                    "elenaberbeci@gmail.com"
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com",
+                    "catalina.tiger25@gmail.com",
+                    "email@stef.ro",
+                    "michelejr@gmail.com",
+                    "mariagheorghiu27@ymail.com"
                 ]
             }
         ]
@@ -79,7 +94,8 @@
             {
                 "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
                 "email": [
-                    "marimari@yahoo.com"
+                    "marimari@yahoo.com",
+                    "catalina.tiger25@gmail.com"
                 ]
             }
         ]
@@ -89,6 +105,134 @@
         "lessons": [
             {
                 "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com",
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "How to text someone for the first time professionally<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "When is it acceptable to take your sweet time to reply?<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Group text message etiquette<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "elenaberbeci@gmail.com",
+                    "olesea@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Why abbreviate?<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "olesea@gmail.com",
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Frequently asked texting do\u2019s and don\u2019ts questions (FAQ)<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "olesea@gmail.com",
+                    "catalina.tiger25@gmail.com"
+                ]
+            },
+            {
+                "nameLesson": "Texting etiquette: The 10 do\u2019s and don\u2019ts<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Multilingualism",
+        "lessons": [
+            {
+                "nameLesson": "The Power of Multilingualism in Online Communities<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    null,
+                    "mariagheorghiu27@ymail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Virtual Community",
+        "lessons": [
+            {
+                "nameLesson": "Introduction<span class=\"easy\"> \ud83d\udfe2 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            },
+            {
+                "nameLesson": "Engaging with Moderators<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            },
+            {
+                "nameLesson": "Being a Good Community Member<span class=\"hard\"> \ud83d\udd34 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            },
+            {
+                "nameLesson": "Privacy and Consent<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+                "email": [
+                    "mariagheorghiu27@ymail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Bunele Maniere",
+        "lessons": [
+            {
+                "nameLesson": "undefined",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "okay",
+        "lessons": [
+            {
+                "nameLesson": "undefined",
+                "email": [
+                    "elenaberbeci@gmail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "Bunele Maniere<span class=\"medium\"> \ud83d\udfe1 <\/span>",
+        "lessons": [
+            {
+                "nameLesson": "undefined",
+                "email": [
+                    "catalina.tiger25@gmail.com"
+                ]
+            }
+        ]
+    },
+    {
+        "nameCategory": "",
+        "lessons": [
+            {
+                "nameLesson": "Bunele Maniere<span class=\"medium\"> \ud83d\udfe1 <\/span>",
                 "email": [
                     "catalina.tiger25@gmail.com"
                 ]

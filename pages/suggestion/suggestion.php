@@ -71,25 +71,6 @@
                 </div>
             </fieldset>
             <fieldset>
-                <legend for="typeCategory"> What category of this type? </legend>
-                <div>
-                    <input type="radio" id="academical" name="typeCategory" value="academical" checked>
-                    <label for="academical">academical</label>
-                </div>
-                <div>
-                    <input type="radio" id="workplace" name="typeCategory" value="workplace">
-                    <label for="workplace">at workplace</label>
-                </div>
-                <div>
-                    <input type="radio" id="friends" name="typeCategory" value="friends">
-                    <label for="friends">with friends</label>
-                </div>
-                <div>
-                    <input type="radio" id="family" name="typeCategory" value="family">
-                    <label for="family">in family</label>
-                </div>
-            </fieldset>
-            <fieldset>
                 <legend>What words might describe it the best:</legend>
                 <div>
                     <input type="checkbox" id="w_using" name="words" value="w_using">

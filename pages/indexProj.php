@@ -3,6 +3,7 @@
 
 <head>
 	<title>Welcome to MaMa!</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<link rel="stylesheet" href="../styles/main_style.css" />
 	<link rel="stylesheet" href="../styles/index_style.css" />
 	<style>
@@ -79,7 +80,7 @@
 
 	<article class="categs">
 		<header>
-			<form method="POST" action="./suggestion/suggestion.php">
+			<form method="POST" action="./suggestion/suggestions_controller.php">
 				<input class="goToPage" type="submit" value="Suggestions For You" />
 			</form>
 		</header>
@@ -96,6 +97,17 @@
 		</header>
 		<p>
 			This is where you can see the leaderboard.
+		</p>
+	</article>
+
+	<article class="categs">
+		<header>
+			<form method="POST" action="admin_applications/admin_application_controller.php">
+				<input class="goToPage" type="submit" value="Admin Application" />
+			</form>
+		</header>
+		<p>
+			This is where you can apply to become an admin.
 		</p>
 	</article>
 </body>
