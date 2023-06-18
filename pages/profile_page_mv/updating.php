@@ -33,8 +33,10 @@ function updatingForm($info)
 
 
 $ok = false;
-if (updatingForm($_POST)) {
-    $ok = true;
+if (isActive($_COOKIE['Email'])) {
+    if (updatingForm($_POST)) {
+        $ok = true;
+    }
 }
 header("Location: ../profile_page.php?ok=" . $ok, true, 303);
 ?>
