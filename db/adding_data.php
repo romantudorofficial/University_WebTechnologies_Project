@@ -50,9 +50,9 @@ function updateUserBasicInformation ($mysql, $initialEmail, $newEmail, $firstNam
 {
     $userId = getId($initialEmail);
     
-    if (($result = $mysql->query("UPDATE users
-        SET firstName = $firstName, lastName = $lastName, email = $newEmail
-        WHERE id_user = $userId")))
+    if (($result = $mysql->query('UPDATE users
+        SET firstName = "'.$firstName.'", lastName = "'.$lastName.'", email = "'.$newEmail.'"
+        WHERE id_user LIKE "'.$userId.'"')))
 
         return true;
     
@@ -65,10 +65,10 @@ function updateUserExtendedInformation ($mysql, $email, $nationality, $countryOf
 {
     $userId = getId($email);
 
-    if (($result = $mysql->query("UPDATE user_info
-        SET nationality = $nationality, countryResidence = $countryOfResidence, gender = $gender,
-        occupation = $occupation, socialStatus = $socialStatus, religion = $religion
-        WHERE id_user = $userId")))
+    if (($result = $mysql->query('UPDATE user_info
+        SET nationality = "'.$nationality.'", countryResidence = "'.$countryOfResidence.'", gender = "'.$gender.'",
+        occupation = "'.$occupation.'", socialStatus = "'.$socialStatus.'", religion = "'.$religion.'"
+        WHERE id_user LIKE "'.$userId.'"')))
 
         return true;
     

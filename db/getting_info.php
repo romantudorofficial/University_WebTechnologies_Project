@@ -97,6 +97,8 @@ function getId($email)
 {
     $mysql = connect();
     
+    $id = null;
+    
     if (!($rez = $mysql->query('select id_user from users where email like "' . $email . '"'))) {
         die('A survenit o eroare la interogare');
     }

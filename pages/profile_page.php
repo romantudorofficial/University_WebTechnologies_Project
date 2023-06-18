@@ -183,8 +183,10 @@
         
         if (!updateUserBasicInformation($mysql, $initialEmail, $newEmail, $firstName, $lastName))
             die("Error - Update User's Basic Information");
+        else
+            $initialEmail = $newEmail;
 
-        if (!updateUserExtendedInformation($mysql, $email, $nationality, $countryOfResidence, $gender, $occupation, $socialStatus, $religion))
+        if (!updateUserExtendedInformation($mysql, $initialEmail, $nationality, $countryOfResidence, $gender, $occupation, $socialStatus, $religion))
             die("Error - Update User's Extended Information");
     }
 
@@ -199,22 +201,23 @@
 
     # Get the data from the database.
 
-    include_once 'connection.php';
+    include_once '../db/connection.php';
+    include_once '../db/getting_info.php';
 
     $database = connect();
 
     $email = 'tudorgalatan@gmail.com';      # ?
     $userId = getId($email);
 
-    $firstName = $mysql->query('SELECT firstName FROM users WHERE id_user = $userId');
-    $lastName = $mysql->query('SELECT lastName FROM users WHERE id_user = $userId');
-    $email = $mysql->query('SELECT email FROM users WHERE id_user = $userId');
-    $nationality = $mysql->query('SELECT nationality FROM user_info WHERE id_user = $userId');
-    $countryOfResidence = $mysql->query('SELECT countryResidence FROM user_info WHERE id_user = $userId');
-    $gender = $mysql->query('SELECT gender FROM user_info WHERE id_user = $userId');
-    $occupation = $mysql->query('SELECT occupation FROM user_info WHERE id_user = $userId');
-    $socialStatus = $mysql->query('SELECT socialStatus FROM user_info WHERE id_user = $userId');
-    $religion = $mysql->query('SELECT religion FROM user_info WHERE id_user = $userId');
+    $firstName = $database->query('SELECT firstName FROM users WHERE id_user LIKE "'.$userId.'"');
+    $lastName = $database->query('SELECT lastName FROM users WHERE id_user LIKE "'.$userId.'"');
+    $email = $database->query('SELECT email FROM users WHERE id_user LIKE "'.$userId.'"');
+    $nationality = $database->query('SELECT nationality FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $countryOfResidence = $database->query('SELECT countryResidence FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $gender = $database->query('SELECT gender FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $occupation = $database->query('SELECT occupation FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $socialStatus = $database->query('SELECT socialStatus FROM user_info WHERE id_user LIKE "'.$userId.'"');
+    $religion = $database->query('SELECT religion FROM user_info WHERE id_user LIKE "'.$userId.'"');
 
 
     # Display the data from the database on the page.
