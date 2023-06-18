@@ -38,7 +38,7 @@ class Lesson
         $resultMedium = $this->parsingJson($this->getMediumLessons($id_category));
         if ($resultMedium['lessons'] != null) {
             if ($result == null) {
-                $result = $resultMedium;
+                $result = $resultMedium['lessons'];
             } else {
                 $idx = count($result) + 1;
                 for ($counter = 0; $counter < count($resultMedium['lessons']); $counter = $counter + 1) {
@@ -54,7 +54,7 @@ class Lesson
             } else {
                 $idx = count($result);
                 for ($counter = 0; $counter < count($resultHard['lessons']); $counter = $counter + 1) {
-                    $result['lessons'][$idx] = $resultHard['lessons'][$counter];
+                    $result[$idx] = $resultHard['lessons'][$counter];
                     $idx = $idx + 1;
                 }
             }
