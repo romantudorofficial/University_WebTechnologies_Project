@@ -17,15 +17,14 @@ function returnLessonsAsArray($id)
     $result = null;
     $i = 0;
     foreach ($jsonFile as $instance) {
-        foreach ($instance as $category) {
-            $noJson = (array) $category;
-            $result[$i][1] = $noJson['id_lesson'];
-            $result[$i][0] = $noJson['id_category'];
-            $result[$i][2] = $noJson['lessonName'];
-            $result[$i][3] = $noJson['difficulty'];
+        $noJson = (array) $instance;
 
-            $i = $i + 1;
-        }
+        $result[$i][1] = $noJson['id_lesson'];
+        $result[$i][0] = $noJson['id_category'];
+        $result[$i][2] = $noJson['lessonName'];
+        $result[$i][3] = $noJson['difficulty'];
+
+        $i = $i + 1;
 
     }
     return $result;
