@@ -44,3 +44,5 @@ password:admin123<br />
 ## Details
 
 Here is a link with the tasks backlog: https://github.com/users/tudorgalatan/projects/6/.
+
+Here is a link for the video presentation: https://drive.google.com/file/d/1ExVIlM3C8xRh4xuEPKr6NfKcKZtlRfKi/view?usp=sharing
